@@ -1,0 +1,29 @@
+
+.icon-header {
+    background-color: brown;
+    height: 40px;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons {
+    font-size: large;
+    height: 60px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
