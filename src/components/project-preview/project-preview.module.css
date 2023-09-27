@@ -1,0 +1,21 @@
+.previewBox {
+  display: block;
+}
+
+.previewBoxImage {
+  width: 100%;
+  height: 100%;
+
+  filter: grayscale(100);
+}
+
+.previewBoxImage:hover {
+  filter: grayscale(0);
+  width: calc(100% + 20px)
+}
+
+
+.previewBoxTitle {
+  font-size: x-large;
+  font-weight: 600;
+}
