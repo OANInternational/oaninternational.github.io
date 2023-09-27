@@ -3,13 +3,12 @@ import Link from "next/link";
 
 import styles from "./page.module.css";
 import ProjectPreview from "@/components/project-preview/project-preview.component";
+import TitleSection from "@/components/title-section/title-section.component";
 
 export default function Home() {
   return (
     <main>
-      <section className={styles.mainSection}>
-        <h1 className={styles.title}>Projects</h1>
-      </section>
+      <TitleSection title="Proyectos"></TitleSection>
 
       <section className={styles.secondSection}>
         <ProjectPreview title="Nikarit" imageUrl="/dummy.jpg" />
