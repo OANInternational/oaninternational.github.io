@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 import ProjectPreview from "@/components/project-preview/project-preview.component";
 import TitleSection from "@/components/title-section/title-section.component";
 
-export default function Home() {
+export default function Projects() {
   return (
     <main>
       <TitleSection title="Proyectos"></TitleSection>

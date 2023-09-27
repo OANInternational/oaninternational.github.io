@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import TitleSection from "@/components/title-section/title-section.component";
 
-export default function Home() {
+export default function AboutUs() {
   return (
     <main>
       <TitleSection title="Sobre Nosotros"></TitleSection>
