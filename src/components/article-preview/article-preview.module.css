@@ -8,8 +8,15 @@
 
 .articleImage {
   width: 300px;
-  height: 300px;
-  padding: 20px;
+  min-width: 300px;
+  height: 200px;
+  padding: 10px;
+  object-fit: cover;
+  transition: transform .3s;
+}
+
+.articleImage:hover {
+  transform: scale(1.2);
 }
 
 .textWrapper {

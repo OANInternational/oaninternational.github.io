@@ -2,11 +2,15 @@ import Image from "next/image";
 
 import styles from "./article-preview.module.css";
 
-export default function ArticlePreview(props: {
+export interface Article {
   title: string;
   imageUrl: string;
   description: string;
-}) {
+  date: string;
+  link?: string;
+}
+
+export default function ArticlePreview(props: Article) {
   return (
     <article className={styles.articleSection}>
       <Image
@@ -21,6 +25,8 @@ export default function ArticlePreview(props: {
       <div className={styles.textWrapper}>
         <h1 className={styles.articleTitle}>{props.title}</h1>
         <p className={styles.articleDescription}>{props.description}</p>
+
+        <p className={styles.articleDate}>{props.date}</p>
       </div>
     </article>
   );

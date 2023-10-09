@@ -7,7 +7,9 @@
   --secondary-color: #ccde27;
   --tertiary-color: #333333;
   --white: #ffffff;
-  --black: #000000
+  --black: #000000;
+
+  --max-width-size: 900px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,11 +33,9 @@ body {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }
-
-
 
 /* Mobile */
 @media (max-width: 700px) {
@@ -46,10 +46,6 @@ body {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
-}
-
-@media (prefers-color-scheme: dark) {
- 
 }
 
 @keyframes rotate {

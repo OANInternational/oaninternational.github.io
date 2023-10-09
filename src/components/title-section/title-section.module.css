@@ -1,17 +1,17 @@
-.mainSection {
-  background-color: var(--primary-background-color);
-  height: 150px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.sectionTitle {
+  color: var(--primary-color);
+  font-size: xx-large;
+  display: inline-block;
+  padding-bottom: 15px;
+  position: relative;
 }
 
-.title {
-  font-size: xxx-large;
-  margin-bottom: 10px;
-  color: var(--primary-color);
-
-  font-weight: 500;
+.sectionTitle:after{    
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  bottom: 0;
+  left: 0%;
+  border-bottom: 3px solid var(--secondary-color);
 }
