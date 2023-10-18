@@ -157,7 +157,8 @@ export default function AboutUs() {
         <TitleSection title="Nuestra Historia" />
       </section>
 
-      <section className={styles.subHistorySection}>
+      {/* HISTORY */}
+      <section>
         <div className={styles.historyBlock}>
           <Image
             className={styles.historyBlockImage}
@@ -228,8 +229,203 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className={styles.valuesSection}></section>
+      {/* WORK PLACE */}
+      <section className={styles.workPlaceSection}>
+        <TitleSection title="Donde trabajamos" />
 
+        <p>
+          Benín, es un país situado en el golfo de Guinea, haciendo frontera con
+          Togo al oeste, Nigeria al este y Burkina Faso y Níger al norte.
+          Antigua colonia de Dahomey, la capital es Porto-Novo, pero la sede del
+          gobierno se sitúa en Cotonou, que es a su vez la capital económica y
+          el mayor núcleo de población.
+        </p>
+
+        <p>
+          La esperanza de vida al nacer es de 59 años, que con un PIB de
+          8.747.000 millones de dólares (1,900 dólares per cápita), un 36,2 % de
+          la población viviendo debajo del umbral de la pobreza, le confieren un
+          índice de desarrollo humano del 0,476, ocupando así la posición 165 de
+          187 países.
+        </p>
+
+        <p>
+          OAN International trabaja específicamente en Nikki situado en el
+          departamento de Borgou, la capital del reino Batonou, con una
+          población de unos 150.000 habitantes y una extensión aproximada de
+          3.000 km2 (similar a la provincia de Álava). La comuna se divide a su
+          vez en los arrondissements de Biro, Gnonkourokali, Ouénou, Sérékalé,
+          Suya, Tasso y Nikki. En cuanto a la población, esta está distribuida
+          uniformemente entre todos a excepción de Nikki, con una población de
+          unos 70.000 habitantes y Suya, con cifras en torno a los 8.000
+          habitantes. El resto acoge de este modo a unas 150.000 personas cada
+          uno. Esta región se trata de una de las zonas más rurales y con menos
+          recursos de la nación.
+        </p>
+      </section>
+
+      {/* VALUES */}
+      <section>
+        <div className={styles.valuesBlock}>
+          <Image
+            className={styles.valuesBlockImage}
+            src="/oan-web-006.jpg"
+            width={400}
+            height={400}
+            alt="OAN history"
+          />
+
+          <div className={styles.valuesBlockText}>
+            <TitleSection title="Nuestros valores" />
+
+            <div className={styles.valuesTitle}>
+              <h1 className={styles.valuesTitleNumber}>1</h1>
+              <h2 className={styles.valuesTitleText}>COMPROMISO</h2>
+            </div>
+
+            <p className={styles.valuesBlockParagraph}>
+              Afirmamos nuestro COMPROMISO con las personas y con nuestra misión
+              a través del esfuerzo y entrega en nuestro día a día, porque
+              creemos firmemente que la sostenibilidad y los logros de nuestras
+              acciones radican en la responsabilidad que adquirimos.
+            </p>
+          </div>
+        </div>
+
+        <div className={styles.valuesBlock}>
+          <div className={styles.valuesBlockText}>
+            <div className={styles.valuesTitle}>
+              <h1 className={styles.valuesTitleNumber}>2</h1>
+              <h2 className={styles.valuesTitleText}>TRANSPARENCIA</h2>
+            </div>
+
+            <p className={styles.valuesBlockParagraph}>
+              Trabajamos desde la TRANSPARENCIA y la información pública como
+              garante de la calidad de nuestra actuación.
+            </p>
+          </div>
+
+          <Image
+            className={styles.valuesBlockImage}
+            src="/oan-web-006.jpg"
+            width={400}
+            height={400}
+            alt="OAN history"
+          />
+        </div>
+
+        <div className={styles.valuesBlock}>
+          <Image
+            className={styles.valuesBlockImage}
+            src="/oan-web-008.jpg"
+            width={400}
+            height={400}
+            alt="OAN history"
+          />
+
+          <div className={styles.valuesBlockText}>
+            <div className={styles.valuesTitle}>
+              <h1 className={styles.valuesTitleNumber}>3</h1>
+              <h2 className={styles.valuesTitleText}>JUSTICIA SOCIAL</h2>
+            </div>
+
+            <p className={styles.valuesBlockParagraph}>
+              Creemos en la JUSTICIA SOCIAL, que entendemos como el
+              reconocimiento y creación del contexto que permita a todas las
+              personas el pleno ejercicio de todos y cada uno de los derechos
+              humanos.
+            </p>
+          </div>
+        </div>
+
+        <div className={styles.valuesBlock}>
+          <div className={styles.valuesBlockText}>
+            <div className={styles.valuesTitle}>
+              <h1 className={styles.valuesTitleNumber}>4</h1>
+              <h2 className={styles.valuesTitleText}>HUMILDAD y RESPETO</h2>
+            </div>
+
+            <p className={styles.valuesBlockParagraph}>
+              Actuamos desde la HUMILDAD y del RESPETO hacia las personas con
+              las que trabajamos.
+            </p>
+          </div>
+
+          <Image
+            className={styles.valuesBlockImage}
+            src="/oan-web-006.jpg"
+            width={400}
+            height={400}
+            alt="OAN history"
+          />
+        </div>
+
+        <div className={styles.valuesBlock}>
+          <Image
+            className={styles.valuesBlockImage}
+            src="/oan-web-008.jpg"
+            width={400}
+            height={400}
+            alt="OAN history"
+          />
+
+          <div className={styles.valuesBlockText}>
+            <div className={styles.valuesTitle}>
+              <h1 className={styles.valuesTitleNumber}>5</h1>
+              <h2 className={styles.valuesTitleText}>COHERENCIA</h2>
+            </div>
+
+            <p className={styles.valuesBlockParagraph}>
+              Buscamos la COHERENCIA entre nuestras acciones y aquello que
+              defendemos, ya que en ellos se basará el éxito de nuestra labor.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* TRANSPARENCY */}
+      <section className={styles.teamSection}>
+        <TitleSection title="Transparencia" />
+
+        <p>
+          En OAN creemos que la transparencia es fundamental para el buen
+          funcionamiento de una organización. Aquí podrás conocer cómo funciona
+          OAN desde dentro, cuál es nuestra normativa y cómo nos financiamos.{" "}
+        </p>
+
+        <h3>Estatutos</h3>
+        <ul>
+          <li>
+            <a
+              className={styles.fileDownloadLink}
+              href="/documents/estatutos-oan-2020.pdf"
+              download="estatutosOAN2020"
+            >
+              Estatutos OAN 2020
+            </a>
+          </li>
+        </ul>
+
+        <h3>Memorias económicas</h3>
+        <ul>
+          <li>
+            <a
+              className={styles.fileDownloadLink}
+              href="/oan-web-015.jpg"
+              download="estatutosOan2023"
+            >
+              Estatutos OAN 2023
+            </a>
+          </li>
+        </ul>
+
+        <h3>Memoria de actividades</h3>
+        <div>
+          <li>Memoria 2021</li>
+        </div>
+      </section>
+
+      {/* TEAM */}
       <section className={styles.teamSection}>
         <TitleSection title="Nuestro Equipo" />
 
