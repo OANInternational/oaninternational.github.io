@@ -8,6 +8,11 @@ import PersonPreview, {
 } from "@/components/person-preview/person-preview.component";
 import TitlePage from "@/components/title-page/title-page.component";
 
+interface File {
+  url: string;
+  name: string;
+}
+
 export default function AboutUs() {
   const SPAIN_TEAM: Person[] = [
     {
@@ -120,6 +125,72 @@ export default function AboutUs() {
     },
   ];
 
+  const ACTIVITIES_MEMORIES: File[] = [
+    {
+      url: "documents/activity-memories/memoria-actividades-oan-2015.pdf",
+      name: "Memoria de Actividades - 2015",
+    },
+    {
+      url: "documents/activity-memories/memoria-actividades-oan-2016.pdf",
+      name: "Memoria de Actividades - 2016",
+    },
+    {
+      url: "documents/activity-memories/memoria-actividades-oan-2017.pdf",
+      name: "Memoria de Actividades - 2017",
+    },
+    {
+      url: "documents/activity-memories/memoria-actividades-oan-2018.pdf",
+      name: "Memoria de Actividades - 2018",
+    },
+    {
+      url: "documents/activity-memories/memoria-actividades-oan-2019.pdf",
+      name: "Memoria de Actividades - 2019",
+    },
+    {
+      url: "documents/activity-memories/memoria-actividades-oan-2020.pdf",
+      name: "Memoria de Actividades - 2020",
+    },
+    {
+      url: "documents/activity-memories/memoria-actividades-oan-2022.pdf",
+      name: "Memoria de Actividades - 2022",
+    },
+  ];
+
+  const ECONOMIC_MEMORIES: File[] = [
+    {
+      url: "documents/economic-memories/memoria-economica-oan-2014.pdf",
+      name: "Memoria de Economica - 2014",
+    },
+    {
+      url: "documents/economic-memories/memoria-economica-oan-2015.pdf",
+      name: "Memoria de Economica - 2015",
+    },
+    {
+      url: "documents/economic-memories/memoria-economica-oan-2016.pdf",
+      name: "Memoria de Economica - 2016",
+    },
+    {
+      url: "documents/economic-memories/memoria-economica-oan-2017.pdf",
+      name: "Memoria de Economica - 2017",
+    },
+    {
+      url: "documents/economic-memories/memoria-economica-oan-2018.pdf",
+      name: "Memoria de Economica - 2018",
+    },
+    {
+      url: "documents/economic-memories/memoria-economica-oan-2019.pdf",
+      name: "Memoria de Economica - 2019",
+    },
+    {
+      url: "documents/economic-memories/memoria-economica-oan-2020.pdf",
+      name: "Memoria de Economica - 2020",
+    },
+    {
+      url: "documents/economic-memories/memoria-economica-oan-2021.pdf",
+      name: "Memoria de Economica - 2021",
+    },
+  ];
+
   const spainTeam = SPAIN_TEAM.map((person) => (
     <PersonPreview
       key={person.name}
@@ -144,6 +215,44 @@ export default function AboutUs() {
     mercados y paisajes son la historia viva del continente africano"`,
     author: "Joan Riera",
   };
+
+  const economicMemories = ECONOMIC_MEMORIES.map((file) => (
+    <div key={file.name}>
+      <li>
+        <a
+          className={styles.fileDownloadLink}
+          href={file.url}
+          download={file.name}
+        >
+          {file.name}
+        </a>
+      </li>
+    </div>
+  ));
+
+  const activityMemories = ACTIVITIES_MEMORIES.map((file) => (
+    <li key={file.name}>
+      <a
+        className={styles.fileDownloadLink}
+        href={file.url}
+        download={file.name}
+      >
+        {file.name}
+      </a>
+    </li>
+  ));
+
+  const statutes = (
+    <li>
+      <a
+        className={styles.fileDownloadLink}
+        href="/documents/estatutos-oan-2020.pdf"
+        download="estatutosOan2020"
+      >
+        Estatutos OAN 2020
+      </a>
+    </li>
+  );
 
   return (
     <main>
@@ -294,15 +403,17 @@ export default function AboutUs() {
 
         <div className={styles.valuesBlock}>
           <div className={styles.valuesBlockText}>
-            <div className={styles.valuesTitle}>
-              <h1 className={styles.valuesTitleNumber}>2</h1>
-              <h2 className={styles.valuesTitleText}>TRANSPARENCIA</h2>
-            </div>
+            <div className={styles.valuesBlockTextLeft}>
+              <div className={styles.valuesTitle}>
+                <h1 className={styles.valuesTitleNumber}>2</h1>
+                <h2 className={styles.valuesTitleText}>TRANSPARENCIA</h2>
+              </div>
 
-            <p className={styles.valuesBlockParagraph}>
-              Trabajamos desde la TRANSPARENCIA y la información pública como
-              garante de la calidad de nuestra actuación.
-            </p>
+              <p className={styles.valuesBlockParagraph}>
+                Trabajamos desde la TRANSPARENCIA y la información pública como
+                garante de la calidad de nuestra actuación.
+              </p>
+            </div>
           </div>
 
           <Image
@@ -340,17 +451,18 @@ export default function AboutUs() {
 
         <div className={styles.valuesBlock}>
           <div className={styles.valuesBlockText}>
-            <div className={styles.valuesTitle}>
-              <h1 className={styles.valuesTitleNumber}>4</h1>
-              <h2 className={styles.valuesTitleText}>HUMILDAD y RESPETO</h2>
+            <div className={styles.valuesBlockTextLeft}>
+              <div className={styles.valuesTitle}>
+                <h1 className={styles.valuesTitleNumber}>4</h1>
+                <h2 className={styles.valuesTitleText}>HUMILDAD y RESPETO</h2>
+              </div>
+
+              <p className={styles.valuesBlockParagraph}>
+                Actuamos desde la HUMILDAD y del RESPETO hacia las personas con
+                las que trabajamos.
+              </p>
             </div>
-
-            <p className={styles.valuesBlockParagraph}>
-              Actuamos desde la HUMILDAD y del RESPETO hacia las personas con
-              las que trabajamos.
-            </p>
           </div>
-
           <Image
             className={styles.valuesBlockImage}
             src="/oan-web-006.jpg"
@@ -394,40 +506,24 @@ export default function AboutUs() {
         </p>
 
         <h3>Estatutos</h3>
-        <ul>
-          <li>
-            <a
-              className={styles.fileDownloadLink}
-              href="/documents/estatutos-oan-2020.pdf"
-              download="estatutosOAN2020"
-            >
-              Estatutos OAN 2020
-            </a>
-          </li>
-        </ul>
+        <ul className={styles.fileColumn}>{statutes}</ul>
 
         <h3>Memorias económicas</h3>
-        <ul>
-          <li>
-            <a
-              className={styles.fileDownloadLink}
-              href="/oan-web-015.jpg"
-              download="estatutosOan2023"
-            >
-              Estatutos OAN 2023
-            </a>
-          </li>
-        </ul>
+        <ul className={styles.fileColumn}>{economicMemories}</ul>
 
         <h3>Memoria de actividades</h3>
-        <div>
-          <li>Memoria 2021</li>
-        </div>
+        <ul className={styles.fileColumn}>{activityMemories}</ul>
       </section>
 
       {/* TEAM */}
       <section className={styles.teamSection}>
         <TitleSection title="Nuestro Equipo" />
+
+        <p>
+          Detrás, tenemos a un gran equipo permanente de profesionales y
+          voluntarios que están contribuyendo a crear un mejor presente para
+          Nikki, con ayuda de las donaciones de todos nuestros socios.
+        </p>
 
         <h3>España</h3>
         <div className={styles.countryTeamSection}>{spainTeam}</div>

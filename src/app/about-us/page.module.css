@@ -82,20 +82,18 @@
     justify-content: center;
 }
 
+.valuesBlockTextLeft {
+    margin-left: auto;
+}
+
 .valuesBlockParagraph {
     max-width: 550px;
     font-size: larger;
     margin-bottom: 1rem;
 }
 
-.valuesBlockParagraphLeft {
-    max-width: 550px;
-    font-size: larger;
-    margin-bottom: 1rem;
-    margin-left: auto;
-}
-
 .valuesTitle {
+    max-width: 550px;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -120,4 +118,13 @@
 
 .fileDownloadLink {
     color: var(--black);
+    font-weight:400;
+    padding: 0 5px;
+}
+
+.fileColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
 }
