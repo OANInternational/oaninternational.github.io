@@ -262,12 +262,25 @@ export default function AboutUs() {
         quote={quote}
       />
 
-      <section className={styles.historySection}>
-        <TitleSection title="Nuestra Historia" />
-      </section>
-
       {/* HISTORY */}
-      <section>
+      <section className={styles.historySection}>
+        <div className={styles.historyWrapper}>
+          <TitleSection title="Nuestra Historia" />
+
+          <p>
+            En 2013, uno de los fundadores de OAN International, Daniel Alfaro,
+            viaja a Nikki como voluntario. Un año más tarde, un grupo de 8
+            jóvenes fundan la ONG OAN International (Objetivo Analizar Nikki).
+          </p>
+
+          <p>
+            Una organización sin ánimo de lucro con una misión: acompañar a los
+            agentes de desarrollo de la comuna de Nikki a través del intercambio
+            de conocimientos y en la creación conjunta de un modelo de
+            cooperación sostenible, responsable y replicable.
+          </p>
+        </div>
+
         <div className={styles.historyBlock}>
           <Image
             className={styles.historyBlockImage}
@@ -276,30 +289,15 @@ export default function AboutUs() {
             height={500}
             alt="OAN history"
           />
-          <div className={styles.historyBlockText}>
-            <p className={styles.historyBlockParagraph}>
-              En 2013, uno de los fundadores de OAN International, Daniel
-              Alfaro, viaja a Nikki como voluntario. Un año más tarde, un grupo
-              de 8 jóvenes fundan la ONG OAN International (Objetivo Analizar
-              Nikki).
-            </p>
-            <p className={styles.historyBlockParagraph}>
-              Una organización sin ánimo de lucro con una misión: acompañar a
-              los agentes de desarrollo de la comuna de Nikki a través del
-              intercambio de conocimientos y en la creación conjunta de un
-              modelo de cooperación sostenible, responsable y replicable.
-            </p>
-          </div>
-        </div>
 
-        <div className={styles.historyBlock}>
           <div className={styles.historyBlockText}>
-            <p className={styles.historyBlockParagraphLeft}>
+            <p>
               Es en este mismo año, 2014, cuando el equipo viaja a Nikki por
               primera vez, con un objetivo claro: INVESTIGAR las necesidades de
               la población.
             </p>
-            <p className={styles.historyBlockParagraphLeft}>
+
+            <p>
               Desde entonces, cada año, jóvenes de diversas nacionalidades se
               han desplazado a terreno para trabajar conjuntamente con los
               agentes locales de desarrollo en Nikki en proyectos que dan
@@ -308,34 +306,15 @@ export default function AboutUs() {
               personas se han desplazado a terreno con esta misión.
             </p>
           </div>
-
-          <Image
-            className={styles.historyBlockImage}
-            src="/oan-web-003.jpg"
-            width={500}
-            height={500}
-            alt="OAN history"
-          />
         </div>
 
-        <div className={styles.historyBlock}>
-          <Image
-            className={styles.historyBlockImage}
-            src="/oan-web-005.jpg"
-            width={500}
-            height={500}
-            alt="OAN history"
-          />
-          <div className={styles.historyBlockText}>
-            <p className={styles.historyBlockParagraph}>
-              En la actualidad OAN International cuenta con más de 80 personas
-              voluntarias, realizando una importante labor no solo en terreno,
-              sino también trabajando en acciones de sensibilización y lucha por
-              la generación de un espíritu crítico e informado, así como de
-              acción política sobre las relaciones norte-sur en nuestro entorno.
-            </p>
-          </div>
-        </div>
+        <p>
+          En la actualidad OAN International cuenta con más de 80 personas
+          voluntarias, realizando una importante labor no solo en terreno, sino
+          también trabajando en acciones de sensibilización y lucha por la
+          generación de un espíritu crítico e informado, así como de acción
+          política sobre las relaciones norte-sur en nuestro entorno.
+        </p>
       </section>
 
       {/* WORK PLACE */}

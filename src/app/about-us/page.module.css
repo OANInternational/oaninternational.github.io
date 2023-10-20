@@ -1,5 +1,4 @@
 .workPlaceSection,
-.historySection,
 .teamSection {
     display: flex;
     flex-direction: column;
@@ -10,7 +9,6 @@
     margin: auto;
 }
 
-
 .countryTeamSection {
     display: grid;
     grid-gap: 20px;
@@ -20,42 +18,38 @@
     justify-content: center;
 }
 
+.historyTitle {
+    margin: auto;
+    max-width: var(--max-width-size);
+}
+
 .historyBlock {
-    display: flex;
-    flex-direction: row;
+    position: relative;
     width: 100%;
-    height: 500px;
+    height: 400px;
 }
 
-.historyBlockText,
 .historyBlockImage {
-    width: 50%;
+    width: 100%;
     height: 100%;
-}
-
-.historyBlockImage {
     object-fit: cover;
 }
 
 .historyBlockText {
     padding: 20px;
-    background-color: var(--primary-background-color);
-}
-
-
-.historyBlockParagraph {
-    max-width: 550px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgba(0,0,0, 0.8);
     font-size: larger;
-    margin-bottom: 1rem;
+    gap: 20px;
 }
-
-.historyBlockParagraphLeft {
-    max-width: 550px;
-    font-size: larger;
-    margin-bottom: 1rem;
-    margin-left: auto;
-}
-
 
 .valuesBlock {
     display: flex;
