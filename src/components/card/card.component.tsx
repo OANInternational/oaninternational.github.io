@@ -6,17 +6,11 @@ export default function Card(props: {
   title: string;
   subtitle: string;
   description: string;
-  iconUrl: string;
+  icon: any;
 }) {
   return (
     <div className={styles.cardBox}>
-      <Image
-        className={styles.cardBoxIcon}
-        src={props.iconUrl}
-        alt={`${props.title} Icon`}
-        width={50}
-        height={50}
-      />
+      <div className={styles.cardBoxIcon}>{props.icon}</div>
 
       <h1 className={styles.cardBoxNumber}>{props.title}</h1>
       <h3 className={styles.cardBoxTitle}>{props.subtitle}</h3>

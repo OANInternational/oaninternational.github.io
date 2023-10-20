@@ -30,7 +30,7 @@ export default function SupportUs() {
 
   const campaigns = CAMPAIGNS.map((campaign) => (
     <div key={campaign.name} className={styles.campaignBox}>
-      <div className={styles.campaignIcon}>{campaign.icon}</div>
+      {campaign.icon}
       <h2 className={styles.campaignName}>{campaign.name}</h2>
     </div>
   ));

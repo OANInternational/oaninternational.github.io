@@ -6,3 +6,29 @@
     justify-content: space-around;
 }
 
+
+.projectCategoriesSection {
+    width: 100%;
+    height: 350px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.projectCategoryBox {
+    border-radius: 5px;
+    padding: 20px;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .projectCategoryName {
+    margin-right: auto;
+  }
+  

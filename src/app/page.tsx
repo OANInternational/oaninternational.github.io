@@ -4,6 +4,10 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import Card from "@/components/card/card.component";
 
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { LiaPeopleCarrySolid, LiaUserFriendsSolid } from "react-icons/lia";
+import { GoChecklist } from "react-icons/go";
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -49,28 +53,28 @@ export default function Home() {
             title="10"
             subtitle="projectos"
             description="en los últimos 10 años"
-            iconUrl="/checklist.svg"
+            icon={<AiOutlineFundProjectionScreen size={70} />}
           ></Card>
 
           <Card
             title="5"
             subtitle="areas"
             description="de trabajo principales"
-            iconUrl="/colaboration.svg"
+            icon={<GoChecklist size={70} />}
           ></Card>
 
           <Card
-            title="+50"
-            subtitle="colaboradores"
-            description="han trabajado con nosotros"
-            iconUrl="/project-icon.svg"
+            title="80"
+            subtitle="voluntari@s"
+            description="trabajando con población local"
+            icon={<LiaPeopleCarrySolid size={70} />}
           ></Card>
 
           <Card
-            title="+50"
+            title="+100"
             subtitle="colaboradores"
-            description="han trabajado con nosotros"
-            iconUrl="/project-icon.svg"
+            description="por el presente de Nikki"
+            icon={<LiaUserFriendsSolid size={70} />}
           ></Card>
         </div>
       </section>

@@ -10,6 +10,19 @@
   --black: #000000;
 
   --max-width-size: 900px;
+
+
+  --agriculture-color: #384625;
+  --agriculture-color-light: #ccde27;
+
+  --health-color: #2976de;
+  --health-color-light: #f2f2f2;
+
+  --social-color: #890b1b;
+  --social-color-light: #fac4ca;
+
+  --energy-color: #FFA000;
+  --energy-color-light: #ffebcb;
 }
 
 @media (prefers-color-scheme: dark) {
