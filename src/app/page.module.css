@@ -46,6 +46,7 @@
   border-width: 4px;
   font-weight: 600;
   box-sizing: border-box;
+  margin: -1px;
 }
 
 .secondSection {
