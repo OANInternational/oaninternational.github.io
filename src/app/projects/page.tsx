@@ -2,7 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import styles from "./page.module.css";
-import ProjectPreview from "@/components/project-preview/project-preview.component";
+import ProjectPreview, {
+  IProjectPreview,
+} from "@/components/project-preview/project-preview.component";
 import TitlePage from "@/components/title-page/title-page.component";
 
 import { TbHealthRecognition, TbPlant } from "react-icons/tb";
@@ -58,11 +60,25 @@ export default function Projects() {
     },
   ];
 
+  const PROJECTS: IProjectPreview[] = [
+    {
+      title: "Formaciones a cooperativas en Nikki",
+      description:
+        "Formaciones en técnicas agrícolas, sensibilización en el uso de recursos hídricos y en el cuidado de la tierra de cultivo y mejora del acceso a semillas.",
+      imageUrl: "/oan-web-012.jpg",
+      url: "",
+    },
+  ];
+
   const projectCategories = PROJECT_CATEGORIES.map((cat) => (
     <div key={cat.name} style={cat.style} className={styles.projectCategoryBox}>
       {cat.icon}
       <h2 className={styles.projectCategoryName}>{cat.name}</h2>
     </div>
+  ));
+
+  const projects = PROJECTS.map((project) => (
+    <ProjectPreview key={project.title} project={project} />
   ));
 
   return (
@@ -73,16 +89,27 @@ export default function Projects() {
         {projectCategories}
       </section>
 
-      <section className={styles.secondSection}>
-        <ProjectPreview title="Nikarit" imageUrl="/oan-web-014.jpg" />
+      <section className={styles.projectsSection}>
+        <div className={styles.projectTitleSection}>
+          <h2 className={styles.projectTitleTextSection}>
+            {PROJECT_CATEGORIES[0].name}
+          </h2>
+        </div>
 
-        <ProjectPreview title="Emancipación" imageUrl="/oan-web-019.jpg" />
+        <div className={styles.projectCategoryDescription}>
+          <p>
+            3 líneas de presentación Formaciones en técnicas agrícolas,
+            sensibilización en el uso de recursos hídricos y en el cuidado de la
+            tierra de cultivo y mejora del acceso a semillas.
+          </p>
 
-        <ProjectPreview title="ASEP" imageUrl="/oan-web-020.jpg" />
+          <p>
+            Formaciones en técnicas agrícolas, sensibilización en el uso de
+            recursos.
+          </p>
+        </div>
 
-        <ProjectPreview title="Residuos" imageUrl="/oan-web-021.jpg" />
-
-        <ProjectPreview title="Malnutrición" imageUrl="/oan-web-016.jpg" />
+        <div>{projects}</div>
       </section>
     </main>
   );

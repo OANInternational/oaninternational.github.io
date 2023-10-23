@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Header from "@/components/header/header.component";
+import Footer from "@/components/footer/footer.component";
 
 export const metadata: Metadata = {
   title: "OAN International",
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body>
         <Header></Header>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );

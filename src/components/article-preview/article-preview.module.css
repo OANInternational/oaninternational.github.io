@@ -11,7 +11,7 @@
   min-width: 300px;
   height: 200px;
   padding: 10px;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform .3s;
 }
 
@@ -26,9 +26,16 @@
 }
 
 .articleTitle {
-  
+  color: var(--black);
+  display: inline-block;
+  position: relative;
+}
+
+.articleTitle:hover {
+  font-weight: 800;
+  transition: all 1s;
 }
 
 .articleDescription {
-
+  color: var(--black);
 }
