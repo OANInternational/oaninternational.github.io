@@ -1,0 +1,39 @@
+.footer {
+  height: 200px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.legalColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.emailColumn,
+.donateColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMediaWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}

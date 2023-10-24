@@ -1,0 +1,124 @@
+.workPlaceSection,
+.teamSection {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    gap: 20px;
+    padding: 40px 0;
+    max-width: var(--max-width-size);
+    margin: auto;
+}
+
+.countryTeamSection {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, 170px);
+    justify-items: stretch;
+    align-items: center;
+    justify-content: center;
+}
+
+.historyTitle {
+    margin: auto;
+    max-width: var(--max-width-size);
+}
+
+.historyBlock {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.historyBlockImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.historyBlockText {
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgba(0,0,0, 0.8);
+    font-size: larger;
+    gap: 20px;
+}
+
+.valuesBlock {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 350px;
+}
+
+.valuesBlockText,
+.valuesBlockImage {
+    width: 50%;
+    height: 100%;
+}
+
+.valuesBlockImage {
+    object-fit: cover;
+}
+
+.valuesBlockText {
+    padding: 20px;
+    background-color: var(--primary-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.valuesBlockTextLeft {
+    margin-left: auto;
+}
+
+.valuesBlockParagraph {
+    max-width: 550px;
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+
+.valuesTitle {
+    max-width: 550px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.valuesTitleNumber {
+    background-color: var(--tertiary-color);
+    color: var(--white);
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.valuesTitleText {
+    margin: auto 0;
+}
+
+
+.fileDownloadLink {
+    color: var(--black);
+    font-weight:400;
+    padding: 0 5px;
+}
+
+.fileColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+}

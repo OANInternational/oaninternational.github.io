@@ -1,0 +1,165 @@
+.mainSection {
+  height: 350px;
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.headlines {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+
+.headlineBox {
+  padding: 10px;
+  width: 300px;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.headlineBoxSecondary {
+  padding: 10px;
+  width: 300px;
+  color: var(--black);
+  background-color: var(--secondary-color);
+  border-radius: 2px;
+  margin-left: 40px;
+}
+
+.headlineBoxTertiary {
+  padding: 10px;
+  width: 300px;
+  color: var(--white);
+  background-color: var(--tertiary-color);
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.headlineDescription {
+  padding: 20px;
+  width: 350px;
+  color: var(--primary-color);
+  background-color: var(--primary-background-color);
+  border-radius: 2px;
+  font-size: large;
+  margin-top: -10px;
+  z-index: 1;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  max-width: 590px;
+  gap: 10px;
+}
+
+.colorSecondary {
+  color: var(--secondary-color);
+}
+
+.title {
+  font-size: xxx-large;
+  margin-bottom: 10px;
+  color: var(--white);
+
+  font-weight: 600;
+}
+
+.subTitle {
+  margin-top: 20px;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.emailButton {
+  width: fit-content;
+  padding: 10px;
+  cursor: pointer;
+  font-size: large;
+  color: var(--white);
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--white);
+  border-radius: 10px;
+}
+
+.emailButton:hover {
+  border-width: 3px;
+  font-weight: 600;
+  box-sizing: border-box;
+  margin: -1px;
+}
+
+.phoneButton {
+  cursor: pointer;
+  color: var(--white);
+}
+
+.campaignsSection {
+  width: 100%;
+  padding: 20px;
+  height: 350px;
+  background-color: var(--primary-background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.campaignsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+}
+
+.campaignBox {
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.campaignName {
+  color: var(--primary-color);
+}
+
+.donationSection {
+    width: 100%;
+    padding: 20px;
+    height: 350px;
+    margin: auto;
+    max-width: var(--max-width-size);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

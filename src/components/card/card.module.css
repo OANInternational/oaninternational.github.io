@@ -1,0 +1,30 @@
+.cardBox {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  color: var(--white);
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cardBoxIcon {
+  align-self: flex-end;
+  margin-bottom: -10px;
+  margin-left: auto;
+}
+
+.cardBoxNumber {
+  font-size: xxx-large;
+  font-weight: 600;
+}
+
+.cardBoxTitle {
+  font-size: medium;
+  font-weight: 200;
+}
+
+.cardBoxSubTitle {
+  font-size: large;
+  font-weight: 500;
+}
