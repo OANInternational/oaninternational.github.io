@@ -23,6 +23,7 @@
 
   --energy-color: #FFA000;
   --energy-color-light: #ffebcb;
+
 }
 
 @media (prefers-color-scheme: dark) {

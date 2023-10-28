@@ -12,7 +12,7 @@
 
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -121,20 +121,21 @@
 .campaignsSection {
   width: 100%;
   padding: 20px;
-  height: 350px;
   background-color: var(--primary-background-color);
   display: flex;
+  gap: 20px;
   flex-direction: column;
   align-items: center;
 }
 
 .campaignsWrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  gap: 20px;
   width: 100%;
-  padding: 20px;
   height: 100%;
+  max-width: var(--max-width-size);
+  justify-items: center;
 }
 
 .campaignBox {
@@ -142,7 +143,8 @@
   border-radius: 5px;
   padding: 20px;
   height: 200px;
-  width: 200px;
+  width: 100%;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
