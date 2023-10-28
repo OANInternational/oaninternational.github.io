@@ -40,6 +40,14 @@ export default function Home() {
             <p className={styles.primaryButton}>SÍGUENOS LOS PASOS</p>
           </Link>
         </div>
+
+        <Image
+          className={styles.background}
+          src="/oan-web-004.jpg"
+          alt="Africa Benin map"
+          width={300}
+          height={250}
+        />
       </section>
 
       <section className={styles.secondSection}>

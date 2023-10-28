@@ -1,5 +1,6 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
 
 import styles from "./page.module.css";
 import TitlePage from "@/components/title-page/title-page.component";
@@ -11,10 +12,12 @@ import { RiWaterFlashLine } from "react-icons/ri";
 import ProjectCategorySection, {
   IProjectCategory,
 } from "@/components/project-category-section/project-category-section.component";
+import { useRef } from "react";
 
 export default function Projects() {
   const PROJECT_CATEGORIES: IProjectCategory[] = [
     {
+      ref: useRef(),
       title: "Agricultura",
       icon: <TbPlant size={100} />,
       url: "/proyectos/agricultura",
@@ -112,6 +115,7 @@ export default function Projects() {
       ],
     },
     {
+      ref: useRef(),
       title: "Salud",
       icon: <TbHealthRecognition size={100} />,
       url: "/proyectos/salud",
@@ -247,6 +251,7 @@ export default function Projects() {
       ],
     },
     {
+      ref: useRef(),
       title: "Políticas Sociales",
       icon: <PiHandshakeLight size={100} />,
       url: "/proyectos/politicassociales",
@@ -394,6 +399,7 @@ export default function Projects() {
       ],
     },
     {
+      ref: useRef(),
       title: "Energía, agua e infraestructura",
       icon: <RiWaterFlashLine size={100} />,
       url: "/proyectos/energia",
@@ -410,19 +416,27 @@ export default function Projects() {
       color: category.backgroundColorLight,
     };
     return (
-      <div
+      <button
         key={category.title}
         style={categoryStyle}
         className={styles.projectCategoryBox}
+        onClick={() => {
+          category.ref.current.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        }}
       >
         {category.icon}
         <h2 className={styles.projectCategoryName}>{category.title}</h2>
-      </div>
+      </button>
     );
   });
 
   const projectCategorySections = PROJECT_CATEGORIES.map((p) => (
-    <ProjectCategorySection key={p.title} projectCategory={p} />
+    <div ref={p.ref} key={p.title}>
+      <ProjectCategorySection projectCategory={p} />
+    </div>
   ));
 
   return (

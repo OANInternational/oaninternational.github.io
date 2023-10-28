@@ -4,9 +4,10 @@ import styles from "./project-category-section.module.css";
 import ProjectPreview, {
   IProjectPreview,
 } from "../project-preview/project-preview.component";
-import { ReactElement } from "react";
+import { MutableRefObject, ReactElement } from "react";
 
 export interface IProjectCategory {
+  ref: MutableRefObject<any>;
   title: string;
   icon: ReactElement;
   url: string;
