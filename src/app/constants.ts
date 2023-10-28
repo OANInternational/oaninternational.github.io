@@ -33,7 +33,7 @@ export const MAIN_MENU_ITEMS: MainMenuItem[] = [
   {
     id: 4,
     label: "Contacto",
-    path: "/contacto",
+    path: "/contact",
     subItems: [],
   },
 ];

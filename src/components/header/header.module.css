@@ -1,15 +1,29 @@
-.toolbar {
+.toolbarWrapper {
   height: 120px;
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.toolbarWrapperScrolled {
+  height: 120px;
+  height: 80px;
+  z-index: 10;
+
+  position: sticky;
+  top: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.toolbar {
+  height: 100%;
   background-color: var(--white);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
   gap: 50px;
-  z-index: 10;
-
-  position: sticky;
-  top: 0;
 
   .logo {
     height: 100%;
@@ -49,15 +63,72 @@
       transform-origin: bottom left;
     }
   }
+
+  .menuMobile {
+    margin-left: auto;
+    display: flex;
+    margin-right: 20px;
+    border: none;
+    background: none;
+    align-items: center;
+  }
 }
 
 .toolbarScrolled {
-  position: sticky;
-  top: 0;
   backdrop-filter: blur(10px);
   opacity: 0.9;
   transition: 0.5s ease-in-out;
-  height: 80px;
+}
+
+.mobileNavBar {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  font-size: xx-large;
+  align-items: center;
+
+  .label {
+    color: var(--white);
+    text-decoration: none;
+
+    display: inline-block;
+    position: relative;
+  }
+}
+
+.mobileNavBarScrolled {
+  top: 80px;
+}
+
+.mobileNavBarOpened {
+  height: 100vh;
+}
+
+.mobileNavBarClosed {
+  height: 0vh !important;
+}
+
+@media only screen and (max-width: 1100px) {
+  .menuItems {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .menuMobile {
+    display: none !important;
+  }
 }
 
 /* Enable hover only on non-touch devices */

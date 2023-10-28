@@ -1,12 +1,12 @@
 .footer {
-  height: 200px;
   background-color: var(--primary-color);
   color: var(--white);
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   justify-content: center;
   align-items: center;
   gap: 50px;
+  padding: 30px;
 }
 
 .legalColumn {
@@ -36,4 +36,7 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+.email {
+  text-align: center;
 }

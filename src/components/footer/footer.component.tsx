@@ -61,7 +61,7 @@ export default function Footer() {
         <p>
           Tlf. <a href="tel:+34696714499">(+34) 696 714 499</a>
         </p>
-        <p>
+        <p className={styles.email}>
           E-mail:{" "}
           <a href="mailto:contacto@oaninternational.org">
             contacto@oaninternational.org

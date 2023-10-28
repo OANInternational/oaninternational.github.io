@@ -282,6 +282,34 @@ export default function AboutUs() {
         </div>
 
         <div className={styles.historyBlock}>
+          <div className={styles.historyBlockTextWrapper}>
+            <div className={styles.historyBlockText}>
+              <p>
+                Es en este mismo año, 2014, cuando el equipo viaja a Nikki por
+                primera vez, con un objetivo claro: INVESTIGAR las necesidades
+                de la población.
+              </p>
+
+              <p>
+                Desde entonces, cada año, jóvenes de diversas nacionalidades se
+                han desplazado a terreno para trabajar conjuntamente con los
+                agentes locales de desarrollo en Nikki en proyectos que dan
+                respuesta a las demandas de los mismos sobre necesidades
+                analizadas y consensuadas. En los últimos 5 años, más de 100
+                personas se han desplazado a terreno con esta misión.
+              </p>
+
+              <p>
+                En la actualidad OAN International cuenta con más de 80 personas
+                voluntarias, realizando una importante labor no solo en terreno,
+                sino también trabajando en acciones de sensibilización y lucha
+                por la generación de un espíritu crítico e informado, así como
+                de acción política sobre las relaciones norte-sur en nuestro
+                entorno.
+              </p>
+            </div>
+          </div>
+
           <Image
             className={styles.historyBlockImage}
             src="/oan-web-002.jpg"
@@ -289,32 +317,7 @@ export default function AboutUs() {
             height={500}
             alt="OAN history"
           />
-
-          <div className={styles.historyBlockText}>
-            <p>
-              Es en este mismo año, 2014, cuando el equipo viaja a Nikki por
-              primera vez, con un objetivo claro: INVESTIGAR las necesidades de
-              la población.
-            </p>
-
-            <p>
-              Desde entonces, cada año, jóvenes de diversas nacionalidades se
-              han desplazado a terreno para trabajar conjuntamente con los
-              agentes locales de desarrollo en Nikki en proyectos que dan
-              respuesta a las demandas de los mismos sobre necesidades
-              analizadas y consensuadas. En los últimos 5 años, más de 100
-              personas se han desplazado a terreno con esta misión.
-            </p>
-          </div>
         </div>
-
-        <p>
-          En la actualidad OAN International cuenta con más de 80 personas
-          voluntarias, realizando una importante labor no solo en terreno, sino
-          también trabajando en acciones de sensibilización y lucha por la
-          generación de un espíritu crítico e informado, así como de acción
-          política sobre las relaciones norte-sur en nuestro entorno.
-        </p>
       </section>
 
       {/* WORK PLACE */}
@@ -354,7 +357,7 @@ export default function AboutUs() {
 
       {/* VALUES */}
       <section>
-        <div className={styles.valuesBlock}>
+        <div className={styles.valuesBlockRight}>
           <Image
             className={styles.valuesBlockImage}
             src="/oan-web-006.jpg"
@@ -380,7 +383,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        <div className={styles.valuesBlock}>
+        <div className={styles.valuesBlockLeft}>
           <div className={styles.valuesBlockText}>
             <div className={styles.valuesBlockTextLeft}>
               <div className={styles.valuesTitle}>
@@ -404,7 +407,7 @@ export default function AboutUs() {
           />
         </div>
 
-        <div className={styles.valuesBlock}>
+        <div className={styles.valuesBlockRight}>
           <Image
             className={styles.valuesBlockImage}
             src="/oan-web-008.jpg"
@@ -428,7 +431,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        <div className={styles.valuesBlock}>
+        <div className={styles.valuesBlockLeft}>
           <div className={styles.valuesBlockText}>
             <div className={styles.valuesBlockTextLeft}>
               <div className={styles.valuesTitle}>
@@ -451,7 +454,7 @@ export default function AboutUs() {
           />
         </div>
 
-        <div className={styles.valuesBlock}>
+        <div className={styles.valuesBlockRight}>
           <Image
             className={styles.valuesBlockImage}
             src="/oan-web-008.jpg"

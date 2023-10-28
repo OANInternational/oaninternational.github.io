@@ -23,6 +23,14 @@ export default function TitlePage(props: {
 
   return (
     <section className={styles.mainSection}>
+      <div className={styles.text}>
+        <h1 className={styles.title}>{props.title}</h1>
+
+        {subTitleObject}
+
+        {quoteObject}
+      </div>
+
       <Image
         className={styles.background}
         src={props.backgroundImageUrl}
@@ -31,14 +39,6 @@ export default function TitlePage(props: {
         quality={100}
         alt="Background header image"
       />
-
-      <div className={styles.text}>
-        <h1 className={styles.title}>{props.title}</h1>
-
-        {subTitleObject}
-
-        {quoteObject}
-      </div>
     </section>
   );
 }
