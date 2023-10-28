@@ -243,7 +243,12 @@ export default function Projects() {
                 </li>
               </ol>
 
-              <Image width={200} height={200} src="/oan-web-004.jpg" />
+              <Image
+                width={200}
+                height={200}
+                alt="project image"
+                src="/oan-web-004.jpg"
+              />
             </div>
           ),
           url: "",
