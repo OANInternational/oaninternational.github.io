@@ -38,15 +38,6 @@ export default function SupportUs() {
   return (
     <main>
       <section className={styles.mainSection}>
-        <Image
-          className={styles.background}
-          src="/oan-web-011.jpg"
-          width={1080}
-          height={150}
-          quality={100}
-          alt="Background header image"
-        />
-
         <div className={styles.wrapper}>
           <div className={styles.headlines}>
             <h2 className={styles.headlineBox}>Comités</h2>
@@ -83,6 +74,15 @@ export default function SupportUs() {
             </a>
           </div>
         </div>
+
+        <Image
+          className={styles.background}
+          src="/oan-web-011.jpg"
+          width={1080}
+          height={150}
+          quality={100}
+          alt="Background header image"
+        />
       </section>
 
       <section className={styles.campaignsSection}>
@@ -95,8 +95,104 @@ export default function SupportUs() {
         <TitleSection title="Dona" />
 
         <p>
-          Ayuda a impulsar el <b>desarrollo</b> y la <b>autonomía de Nikki</b> .
+          Todas las donaciones a <b>OAN International</b> desgravan en función
+          de la{" "}
+          <a
+            href="https://www.boe.es/buscar/doc.php?id=BOE-A-2002-25039"
+            className={styles.link}
+          >
+            Ley 49/2002
+          </a>
+          , de 23 de diciembre, de régimen fiscal de las entidades sin fines
+          lucrativos y de los incentivos fiscales del mecenazgo.{" "}
         </p>
+
+        <div className={styles.donationImageSection}>
+          <Image src="/donation.jpg" alt="" width={400} height={200} />
+
+          <div className={styles.donationTextSection}>
+            <p>
+              Hacienda <b>te devuelve el 80% de lo que dones</b>, hasta los
+              primeros 150€ (al superar esta cuantía se desgrava el 35%, y si
+              llevas 3 años colaborando con nosotros el 40%).
+            </p>
+
+            <p>
+              Con muy poco puedes ayudarnos a generar un gran impacto en Nikki.
+              Juntos podemos conseguir un mundo más justo.
+            </p>
+          </div>
+        </div>
+
+        <h2 className={styles.donationMethodTitle}>Transferencia o Bizum</h2>
+
+        <div className={styles.donationImageSection}>
+          <div className={styles.donationTextSection}>
+            <p>
+              La mejor manera de donarnos es hacer directamente una
+              transferencia periódica a nuestra cuenta:
+            </p>
+            <div>
+              <p>Banco Santander</p>
+              <p>OAN International</p>
+              <p>IBAN: ES04 0049 6109 60 2516359826</p>
+              <p>BIC / SWIFT: BSCHESMMXXX</p>
+            </div>
+          </div>
+          <div className={styles.donationTextSection}>
+            <p>
+              Si lo prefieres, puedes realizar también tu donación a través de
+              Bizum, insertando el código de campaña de OAN INTERNATIONAL:
+            </p>
+
+            <h2>00107</h2>
+          </div>
+        </div>
+
+        <h2 className={styles.donationMethodTitle}>Teaming</h2>
+        <p>¡En OAN International te lo ponemos fácil!</p>
+        <p>
+          Sabemos que eres joven y tienes presupuesto limitado. Así que te
+          proponemos que dones solo 1 café al mes: 1€ al mes.
+        </p>
+        <p>
+          ¡Inscríbete en nuestro equipo de Teaming y estarás apoyando proyectos
+          de desarrollo en salud, agua, empoderamiento de mujer y mucho más!
+        </p>
+
+        <a
+          href="https://www.teaming.net/oaninternational"
+          className={styles.teamingButton}
+        >
+          Únete a nuestro grupo
+        </a>
+      </section>
+
+      <section className={styles.thesisSection}>
+        <div className={styles.thesisText}>
+          <TitleSection title="Tu TFG/TFM con OAN" />
+
+          <p>
+            Presentamos una nueva forma de cooperación que hace partícipe del
+            cambio a la universidad. Si eres universitario y quieres marcar la
+            diferencia, ¡esto es perfecto para ti!
+          </p>
+
+          <p>
+            Puedes aportar tu ayuda realizando tu TFG o TFM sobre algún proyecto
+            de OAN International en Nikki. Trabajarás de la mano de nuestros
+            comités:
+          </p>
+
+          <ul>
+            <li>Comité de Energía, Infraestructuras y Agua</li>
+            <li>Comité Biosanitario</li>
+            <li>Comité de Políticas Sociales</li>
+            <li>Comité de Agronomía</li>
+          </ul>
+
+          <p>¡No dudes y escríbenos! contacto@oaninternational.org</p>
+        </div>
       </section>
     </main>
   );
