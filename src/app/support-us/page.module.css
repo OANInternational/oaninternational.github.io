@@ -156,12 +156,60 @@
 }
 
 .donationSection {
-    width: 100%;
-    padding: 20px;
-    height: 350px;
-    margin: auto;
-    max-width: var(--max-width-size);
-    display: flex;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  max-width: var(--max-width-size);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.donationImageSection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+
+.donationTextSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.donationMethodTitle {
+  text-align: center;
+}
+
+.thesisSection {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-background-color);
+}
+
+.thesisText {
+  max-width: var(--max-width-size);
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  color: var(--black);
+}
+
+@media only screen and (max-width: 900px) {
+  .donationImageSection {
     flex-direction: column;
     align-items: center;
+  }
+
+  .donationTextSection {
+    width: 100%;
+  }
 }
