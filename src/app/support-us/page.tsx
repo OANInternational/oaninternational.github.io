@@ -38,15 +38,6 @@ export default function SupportUs() {
   return (
     <main>
       <section className={styles.mainSection}>
-        <Image
-          className={styles.background}
-          src="/oan-web-011.jpg"
-          width={1080}
-          height={150}
-          quality={100}
-          alt="Background header image"
-        />
-
         <div className={styles.wrapper}>
           <div className={styles.headlines}>
             <h2 className={styles.headlineBox}>Comités</h2>
@@ -83,6 +74,15 @@ export default function SupportUs() {
             </a>
           </div>
         </div>
+
+        <Image
+          className={styles.background}
+          src="/oan-web-011.jpg"
+          width={1080}
+          height={150}
+          quality={100}
+          alt="Background header image"
+        />
       </section>
 
       <section className={styles.campaignsSection}>
@@ -148,6 +148,24 @@ export default function SupportUs() {
             <h2>00107</h2>
           </div>
         </div>
+
+        <h2 className={styles.donationMethodTitle}>Teaming</h2>
+        <p>¡En OAN International te lo ponemos fácil!</p>
+        <p>
+          Sabemos que eres joven y tienes presupuesto limitado. Así que te
+          proponemos que dones solo 1 café al mes: 1€ al mes.
+        </p>
+        <p>
+          ¡Inscríbete en nuestro equipo de Teaming y estarás apoyando proyectos
+          de desarrollo en salud, agua, empoderamiento de mujer y mucho más!
+        </p>
+
+        <a
+          href="https://www.teaming.net/oaninternational"
+          className={styles.teamingButton}
+        >
+          Únete a nuestro grupo
+        </a>
       </section>
 
       <section className={styles.thesisSection}>
