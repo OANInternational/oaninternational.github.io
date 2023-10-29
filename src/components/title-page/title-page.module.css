@@ -4,6 +4,7 @@
 
 .text {
   padding: 20px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;

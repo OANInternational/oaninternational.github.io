@@ -410,8 +410,257 @@ export default function Projects() {
       url: "/proyectos/energia",
       backgroundColor: "var(--energy-color)",
       backgroundColorLight: "var(--energy-color-light)",
-      description: <div></div>,
-      projects: [],
+      description: (
+        <div>
+          <p className={styles.marginBottom}>
+            Los principales servicios involucrados en los servicios básicos son
+            el agua, el saneamiento y la gestión de residuos. Según la OMS, en
+            2018 más de 1.000 millones de personas en el mundo no tienen acceso
+            a agua potable, y 2.600 millones carecen de un saneamiento adecuado.
+            En concreto, se estima que 660 millones de africanos no tienen
+            acceso a servicios de saneamiento adecuado, y 173 millones todavía
+            practican la defecación al aire libre (WWC, 2018).
+          </p>
+          <p className={styles.marginBottom}>
+            El agua y el saneamiento son fundamentales para el desarrollo y el
+            bienestar humano, y están reconocidos como derechos humanos por la
+            Asamblea General de las Naciones Unidas (2010). Sin embargo, también
+            son fundamentales para el buen desarrollo de otros sectores, como la
+            nutrición adecuada, la educación y la erradicación de la pobreza .
+          </p>
+
+          <p className={styles.marginBottom}>
+            El agua es uno de los recursos naturales fundamentales y en la
+            actualidad no existe duda alguna de la importancia tanto de la
+            cantidad como de la calidad de la misma para el bienestar y el
+            desarrollo humano. Se necesitan entre 50 y 100 litros/persona
+            diarios para cubrir cómodamente todas las necesidades de consumo e
+            higiene, estando el mínimo necesario alrededor de los 25. En 2010,
+            la Asamblea General de las Naciones Unidas reconoció explícitamente
+            el derecho humano al abastecimiento de agua dulce. Todas las
+            personas tienen derecho a disponer de forma continuada de agua
+            suficiente, salubre, físicamente accesible, asequible y de una
+            calidad aceptable, para uso personal y doméstico (ONU, 2010). Se
+            trata de un recurso abundante y renovable, sin embargo, aún en la
+            actualidad existe una gran cantidad de personas que no disponen de
+            acceso suficiente a agua apropiada para su consumo.
+          </p>
+
+          <p className={styles.marginBottom}>
+            Los datos revelan que la mayor parte de la población sin acceso a
+            agua potable en el entorno mundial se sitúa en África subsahariana,
+            con 319 millones de personas, de las que 8 de cada 10 viven en zonas
+            rurales con escaso acceso a nuevos recursos.
+          </p>
+
+          <p className={styles.marginBottom}>
+            Por otro lado, a pesar de considerar la electricidad como una
+            necesidad básica y pilar en la vida de todo país o comunidad, en
+            África, más de 600 millones de personas, casi 2/3 de la población,
+            viven sin suministro eléctrico. Millones de familias y hogares
+            dependen de fuentes de energía tradicionales que se traducen en
+            tecnologías contaminantes, costosas, y lo que es más importante,
+            negativas para la salud humana. Esta situación supone, sin duda, el
+            impedimento fundamental para el avance y desarrollo de estos países.
+          </p>
+
+          <p>
+            En concreto en Benín, el 85 % de la electricidad proviene de Ghana,
+            Nigeria y Costa de Marfil y los productos petrolíferos consumidos
+            son, en su totalidad, de origen externo. Esta situación de
+            dependencia tan elevada hace a Benín un país muy vulnerable a
+            cualquier tipo de fluctuación que sufran sus países vecinos. Debido
+            a ello, el consumo de energía en este país es, aproximadamente, la
+            mitad del de los países de África Subsahariana y menos de una cuarta
+            parte de la media mundial. Estos datos se ven reflejados en la tasa
+            de electrificación, que supone solamente un 27 %, siendo el de las
+            zonas urbanas un 54 % y el de las rurales un 4 %.
+          </p>
+        </div>
+      ),
+      projects: [
+        {
+          title: "Proyecto integral de perforación y construcción de bombas",
+          summary: (
+            <div>
+              <p>
+                Esta actividad es el resultado de una colaboración entre OAN
+                International y AUARA. Este proyecto está dentro de nuestro eje
+                estratégico de acceso al agua potable en la comunidad de Nikki.
+              </p>
+              <p>
+                Tiene por objetivo la instalación de una bomba hidráulica
+                Vergnet en un pueblo de la comuna de Nikki, Bio Sika Kparou. Su
+                propósito es dar acceso al agua potable y como consecuencia
+                reducir el número de enfermedades relacionadas con el consumo de
+                agua contaminada.
+              </p>
+            </div>
+          ),
+          description: (
+            <div>
+              <p>
+                Esta actividad es el resultado de una colaboración entre OAN
+                International y AUARA. Este proyecto está dentro de nuestro eje
+                estratégico de acceso al agua potable en la comunidad de Nikki.
+              </p>
+              <p>
+                Tiene por objetivo la instalación de una bomba hidráulica
+                Vergnet en un pueblo de la comuna de Nikki, Bio Sika Kparou. Su
+                propósito es dar acceso al agua potable y como consecuencia
+                reducir el número de enfermedades relacionadas con el consumo de
+                agua contaminada.
+              </p>
+              <p>
+                En la primera fase del proyecto se realizaron sensibilizaciones
+                para el buen uso del agua potable segura y también relacionadas
+                con la higiene. Además de ello, se ha creado un comité
+                responsable del mantenimiento del pozo.
+              </p>
+              <p>
+                En una segunda fase se realizó la perforación del terreno y la
+                instalación del pozo con bomba de pie. Tras esto, se procedió al
+                acondicionamiento del entorno de la bomba mediante la
+                construcción de la estructura de hormigón que permite el desagüe
+                que rodea al pozo.
+              </p>
+              <p>
+                Por último, se pretende evaluar y analizar el impacto que una
+                bomba de estas características tiene en una población. Además de
+                las consecuencias directas, también se quiere analizar si
+                mejoran otros problemas relacionados con el acceso a agua de
+                calidad, que no forzosamente pertenecen al ámbito sanitario.
+              </p>
+            </div>
+          ),
+          imageUrl: "/oan-web-006.jpg",
+          url: "",
+        },
+        {
+          title: "Red de reparadores de bombas",
+          summary: (
+            <div>
+              <p>
+                Desde el comienzo de la actividad de OAN International en Nikki,
+                se observó que una de las principales necesidades de la
+                población era el acceso a agua limpia y de calidad,
+                especialmente durante la época seca.
+              </p>
+
+              <p>
+                Gracias al proyecto, se han reparado entre 130 y 150 bombas, un
+                tercio del total de la Comuna de Nikki. Esto ha garantizado el
+                acceso a agua a unas 60.000 personas.
+              </p>
+            </div>
+          ),
+          description: (
+            <div>
+              <p>
+                Desde el comienzo de la actividad de OAN International en Nikki,
+                se observó que una de las principales necesidades de la
+                población era el acceso a agua limpia y de calidad,
+                especialmente durante la época seca.
+              </p>
+              <p>
+                En el año 2016, el proyecto comenzó la ejecución de dos acciones
+                en paralelo: la formación teórica y práctica de una veintena de
+                mecánicos locales para que las bombas de la comuna pudieran
+                repararse y la creación de una boutique para poner en venta las
+                piezas de repuesto necesarias y garantizar el stock. Desde
+                entonces, se está trabajando con las autoridades y población
+                locales para garantizar el acceso de todos los pueblos a los
+                servicios de los reparadores y para mantener la boutique
+                funcionando.
+              </p>
+              <p>
+                Gracias al proyecto, se han reparado entre 130 y 150 bombas, un
+                tercio del total de la Comuna de Nikki. Esto ha garantizado el
+                acceso a agua a unas 60.000 personas.
+              </p>
+            </div>
+          ),
+          imageUrl: "/oan-web-012.jpg",
+          url: "",
+        },
+        {
+          title: "AguApp",
+          summary: (
+            <div>
+              <p>
+                El proyecto persigue conectar entre sí a los diferentes actores
+                que tienen un papel en el aprovisionamiento de agua en la comuna
+                de Nikki. Además de ello, busca, a través de las nuevas
+                tecnologías (como el análisis de datos, machine learning o big
+                data) hacer predicciones sobre la rotura de las infraestructuras
+                hidráulicas de Nikki.
+              </p>
+            </div>
+          ),
+          description: (
+            <div>
+              <p>
+                El proyecto persigue conectar entre sí a los diferentes actores
+                que tienen un papel en el aprovisionamiento de agua en la comuna
+                de Nikki. Además de ello, busca, a través de las nuevas
+                tecnologías (como el análisis de datos, machine learning o big
+                data) hacer predicciones sobre la rotura de las infraestructuras
+                hidráulicas de Nikki.
+              </p>
+              <p>
+                Esto además permite a los actores tener mejor información para
+                el desarrollo de políticas públicas, mejorar el acceso final al
+                agua de las personas (un 60 % de las bombas hidráulicas de la
+                región estaban rotas o en mal funcionamiento) y sobre todo,
+                contribuir a la mejora de la salud de sus habitantes. El
+                proyecto tiene la ambición, también, de ayudar a otras
+                comunidades y otras ONG.
+              </p>
+            </div>
+          ),
+          imageUrl: "/oan-web-009.jpg",
+          url: "",
+        },
+        {
+          title: "Investigación estratégica",
+          summary: (
+            <div>
+              <p>
+                En 2018 se comenzó una nueva investigación estratégica para
+                identificar otras problemáticas que afectan a la población de
+                Nikki. En paralelo, se están realizando tres trabajos de fin de
+                grado sobre estas líneas de investigación.
+              </p>
+            </div>
+          ),
+          description: (
+            <div>
+              <p>
+                En 2018 se comenzó una nueva investigación estratégica para
+                identificar otras problemáticas que afectan a la población de
+                Nikki. En paralelo, se están realizando tres trabajos de fin de
+                grado sobre estas líneas de investigación.
+              </p>
+              <p>
+                El principal objetivo de la investigación es conocer las
+                iniciativas locales, tanto en el ámbito local como estatal, los
+                actores más importantes en estos campos y estudiar cuál es la
+                manera más efectiva en la que OAN International puede apoyar en
+                estos aspectos. Las principales líneas de investigación son:
+              </p>
+              <ul>
+                <li>Acceso a energía y electrificación</li>
+                <li>Gestión de residuos</li>
+                <li>Biomasa</li>
+                <li>Saneamiento</li>
+                <li>Almacenamiento de aguas</li>
+              </ul>
+            </div>
+          ),
+          imageUrl: "/oan-web-008.jpg",
+          url: "",
+        },
+      ],
     },
   ];
 
@@ -421,20 +670,21 @@ export default function Projects() {
       color: category.backgroundColorLight,
     };
     return (
-      <button
+      <div
         key={category.title}
         style={categoryStyle}
         className={styles.projectCategoryBox}
         onClick={() => {
-          category.ref.current.scrollIntoView({
+          (category.ref.current as HTMLElement).scrollIntoView({
             behavior: "smooth",
-            block: "center",
+            block: "start",
+            inline: "start",
           });
         }}
       >
         {category.icon}
         <h2 className={styles.projectCategoryName}>{category.title}</h2>
-      </button>
+      </div>
     );
   });
 

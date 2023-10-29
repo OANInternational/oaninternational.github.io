@@ -8,20 +8,20 @@
 
 .projectCategoriesSection {
   width: 100%;
-  padding: 40px;
   max-width: var(--max-width-size);
   margin: auto;
-  padding: 40px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
 }
 
 .projectCategoryBox {
   border-radius: 10px;
   padding: 20px;
   height: 200px;
-  width: 200px;
+  width: 100%;
+  cursor: pointer;
 
   display: flex;
   flex-direction: column;
@@ -32,30 +32,6 @@
 .projectCategoryName {
   margin-right: auto;
   font-size: larger;
-}
-
-.projectsSection {
-  max-width: var(--max-width-size);
-  margin: auto;
-}
-
-.projectCategoryDescription {
-  padding: 20px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.projectTitleSection {
-  background-color: var(--agriculture-color);
-  border-radius: 10px;
-}
-
-.projectTitleTextSection {
-  background-color: var(--agriculture-color-light);
-  margin-left: 200px;
-  padding: 10px;
-  border-radius: 0 10px 10px 0;
 }
 
 .marginBottom {
