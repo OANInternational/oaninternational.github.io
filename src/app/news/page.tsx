@@ -205,6 +205,16 @@ export default function News() {
     },
   ];
 
+  const BLOG_ARTICLES: Article[] = [
+    {
+      title: `Conferencia del Karité en Nikki"`,
+      imageUrl: "/oan-web-004.jpg",
+      description: "Almudena Vázquez",
+      date: "30 julio 2023",
+      link: "/",
+    },
+  ];
+
   const radioArticles = RADIO_ARTICLES.map((article) => (
     <ArticlePreview key={article.title} article={article} />
   ));
@@ -217,6 +227,10 @@ export default function News() {
     <ArticlePreview key={article.title} article={article} />
   ));
 
+  const blogArticles = BLOG_ARTICLES.map((article) => (
+    <ArticlePreview key={article.title} article={article} />
+  ));
+
   return (
     <main>
       <TitlePage
@@ -224,6 +238,12 @@ export default function News() {
         backgroundImageUrl="/oan-web-009.jpg"
         subTitle="Artículos, entrevistas y apariciones en los medios de OAN International"
       />
+
+      <section className={styles.blogSection}>
+        <TitleSection title="Blog" />
+
+        {blogArticles}
+      </section>
 
       <section className={styles.articleSection}>
         <TitleSection title="Prensa Escrita y Digital" />

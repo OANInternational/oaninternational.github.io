@@ -6,33 +6,29 @@ import {
   PiHandshakeLight,
   PiFilmSlateLight,
 } from "react-icons/pi";
+import CampaignPreview from "@/components/campaign-preview/campaign-preview.component";
 
 export default function SupportUs() {
-  const iconStyle = { color: "var(--primary-color)" };
-
   const CAMPAIGNS = [
     {
       name: "Mi grano de arena",
-      icon: <PiHandshakeLight size={70} style={iconStyle} />,
-      url: "",
+      icon: PiHandshakeLight,
+      url: "grano-de-arena",
     },
     {
       name: "Adopta un karite",
-      icon: <PiPottedPlantLight size={70} style={iconStyle} />,
-      url: "",
+      icon: PiPottedPlantLight,
+      url: "adopta-un-karite",
     },
     {
       name: "Documental SON YARA",
-      icon: <PiFilmSlateLight size={70} style={iconStyle} />,
-      url: "",
+      icon: PiFilmSlateLight,
+      url: "son-yara",
     },
   ];
 
   const campaigns = CAMPAIGNS.map((campaign) => (
-    <div key={campaign.name} className={styles.campaignBox}>
-      {campaign.icon}
-      <h2 className={styles.campaignName}>{campaign.name}</h2>
-    </div>
+    <CampaignPreview key={campaign.name} campaign={campaign} />
   ));
 
   return (
@@ -63,13 +59,20 @@ export default function SupportUs() {
             <h2 className={styles.subTitle}>Escríbenos</h2>
 
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               href="mailto:contacto@oaninternational.org"
               className={styles.emailButton}
             >
               contacto@oaninternational.org
             </a>
 
-            <a className={styles.phoneButton} href="tel:+34696714499">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.phoneButton}
+              href="tel:+34696714499"
+            >
               (+34) 696 714 499
             </a>
           </div>
@@ -98,6 +101,8 @@ export default function SupportUs() {
           Todas las donaciones a <b>OAN International</b> desgravan en función
           de la{" "}
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.boe.es/buscar/doc.php?id=BOE-A-2002-25039"
             className={styles.link}
           >
@@ -161,6 +166,8 @@ export default function SupportUs() {
         </p>
 
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.teaming.net/oaninternational"
           className={styles.teamingButton}
         >
@@ -191,7 +198,7 @@ export default function SupportUs() {
             <li>Comité de Agronomía</li>
           </ul>
 
-          <p>¡No dudes y escríbenos! contacto@oaninternational.org</p>
+          <p>¡No dudes y escríbenos!</p>
         </div>
       </section>
     </main>

@@ -1,3 +1,5 @@
+
+.blogSection,
 .articleSection {
     display: flex;
     flex-direction: column;

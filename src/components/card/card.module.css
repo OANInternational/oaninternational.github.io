@@ -7,6 +7,13 @@
   background-color: var(--primary-color);
   padding: 20px;
   border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.cardBox:hover {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  transition: all 0.5s ease-in-out;
 }
 
 .cardBoxIcon {
@@ -18,14 +25,17 @@
 .cardBoxNumber {
   font-size: xxx-large;
   font-weight: 600;
+  text-align: start;
 }
 
 .cardBoxTitle {
   font-size: medium;
   font-weight: 200;
+  text-align: start;
 }
 
 .cardBoxSubTitle {
   font-size: large;
   font-weight: 500;
+  text-align: start;
 }

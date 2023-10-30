@@ -14,38 +14,59 @@ export default function Footer() {
         <p>Todos los derechos reservados</p>
 
         <div className={styles.links}>
-          <p>
-            <Link href="/legal">Aviso Legal</Link>
-          </p>
+          <Link href="/legal" className={styles.link}>
+            Aviso Legal
+          </Link>
           <p> | </p>
-          <p>
-            <Link href="/cookies">Política de Cookies</Link>
-          </p>
+          <Link href="/cookies" className={styles.link}>
+            Política de Cookies
+          </Link>
         </div>
       </div>
 
       <div className={styles.donateColumn}>
         <h2>
-          <Link href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=6CQ9L2J38YVJL&source=url&ssrt=1698092206755">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+            href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=6CQ9L2J38YVJL&source=url&ssrt=1698092206755"
+          >
             ¡DONA CON PAYPAL!
-          </Link>
+          </a>
         </h2>
         <div className={styles.socialMediaWrapper}>
-          <Link href="https://facebook.com/oaninternational">
-            <BsFacebook size={25} />
-          </Link>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://facebook.com/oaninternational"
+          >
+            <BsFacebook size={25} className={styles.link} />
+          </a>
 
-          <Link href="https://twitter.com/OAN_Int">
-            <BsTwitter size={25} />
-          </Link>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/OAN_Int"
+          >
+            <BsTwitter size={25} className={styles.link} />
+          </a>
 
-          <Link href="https://linkedin.com/company/10281709/">
-            <BsLinkedin size={25} />
-          </Link>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://linkedin.com/company/10281709/"
+          >
+            <BsLinkedin size={25} className={styles.link} />
+          </a>
 
-          <Link href="https://instagram.com/oan.international">
-            <BsInstagram size={25} />
-          </Link>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://instagram.com/oan.international"
+          >
+            <BsInstagram size={25} className={styles.link} />
+          </a>
         </div>
       </div>
 
@@ -59,11 +80,24 @@ export default function Footer() {
           />
         </Link>
         <p>
-          Tlf. <a href="tel:+34696714499">(+34) 696 714 499</a>
+          Tlf.{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+            href="tel:+34696714499"
+          >
+            (+34) 696 714 499
+          </a>
         </p>
         <p className={styles.email}>
           E-mail:{" "}
-          <a href="mailto:contacto@oaninternational.org">
+          <a
+            className={styles.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:contacto@oaninternational.org"
+          >
             contacto@oaninternational.org
           </a>
         </p>

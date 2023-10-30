@@ -1,0 +1,84 @@
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  gap: 20px;
+  padding: 20px;
+  max-width: var(--max-width-size);
+  margin: auto;
+}
+
+.textWrapper{ 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  gap: 20px;
+  padding: 20px;
+  max-width: var(--max-width-size);
+  margin: auto;
+}
+
+.descriptions {
+      display: flex;
+  flex-direction: column;
+    gap: 20px;
+}
+
+.documentaryPicture {
+  width: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.picturesSection {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--max-width-size);
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+
+  .picture {
+    width: 100%;
+    aspect-ratio: auto 1 / 1;
+    object-fit: cover;
+  }
+}
+
+
+.documentaryButton {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+  cursor: pointer;
+  font-size: larger;
+  color: var(--tertiary-color);
+
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--tertiary-color);
+  border-radius: 10px;
+}
+
+.documentaryButton:hover {
+  border-width: 4px;
+  font-weight: 600;
+  box-sizing: border-box;
+  margin: -1px auto;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .textWrapper {
+    flex-direction: column;
+  }
+}

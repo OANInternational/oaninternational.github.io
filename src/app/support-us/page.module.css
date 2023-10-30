@@ -1,6 +1,5 @@
 .mainSection {
   position: relative;
-  min-height: 350px;
 }
 
 .wrapper {
@@ -140,23 +139,6 @@
   justify-items: center;
 }
 
-.campaignBox {
-  background-color: var(--white);
-  border-radius: 5px;
-  padding: 20px;
-  height: 200px;
-  width: 100%;
-  min-width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.campaignName {
-  color: var(--primary-color);
-}
-
 .donationSection {
   width: 100%;
   padding: 20px;
@@ -199,6 +181,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .link {
@@ -245,6 +228,6 @@
   }
 
   .text {
-        align-items: center;
+    align-items: center;
   }
 }

@@ -85,7 +85,7 @@
   justify-items: center;
   max-width: var(--max-width-size);
   grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
- 
+
   gap: 20px;
 }
 
