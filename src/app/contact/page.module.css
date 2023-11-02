@@ -1,10 +1,52 @@
-.constructionSection {
+.mainSection {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
   width: 100%;
   background-color: var(--white);
   padding: 40px;
+  margin: auto;
+}
+
+.message,
+.email,
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form {
+  width: 300px;
+}
+
+.form input {
+  margin: 10px 0 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: var(--white);
+}
+
+.form textarea {
+  margin: 10px 0 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--white);
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  width: 30%;
+  border-radius: 5px;
+}
+
+.textarea {
+  resize: none;
 }
