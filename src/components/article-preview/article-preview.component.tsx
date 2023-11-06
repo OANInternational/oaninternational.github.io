@@ -11,6 +11,12 @@ export interface Article {
   link: string;
 }
 
+export interface BlogArticle extends Article {
+  id: string;
+  content: JSX.Element;
+  author: string;
+}
+
 export default function ArticlePreview(props: { article: Article }) {
   return (
     <article className={styles.articleSection}>
