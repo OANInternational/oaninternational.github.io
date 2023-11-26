@@ -36,7 +36,7 @@ export default function Home() {
             acerca de las desigualdades norte-sur.
           </p>
 
-          <Link href={"/"} className={styles.noLink}>
+          <Link href={"/news"} className={styles.noLink}>
             <p className={styles.primaryButton}>SÍGUENOS LOS PASOS</p>
           </Link>
         </div>
@@ -61,12 +61,14 @@ export default function Home() {
             title="10"
             subtitle="projectos"
             description="en los últimos 10 años"
+            url="/projects"
             icon={<AiOutlineFundProjectionScreen size={70} />}
           ></Card>
 
           <Card
             title="5"
             subtitle="areas"
+            url="/about-us"
             description="de trabajo principales"
             icon={<GoChecklist size={70} />}
           ></Card>
@@ -74,12 +76,14 @@ export default function Home() {
           <Card
             title="80"
             subtitle="voluntari@s"
+            url="/support-us"
             description="trabajando con población local"
             icon={<LiaPeopleCarrySolid size={70} />}
           ></Card>
 
           <Card
             title="+100"
+            url="/about-us"
             subtitle="colaboradores"
             description="por el presente de Nikki"
             icon={<LiaUserFriendsSolid size={70} />}

@@ -14,42 +14,13 @@ export default function AboutUs() {
       <section className={styles.mainSection}>
         <TitleSection title="¿Quieres contactar con nosotros?" />
 
-        <form className={styles.form}>
-          <div className={styles.email}>
-            <label htmlFor="frm-email">Email</label>
-            <input
-              id="frm-email"
-              type="email"
-              name="email"
-              autoComplete="email"
-              required
-            />
-          </div>
-
-          <div className={styles.name}>
-            <label htmlFor="frm-first">Nombre</label>
-            <input
-              id="frm-first"
-              type="text"
-              name="first"
-              autoComplete="given-name"
-              required
-            />
-          </div>
-
-          <div className={styles.message}>
-            <label htmlFor="frm-message">Mensage</label>
-            <textarea
-              className={styles.textarea}
-              id="frm-message"
-              rows={6}
-              name="message"
-            ></textarea>
-          </div>
-          <div className={styles.button}>
-            <button type="submit">Enviar</button>
-          </div>
-        </form>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSesVw6RZbW6-CHJUG90L9fmJpBq5PFAt4OFYtz_quIjLGOKSg/viewform?embedded=true"
+          width="640"
+          height="642"
+        >
+          Cargando…
+        </iframe>
       </section>
     </main>
   );
