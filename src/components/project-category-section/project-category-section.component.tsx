@@ -7,7 +7,7 @@ import ProjectPreview, {
 import { MutableRefObject, ReactElement } from "react";
 
 export interface IProjectCategory {
-  ref: MutableRefObject<any>;
+  id: string;
   title: string;
   icon: ReactElement;
   url: string;

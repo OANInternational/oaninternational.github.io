@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import styles from "./page.module.css";
 import TitleSection from "@/components/title-section/title-section.component";
@@ -268,16 +267,16 @@ export default function AboutUs() {
           <TitleSection title="Nuestra Historia" />
 
           <p>
-            En 2013, uno de los fundadores de OAN International, Daniel Alfaro,
-            viaja a Nikki como voluntario. Un año más tarde, un grupo de 8
-            jóvenes fundan la ONG OAN International (Objetivo Analizar Nikki).
+            Un año después, en 2014, nos constituimos como la ONGD que somos hoy
+            en Nikki, una población de 70.000 habitantes situada en una de las
+            zonas más rurales y con menos recursos del país.
           </p>
 
           <p>
-            Una organización sin ánimo de lucro con una misión: acompañar a los
-            agentes de desarrollo de la comuna de Nikki a través del intercambio
-            de conocimientos y en la creación conjunta de un modelo de
-            cooperación sostenible, responsable y replicable.
+            Desde sus inicios, OAN Internacional ha puesto a disposición de los
+            agentes de cambio de Nikki sus conocimientos y experiencia para
+            poner en marcha junto a ellos proyectos coherentes con su realidad y
+            que generen un verdadero impacto en su día a día.
           </p>
         </div>
 
@@ -285,27 +284,13 @@ export default function AboutUs() {
           <div className={styles.historyBlockTextWrapper}>
             <div className={styles.historyBlockText}>
               <p>
-                Es en este mismo año, 2014, cuando el equipo viaja a Nikki por
-                primera vez, con un objetivo claro: INVESTIGAR las necesidades
-                de la población.
-              </p>
-
-              <p>
-                Desde entonces, cada año, jóvenes de diversas nacionalidades se
-                han desplazado a terreno para trabajar conjuntamente con los
-                agentes locales de desarrollo en Nikki en proyectos que dan
-                respuesta a las demandas de los mismos sobre necesidades
-                analizadas y consensuadas. En los últimos 5 años, más de 100
-                personas se han desplazado a terreno con esta misión.
-              </p>
-
-              <p>
-                En la actualidad OAN International cuenta con más de 80 personas
-                voluntarias, realizando una importante labor no solo en terreno,
-                sino también trabajando en acciones de sensibilización y lucha
-                por la generación de un espíritu crítico e informado, así como
-                de acción política sobre las relaciones norte-sur en nuestro
-                entorno.
+                En los últimos 5 años, más de 100 jóvenes de diversas
+                nacionalidades se han desplazado a Nikki para colaborar en
+                proyectos de desarrollo con la población local. Actualmente, OAN
+                Internacional cuenta con más de 80 personas voluntarias. Además,
+                más de 30 estudiantes han realizado sus TFG y TFM con nosotros,
+                permitiendo a los universitarios (en Benín y en España) tomar
+                conciencia sobre esta realidad.
               </p>
             </div>
           </div>
@@ -322,36 +307,28 @@ export default function AboutUs() {
 
       {/* WORK PLACE */}
       <section className={styles.workPlaceSection}>
-        <TitleSection title="Donde trabajamos" />
+        <TitleSection title="Nuestros pilares" />
 
         <p>
-          Benín, es un país situado en el golfo de Guinea, haciendo frontera con
-          Togo al oeste, Nigeria al este y Burkina Faso y Níger al norte.
-          Antigua colonia de Dahomey, la capital es Porto-Novo, pero la sede del
-          gobierno se sitúa en Cotonou, que es a su vez la capital económica y
-          el mayor núcleo de población.
+          <b>Proyectos útiles</b>, que se ajusten realmente a los recursos y
+          necesidades de la población de Nikki, con actuaciones cuidadosamente
+          pensadas, implantadas y evaluadas.
         </p>
 
         <p>
-          La esperanza de vida al nacer es de 59 años, que con un PIB de
-          8.747.000 millones de dólares (1,900 dólares per cápita), un 36,2 % de
-          la población viviendo debajo del umbral de la pobreza, le confieren un
-          índice de desarrollo humano del 0,476, ocupando así la posición 165 de
-          187 países.
+          <b>Empoderamiento de las personas</b>, para lograr su autogestión y el
+          liderazgo autónomo local.
         </p>
 
         <p>
-          OAN International trabaja específicamente en Nikki situado en el
-          departamento de Borgou, la capital del reino Batonou, con una
-          población de unos 150.000 habitantes y una extensión aproximada de
-          3.000 km2 (similar a la provincia de Álava). La comuna se divide a su
-          vez en los arrondissements de Biro, Gnonkourokali, Ouénou, Sérékalé,
-          Suya, Tasso y Nikki. En cuanto a la población, esta está distribuida
-          uniformemente entre todos a excepción de Nikki, con una población de
-          unos 70.000 habitantes y Suya, con cifras en torno a los 8.000
-          habitantes. El resto acoge de este modo a unas 150.000 personas cada
-          uno. Esta región se trata de una de las zonas más rurales y con menos
-          recursos de la nación.
+          <b>Pensamiento crítico</b> acerca de las relaciones norte-sur, la
+          situación desfavorecida de ciertos países y sus causas.
+        </p>
+
+        <p>
+          Construcción de un modelo de{" "}
+          <b>cooperación sostenible, responsable y replicable</b> a otros
+          lugares.
         </p>
       </section>
 
@@ -360,10 +337,10 @@ export default function AboutUs() {
         <div className={styles.valuesBlockRight}>
           <Image
             className={styles.valuesBlockImage}
-            src="/oan-web-006.jpg"
+            src="/oan-web-compromiso.jpg"
             width={400}
             height={400}
-            alt="OAN history"
+            alt="OAN compromiso"
           />
 
           <div className={styles.valuesBlockText}>
@@ -400,17 +377,17 @@ export default function AboutUs() {
 
           <Image
             className={styles.valuesBlockImage}
-            src="/oan-web-006.jpg"
+            src="/oan-web-transparencia.jpg"
             width={400}
             height={400}
-            alt="OAN history"
+            alt="OAN transparencia"
           />
         </div>
 
         <div className={styles.valuesBlockRight}>
           <Image
             className={styles.valuesBlockImage}
-            src="/oan-web-008.jpg"
+            src="/oan-web-justicia-social.jpg"
             width={400}
             height={400}
             alt="OAN history"
@@ -440,14 +417,14 @@ export default function AboutUs() {
               </div>
 
               <p className={styles.valuesBlockParagraph}>
-                Actuamos desde la HUMILDAD y del RESPETO hacia las personas con
+                Actuamos desde la HUMILDAD y el RESPETO hacia las personas con
                 las que trabajamos.
               </p>
             </div>
           </div>
           <Image
             className={styles.valuesBlockImage}
-            src="/oan-web-006.jpg"
+            src="/oan-web-humildad.jpg"
             width={400}
             height={400}
             alt="OAN history"
@@ -457,7 +434,7 @@ export default function AboutUs() {
         <div className={styles.valuesBlockRight}>
           <Image
             className={styles.valuesBlockImage}
-            src="/oan-web-008.jpg"
+            src="/oan-web-coherencia.jpg"
             width={400}
             height={400}
             alt="OAN history"

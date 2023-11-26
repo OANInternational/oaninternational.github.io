@@ -1,0 +1,45 @@
+
+.campaignBox {
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 20px;
+  height: 200px;
+  width: 100%;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  transition: all 0.5s ease-in-out;
+}
+
+.campaignName {
+  color: var(--primary-color);
+  text-align: start;
+  margin-right: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.noLink {
+  text-decoration: none;
+}
+
+.campaignIcon {
+  color: var(--primary-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.campaignBox:hover {
+  background-color: var(--primary-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.campaignBox:hover .campaignName {
+  color: var(--white);
+  transition: all 0.5s ease-in-out;
+}
+
+.campaignBox:hover .campaignIcon {
+  color: var(--white);
+  transition: all 0.5s ease-in-out;
+}

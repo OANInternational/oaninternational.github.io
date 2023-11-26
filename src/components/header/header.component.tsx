@@ -58,6 +58,7 @@ export default function Header() {
             alt="OAN International Logo"
             width={50}
             height={100}
+            priority
           />
         </Link>
 

@@ -27,7 +27,7 @@
 
 .historyWrapper {
   max-width: var(--max-width-size);
-  padding: 20px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -70,7 +70,7 @@
   align-items: center;
   color: white;
   gap: 20px;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .valuesBlockLeft,
@@ -126,6 +126,7 @@
   height: 40px;
   text-align: center;
   border-radius: 50%;
+  line-height: normal;
 }
 
 .valuesTitleText {

@@ -23,6 +23,11 @@
   gap: 1rem;
 }
 
+.link:hover {
+  color: var(--secondary-color);
+  transition: all 0.2s ease-in-out;
+}
+
 .emailColumn,
 .donateColumn {
   display: flex;
@@ -37,6 +42,7 @@
   flex-direction: row;
   gap: 20px;
 }
+
 .email {
   text-align: center;
 }

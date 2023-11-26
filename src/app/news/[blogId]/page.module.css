@@ -1,0 +1,10 @@
+
+.articleSection {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    gap: 20px;
+    padding: 20px;
+    max-width: var(--max-width-size);
+    margin: auto;
+}
