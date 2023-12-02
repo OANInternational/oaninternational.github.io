@@ -48,16 +48,16 @@ export const BLOG_ARTICLES: BlogArticle[] = [
         />
 
         <p>
-          Bajo el lema "Sembrando karité para cultivar el futuro", Nikki acogió
-          este pasado 6 de julio la primera edición de la Conferencia del
-          Karité, un evento organizado por OAN Nikki en el que se reunieron
-          representantes de los principales actores del sector del karité, así
-          como las autoridades de esta región del norte de Benín, con el
-          objetivo de poner en común el estado de la producción del karité a
-          nivel nacional y los diferentes problemas que aparecen, así como
-          conocer las diferentes acciones que se están llevando a cabo para
-          proteger el árbol de karité y mejorar las condiciones de producción y
-          por último proponer nuevas soluciones.
+          Bajo el lema `&quot;`Sembrando karité para cultivar el
+          futuro\`&quot;`, Nikki acogió este pasado 6 de julio la primera
+          edición de la Conferencia del Karité, un evento organizado por OAN
+          Nikki en el que se reunieron representantes de los principales actores
+          del sector del karité, así como las autoridades de esta región del
+          norte de Benín, con el objetivo de poner en común el estado de la
+          producción del karité a nivel nacional y los diferentes problemas que
+          aparecen, así como conocer las diferentes acciones que se están
+          llevando a cabo para proteger el árbol de karité y mejorar las
+          condiciones de producción y por último proponer nuevas soluciones.
         </p>
 
         <Image
