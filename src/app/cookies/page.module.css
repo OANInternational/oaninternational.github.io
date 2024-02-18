@@ -1,10 +1,21 @@
-.constructionSection {
+.legalSection {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
+  flex-direction: column;
   width: 100%;
+  max-width: var(--max-width-size);
   background-color: var(--white);
-  padding: 40px;
+  padding: 40px 20px;
+  margin: auto;
+}
+
+.marginBottom {
+  margin-bottom: 20px;
+}
+
+.marginBottom10 {
+  margin-bottom: 10px;
+}
+
+.marginLeft {
+  margin-left: 20px;
 }

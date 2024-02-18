@@ -32,7 +32,7 @@ export default function AboutUs() {
     {
       name: "Ángel Arquero",
       title: "Coordinador de proyectos",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/angel.jpeg",
     },
     {
       name: "Sofía Fernández",
@@ -80,17 +80,17 @@ export default function AboutUs() {
     {
       name: "Lamatou Moumouni",
       title: "Administración general",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/lamatou.jpeg",
     },
     {
       name: "Yacoubou Seh",
       title: "Secretario general",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/yacoubou.jpeg",
     },
     {
       name: "Mousa Yacoubou",
       title: "",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/moussa.jpeg",
     },
     {
       name: "Hafiz Djaouga",
@@ -100,7 +100,7 @@ export default function AboutUs() {
     {
       name: "Yasminatou Imorou",
       title: "",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/yasminatou.jpeg",
     },
     {
       name: "Aminatou Imorou",
@@ -115,12 +115,12 @@ export default function AboutUs() {
     {
       name: "Imourou Worou",
       title: "",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/imourou.jpeg",
     },
     {
       name: "Chabi Gafarou",
       title: "",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/chabi.jpeg",
     },
   ];
 
