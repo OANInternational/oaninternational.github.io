@@ -6,7 +6,7 @@ import { ReactElement } from "react";
 export interface IProjectPreview {
   title: string;
   summary: ReactElement;
-  description: ReactElement;
+  description?: ReactElement;
   imageUrl: string;
   url: string;
 }

@@ -30,7 +30,7 @@ export default function Legal() {
           <div>
             <div>
               <h3 className={styles.marginBottom10}>
-                1.- Aceptación de las condiciones de uso.
+                1. Aceptación de las condiciones de uso.
               </h3>
               <p className={styles.marginBottom}>
                 Estas condiciones generales regulan el uso del sitio web de OAN,
@@ -51,7 +51,7 @@ export default function Legal() {
             </div>
             <div>
               <h3 className={styles.marginBottom10}>
-                2.- Propiedad Intelectual y/o Industrial.
+                2. Propiedad Intelectual y/o Industrial.
               </h3>
               <p className={styles.marginBottom}>
                 Todos los derechos de propiedad industrial e intelectual que
@@ -98,7 +98,7 @@ export default function Legal() {
             </div>
             <div>
               <h3 className={styles.marginBottom10}>
-                3.- Prohibición de difusión de los contenidos e información
+                3. Prohibición de difusión de los contenidos e información
                 suministrada
               </h3>
               <p className={styles.marginBottom}>
@@ -143,8 +143,7 @@ export default function Legal() {
             </div>
             <div>
               <h3 className={styles.marginBottom10}>
-                4.- Introducción de Links, Enlaces, Hiperenlaces o
-                Hipervínculos.
+                4. Introducción de Links, Enlaces, Hiperenlaces o Hipervínculos.
               </h3>
               <p className={styles.marginBottom}>
                 Los Usuarios y, en general, aquellas personas que se propongan
@@ -191,7 +190,7 @@ export default function Legal() {
             </div>
             <div>
               <h3 className={styles.marginBottom10}>
-                5.- Obligación de confidencialidad sobre los contenidos e
+                5. Obligación de confidencialidad sobre los contenidos e
                 información de los servicios prestados por OAN&nbsp;a los
                 Usuarios.
               </h3>
@@ -204,7 +203,7 @@ export default function Legal() {
             </div>
             <div>
               <h3 className={styles.marginBottom10}>
-                6.- Datos de carácter personal.
+                6. Datos de carácter personal.
               </h3>
               <p className={styles.marginBottom}>
                 Para utilizar ciertos servicios los usuarios deben proporcionar
@@ -246,7 +245,7 @@ export default function Legal() {
             </div>
             <div>
               <h3 className={styles.marginBottom10}>
-                7.- Utilización de la Página, de los Servicios y de los
+                7. Utilización de la Página, de los Servicios y de los
                 Contenidos bajo la exclusiva responsabilidad de los Usuarios.
               </h3>
               <p className={styles.marginBottom}>
@@ -314,7 +313,7 @@ export default function Legal() {
             </div>
             <div>
               <h3 className={styles.marginBottom10}>
-                8.- Exclusión de garantías y responsabilidad por los servicios y
+                8. Exclusión de garantías y responsabilidad por los servicios y
                 contenidos alojados fuera del PORTAL:
               </h3>
               <p className={styles.marginBottom}>
@@ -367,7 +366,7 @@ export default function Legal() {
             </div>
             <div>
               <h3 className={styles.marginBottom10}>
-                9.- Exclusión de garantías y responsabilidad por la utilización
+                9. Exclusión de garantías y responsabilidad por la utilización
                 que los usuarios puedan hacer del PORTAL, los servicios y
                 contenidos:
               </h3>
@@ -382,7 +381,7 @@ export default function Legal() {
             </div>
             <div>
               <h3 className={styles.marginBottom10}>
-                10.- Responsabilidad por daños y perjuicios .
+                10. Responsabilidad por daños y perjuicios .
               </h3>
               <p className={styles.marginBottom}>
                 Los usuarios responderán de los daños y perjuicios de toda
@@ -394,7 +393,7 @@ export default function Legal() {
             </div>
             <div>
               <h3 className={styles.marginBottom10}>
-                11.- Aceptación de las presentes Condiciones Generales.
+                11. Aceptación de las presentes Condiciones Generales.
               </h3>
               <p className={styles.marginBottom}>
                 La aceptación de las presentes Condiciones Generales por parte
@@ -408,7 +407,7 @@ export default function Legal() {
             </div>
             <div>
               <h3 className={styles.marginBottom10}>
-                12.- Ley aplicable y sumisión a Juzgados y Tribunales
+                12. Ley aplicable y sumisión a Juzgados y Tribunales
               </h3>
               <p className={styles.marginBottom}>
                 Estas Condiciones Generales se regirán por sus propias
