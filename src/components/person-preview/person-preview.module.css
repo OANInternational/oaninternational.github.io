@@ -16,6 +16,7 @@
   border-radius: 60px;
   background-color: var(--white);
   transition: transform .3s;
+  object-fit: cover;
 }
 
 .personImage:hover {

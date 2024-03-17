@@ -29,7 +29,7 @@ export const ENGINEERING_PROJECTS: IProjectPreview[] = [
         </p>
       </div>
     ),
-    imageUrl: "/oan-web-006.jpg",
+    imageUrl: "/oan-web-031.jpg",
     url: "",
   },
   {

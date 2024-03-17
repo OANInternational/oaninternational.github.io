@@ -17,17 +17,17 @@ export default function AboutUs() {
     {
       name: "Daniel Alfaro",
       title: "Presidente",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/person-placeholder.svg",
     },
     {
       name: "Alvaro Pascual",
       title: "Secretario general",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/person-placeholder.svg",
     },
     {
       name: "Beatriz Vázquez",
       title: "Coordinadora de proyectos",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/bea.jpg",
     },
     {
       name: "Ángel Arquero",
@@ -37,32 +37,32 @@ export default function AboutUs() {
     {
       name: "Sofía Fernández",
       title: "Comunicación",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/person-placeholder.svg",
     },
     {
       name: "Almudena Vázquez",
       title: "Comunicación",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/person-placeholder.svg",
     },
     {
       name: "Ángela Hidalgo",
       title: "Proyecto Nikarit",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/person-placeholder.svg",
     },
     {
       name: "Patricia de Blas",
       title: "Financiación",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/person-placeholder.svg",
     },
     {
       name: "Hanna Botello",
       title: "Proyecto Malnutrición",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/person-placeholder.svg",
     },
     {
       name: "Alfonso García",
       title: "Tecnología",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/person-placeholder.svg",
     },
   ];
 
@@ -70,12 +70,12 @@ export default function AboutUs() {
     {
       name: "Kader Madougou",
       title: "Coordinador general",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/person-placeholder.svg",
     },
     {
       name: "Mireille Gnammi",
       title: "Tesorería",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/mireille.jpg",
     },
     {
       name: "Lamatou Moumouni",
@@ -85,7 +85,7 @@ export default function AboutUs() {
     {
       name: "Yacoubou Seh",
       title: "Secretario general",
-      imageUrl: "/people/yacoubou.jpeg",
+      imageUrl: "/people/person-placeholder.svg",
     },
     {
       name: "Mousa Yacoubou",
@@ -95,7 +95,12 @@ export default function AboutUs() {
     {
       name: "Hafiz Djaouga",
       title: "",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/person-placeholder.svg",
+    },
+    {
+      name: "Waliou",
+      title: "",
+      imageUrl: "/people/waliou.jpeg",
     },
     {
       name: "Yasminatou Imorou",
@@ -105,22 +110,27 @@ export default function AboutUs() {
     {
       name: "Aminatou Imorou",
       title: "",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/aminatou.jpeg",
+    },
+    {
+      name: "Romeo",
+      title: "",
+      imageUrl: "/people/romeo.jpeg",
     },
     {
       name: "Alimatou Soumaila",
       title: "",
-      imageUrl: "/dummy.jpg",
+      imageUrl: "/people/person-placeholder.svg",
     },
     {
       name: "Imourou Worou",
       title: "",
-      imageUrl: "/people/imourou.jpeg",
+      imageUrl: "/people/person-placeholder.svg",
     },
     {
       name: "Chabi Gafarou",
       title: "",
-      imageUrl: "/people/chabi.jpeg",
+      imageUrl: "/people/person-placeholder.svg",
     },
   ];
 
