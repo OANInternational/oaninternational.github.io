@@ -91,7 +91,7 @@ export const SOCIAL_PROJECTS: IProjectPreview[] = [
         </ul>
       </div>
     ),
-    imageUrl: "/oan-web-006.jpg",
+    imageUrl: "/oan-web-007.jpg",
     url: "",
   },
 ];

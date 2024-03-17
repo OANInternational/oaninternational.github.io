@@ -42,7 +42,7 @@ export const AGRICULTURE_PROJECTS: IProjectPreview[] = [
         </p>
       </div>
     ),
-    imageUrl: "/oan-web-004.jpg",
+    imageUrl: "/oan-web-030.jpg",
     url: "",
   },
   {
@@ -57,7 +57,7 @@ export const AGRICULTURE_PROJECTS: IProjectPreview[] = [
         </p>
       </div>
     ),
-    imageUrl: "/oan-web-004.jpg",
+    imageUrl: "/oan-web-029.jpg",
     url: "",
   },
   {
