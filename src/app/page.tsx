@@ -94,7 +94,7 @@ export default function Home() {
       <section className={styles.videoSection}>
         <iframe
           className={styles.video}
-          src="https://www.youtube.com/watch?v=EDB6Vk7z1eQ"
+          src="https://www.youtube.com/embed/EDB6Vk7z1eQ?si=Ol-jEZ5lUuA2Ije5"
           title="OAN International en 30 s"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>
