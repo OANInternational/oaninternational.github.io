@@ -81,6 +81,6 @@ export const AGRICULTURE_PROJECTS: IProjectPreview[] = [
     ),
     imageUrl: "/oan-web-004.jpg",
     videoUrl: "https://www.youtube.com/embed/Dni9N_rtyx0?si=wdBYRhMob6GJ9Y2S",
-    url: "",
+    url: "/documents/projects/microcreditos.pdf",
   },
 ];
