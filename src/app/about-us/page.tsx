@@ -17,7 +17,7 @@ export default function AboutUs() {
     {
       name: "Daniel Alfaro",
       title: "Presidente",
-      imageUrl: "/people/person-placeholder.svg",
+      imageUrl: "/people/daniel.png",
     },
     {
       name: "Alvaro Pascual",
@@ -62,6 +62,21 @@ export default function AboutUs() {
     {
       name: "Alfonso García",
       title: "Tecnología",
+      imageUrl: "/people/alfonso.jpg",
+    },
+    {
+      name: "Marta Cuenca",
+      title: "Voluntaria",
+      imageUrl: "/people/marta.jpeg",
+    },
+    {
+      name: "Eva ",
+      title: "Voluntaria",
+      imageUrl: "/people/person-placeholder.svg",
+    },
+    {
+      name: "Andrea ",
+      title: "Voluntaria",
       imageUrl: "/people/person-placeholder.svg",
     },
   ];

@@ -32,18 +32,16 @@ export const AGRICULTURE_PROJECTS: IProjectPreview[] = [
           <a style={link} href="https://nikarit.es/">
             (nikarit.es)
           </a>{" "}
-          y con estos ingresos apoyamos la financiación del resto de proyectos.
-        </p>
-
-        <p>
+          y con estos ingresos apoyamos la financiación del resto de proyectos.{" "}
           <a style={link} href="https://www.instagram.com/nikarit_karite/">
-            instagram.com/nikarit_karite/
+            (Instagram)
           </a>
         </p>
       </div>
     ),
     imageUrl: "/oan-web-030.jpg",
-    url: "",
+    videoUrl: "https://www.youtube.com/embed/jsvZld4MQOA?si=8931l6GUk5D_qXLZ",
+    url: "/documents/projects/nikarit.pdf",
   },
   {
     title: "Huertas comunitarias",
@@ -82,6 +80,7 @@ export const AGRICULTURE_PROJECTS: IProjectPreview[] = [
       </div>
     ),
     imageUrl: "/oan-web-004.jpg",
+    videoUrl: "https://www.youtube.com/embed/Dni9N_rtyx0?si=wdBYRhMob6GJ9Y2S",
     url: "",
   },
 ];
