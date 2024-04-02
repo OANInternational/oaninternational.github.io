@@ -118,8 +118,8 @@ export default function SupportUs() {
           <div className={styles.donationTextSection}>
             <p>
               Hacienda <b>te devuelve el 80% de lo que dones</b>, hasta los
-              primeros 150€ (al superar esta cuantía se desgrava el 35%, y si
-              llevas 3 años colaborando con nosotros el 40%).
+              primeros 250€ (al superar esta cuantía se desgrava el 40%, y si
+              llevas 3 años colaborando con nosotros el 45%).
             </p>
 
             <p>

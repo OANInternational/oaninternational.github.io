@@ -36,6 +36,6 @@ export const HEALTH_PROJECTS: IProjectPreview[] = [
         </p>
       </div>
     ),
-    url: "",
+    url: "/documents/projects/proyecto-nutricion.pdf",
   },
 ];

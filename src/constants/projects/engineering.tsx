@@ -30,7 +30,7 @@ export const ENGINEERING_PROJECTS: IProjectPreview[] = [
       </div>
     ),
     imageUrl: "/oan-web-031.jpg",
-    url: "",
+    url: "/documents/projects/asep.pdf",
   },
   {
     title: "Bombas EMAS",

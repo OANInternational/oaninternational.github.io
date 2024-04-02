@@ -59,7 +59,7 @@ export default function Home() {
         <div className={styles.cardWrapper}>
           <Card
             title="10"
-            subtitle="projectos"
+            subtitle="proyectos"
             description="en los últimos 10 años"
             url="/projects"
             icon={<AiOutlineFundProjectionScreen size={70} />}
