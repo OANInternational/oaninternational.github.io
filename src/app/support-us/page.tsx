@@ -10,11 +10,11 @@ import CampaignPreview from "@/components/campaign-preview/campaign-preview.comp
 
 export default function SupportUs() {
   const CAMPAIGNS = [
-    {
-      name: "Mi grano de arena",
-      icon: PiHandshakeLight,
-      url: "grano-de-arena",
-    },
+    // {
+    //   name: "Mi grano de arena",
+    //   icon: PiHandshakeLight,
+    //   url: "grano-de-arena",
+    // },
     {
       name: "Adopta un karite",
       icon: PiPottedPlantLight,

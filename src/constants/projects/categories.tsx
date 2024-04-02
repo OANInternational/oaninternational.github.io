@@ -1,11 +1,9 @@
 import { IProjectCategory } from "@/components/project-category-section/project-category-section.component";
 import { AGRICULTURE_PROJECTS } from "@/constants/projects/agriculture";
 import { HEALTH_PROJECTS } from "@/constants/projects/health";
-import { SOCIAL_PROJECTS } from "@/constants/projects/social";
 import { ENGINEERING_PROJECTS } from "@/constants/projects/engineering";
 
 import { TbHealthRecognition, TbPlant } from "react-icons/tb";
-import { PiHandshakeLight } from "react-icons/pi";
 import { RiWaterFlashLine } from "react-icons/ri";
 import { CSSProperties } from "react";
 
