@@ -70,12 +70,12 @@ export default function AboutUs() {
       imageUrl: "/people/marta.jpeg",
     },
     {
-      name: "Eva ",
+      name: "Eva Diaz",
       title: "Voluntaria",
       imageUrl: "/people/person-placeholder.svg",
     },
     {
-      name: "Andrea ",
+      name: "Andrea Triquet",
       title: "Voluntaria",
       imageUrl: "/people/person-placeholder.svg",
     },
