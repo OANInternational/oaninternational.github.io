@@ -292,6 +292,12 @@ export default function AboutUs() {
           <TitleSection title="Nuestra Historia" />
 
           <p>
+            En 2013, uno de los fundadores de OAN International, Daniel Alfaro,
+            viaja a Nikki como voluntario. Un año más tarde, un grupo de 8
+            jóvenes fundan la ONG OAN International (Objetivo Analizar Nikki).
+          </p>
+
+          <p>
             Un año después, en 2014, nos constituimos como la ONGD que somos hoy
             en Nikki, una población de 70.000 habitantes situada en una de las
             zonas más rurales y con menos recursos del país.
@@ -309,7 +315,7 @@ export default function AboutUs() {
           <div className={styles.historyBlockTextWrapper}>
             <div className={styles.historyBlockText}>
               <p>
-                En los últimos 5 años, más de 100 jóvenes de diversas
+                En los últimos 10 años, más de 50 jóvenes de diversas
                 nacionalidades se han desplazado a Nikki para colaborar en
                 proyectos de desarrollo con la población local. Actualmente, OAN
                 Internacional cuenta con más de 80 personas voluntarias. Además,

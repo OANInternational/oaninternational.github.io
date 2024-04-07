@@ -18,7 +18,7 @@ const list: CSSProperties = {
 export const HEALTH_PROJECTS: IProjectPreview[] = [
   {
     title: `PReMASE (Proyecto de reducción de la malnutrición y mejora de la salud infantil)`,
-    imageUrl: "/oan-web-011.jpg",
+    imageUrl: "/oan-web-032.jpg",
     summary: (
       <div style={wrapper}>
         <p>
