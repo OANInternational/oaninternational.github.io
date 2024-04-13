@@ -5,13 +5,16 @@ import Link from "next/link";
 export interface Campaign {
   name: string;
   icon: IconType;
-  url: string;
+  url?: string;
+  link?: string;
 }
 
 export default function CampaignPreview(props: { campaign: Campaign }) {
   return (
     <Link
-      href={`support-us/campaigns/${props.campaign.url}`}
+      {...(props.campaign.link
+        ? { href: props.campaign.link }
+        : { href: `support-us/campaigns/${props.campaign.url}` })}
       className={styles.noLink}
     >
       <div key={props.campaign.name} className={styles.campaignBox}>

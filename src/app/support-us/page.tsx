@@ -6,19 +6,21 @@ import {
   PiHandshakeLight,
   PiFilmSlateLight,
 } from "react-icons/pi";
-import CampaignPreview from "@/components/campaign-preview/campaign-preview.component";
+import CampaignPreview, {
+  Campaign,
+} from "@/components/campaign-preview/campaign-preview.component";
 
 export default function SupportUs() {
-  const CAMPAIGNS = [
-    // {
-    //   name: "Mi grano de arena",
-    //   icon: PiHandshakeLight,
-    //   url: "grano-de-arena",
-    // },
+  const CAMPAIGNS: Campaign[] = [
+    {
+      name: "Mi grano de arena",
+      icon: PiHandshakeLight,
+      link: "https://www.migranodearena.org/",
+    },
     {
       name: "Adopta un karite",
       icon: PiPottedPlantLight,
-      url: "adopta-un-karite",
+      link: "https://nikarit.es/collections/oan-international/products/hermanate-con-un-karite",
     },
     {
       name: "Documental SON YARA",
