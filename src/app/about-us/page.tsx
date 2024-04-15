@@ -175,6 +175,10 @@ export default function AboutUs() {
       name: "Memoria de Actividades - 2020",
     },
     {
+      url: "documents/activity-memories/memoria-actividades-oan-2021.pdf",
+      name: "Memoria de Actividades - 2021",
+    },
+    {
       url: "documents/activity-memories/memoria-actividades-oan-2022.pdf",
       name: "Memoria de Actividades - 2022",
     },
