@@ -15,7 +15,7 @@ export default function SupportUs() {
     {
       name: "Mi grano de arena",
       icon: PiHandshakeLight,
-      link: "https://www.migranodearena.org/",
+      link: "https://www.migranodearena.org/reto/apoya-la-autonomia-de-mujeres-en-benin-frica-colabora-con-nikarit-",
     },
     {
       name: "Adopta un karite",
