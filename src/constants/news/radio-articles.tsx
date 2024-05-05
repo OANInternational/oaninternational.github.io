@@ -3,6 +3,13 @@ import { Article } from "@/components/article-preview/article-preview.component"
 export const RADIO_ARTICLES: Article[] = [
   {
     title: "3enRed en África hoy",
+    imageUrl: "/logos/RTVE-logo.png",
+    description: "Min. 36:34",
+    date: "29 Abril 2024",
+    link: "https://www.rtve.es/play/audios/las-tardes-de-rne/segunda-hora-29-04-24/16082195/",
+  },
+  {
+    title: "3enRed en África hoy",
     imageUrl: "/logos/3enred-logo.png",
     description: "",
     date: "18 junio 2019",
