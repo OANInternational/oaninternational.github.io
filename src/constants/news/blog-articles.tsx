@@ -18,8 +18,147 @@ const image: CSSProperties = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    id: "progidem",
+    imageUrl: "/oan-web-040.jpg",
+    description: "Álvaro Pascual",
+    author: "Álvaro Pascual",
+    date: "27 junio 2024",
+    link: "/news/progidem",
+    title: "Proyecto de gestión integral de desechos domésticos (ProGIDéM)",
+    content: (
+      <div style={wrapper}>
+        <p>
+          Se inicia el proyecto de gestión integral de desechos domésticos
+          (ProGIDéM)
+        </p>
+
+        <p>
+          En el mes de junio de 2024, OAN International inicia el proyecto de
+          gestión de residuos domésticos para intervenir en esta problemática de
+          salud pública presente en toda la comuna de Nikki, con especial
+          incidencia en el área urbana. Este proyecto se está desarrollando en
+          colaboración con el Ayuntamiento de Nikki quien ha solicitado a OAN la
+          ejecución de este proyecto dándonos para ello apoyo financiero.
+        </p>
+
+        <p>
+          A pesar de los numerosos esfuerzos realizados por la administración y
+          otras entidades en el pasado, el municipio de Nikki lucha aún por
+          tener una estrategia coherente para la gestión sostenible e integrada
+          de sus residuos domésticos. Se hace precisa una gestión medioambiental
+          eficaz, especialmente en lo relativo a los residuos domésticos que
+          constituyen un problema real de saneamiento básico, diseñando
+          vertederos finales para la recepción de los residuos. Es por ello que
+          sigue siendo el principal reto de la administración municipal. Cabe
+          señalar que las operaciones de precolección y cobro del servicio se
+          encuentran actualmente interrumpidas debido a la inexistencia de
+          estructuras y personas involucradas en este proceso. Esta situación ha
+          devenido en la aparición de vertederos improvisados descontrolados que
+          han proliferado por todo el municipio de Nikki.
+        </p>
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-039.jpg"
+          alt=""
+        />
+
+        <p>
+          Las anteriores experiencias en gestión de residuos han demostrado
+          enormes deficiencias educativas entre la población en cuestiones
+          relacionadas con la gestión de residuos, reflejo de actos incívicos.
+          También hay que señalar que los hogares tienen dificultades para pagar
+          las tasas municipales que permitirían mantener este servicio.
+        </p>
+
+        <p>
+          Ante esta situación, que precisa de una solución urgente y definitiva,
+          se inicia este proyecto entre OAN y el Ayuntamiento de Nikki con los
+          objetivos de generar un sistema eficaz de recogida de residuos y
+          sensibilizar a la población en la necesidad de una correcta de los
+          espacios públicos.
+        </p>
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-038.png"
+          alt=""
+        />
+      </div>
+    ),
+  },
+  {
+    id: "consejo-comunal",
+    imageUrl: "/oan-web-036.jpg",
+    description: "Álvaro Pascual",
+    author: "Álvaro Pascual",
+    date: "25 junio 2024",
+    link: "/news/consejo-comunal",
+    title:
+      "Reunión del Consejo Comunal en torno al sector de alimentación y salud",
+    content: (
+      <div style={wrapper}>
+        <p>
+          Los días 18 y 19 de junio se llevó a cabo una sesión en el
+          Ayuntamiento de Nikki sobre el Marco del Consejo Comunalen torno al
+          sector de alimentación, salud y nutrición. Esta sesión está organizada
+          por CASCADE ONG en colaboración con el Ayuntamiento de Nikki.
+        </p>
+
+        <p>
+          En ella participan los gerentes departamentales y municipales de
+          CASCADE ONG, el Secretario Ejecutivo y el Director de Planificación
+          del ayuntamiento y los distintos actores que intervienen en el sector
+          nutricional y alimentario en el municipio de Nikki, siendo OAN
+          International invitada una vez más como entidad con acción en este
+          ámbito.
+        </p>
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-034.jpg"
+          alt=""
+        />
+
+        <p>
+          Se llevó a cabo una presentación de las actividades de los últimos
+          tres meses y se debatió la ejecución de las recomendaciones fijadas
+          durante la primera sesión del año 2024.
+        </p>
+
+        <p>
+          Durante esta sesión se planificaron actividades para el próximo
+          trimestre en forma de nuevas recomendaciones. Está previsto un mapeo
+          de las estructuras y ONGs que intervienen en el municipio para
+          facilitar las sinergias de acción pero también para permitir a las
+          autoridades distinguir entre la intervención de los actores de
+          diferentes ONG en el terreno municipal. También se nos presentó un
+          estudio realizado por CASCADE sobre las prohibiciones alimentarias y
+          las razones que de ellas se derivan, con el fin de reforzar la
+          información y nociones nutricionales de todos los responsables en el
+          campo.
+        </p>
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-035.jpg"
+          alt=""
+        />
+      </div>
+    ),
+  },
+  {
     id: "pre-mase",
-    title: `"Un paso más en el proyecto PreMase, se conforman los comités de seguimiento"`,
+    title:
+      "Un paso más en el proyecto PreMase, se conforman los comités de seguimiento",
     imageUrl: "/oan-web-033.jpg",
     description: "Álvaro Pascual",
     date: "1 mayo 2024",
