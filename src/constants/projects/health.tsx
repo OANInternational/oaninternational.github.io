@@ -34,6 +34,12 @@ export const HEALTH_PROJECTS: IProjectPreview[] = [
           capacidades de personas líderes encargadas de velar por la nutrición
           en cada pueblo.
         </p>
+
+        <p>
+          Para la ejecución de este proyecto, OAN International ha colaborado
+          con el Colegio de Enfermería de Cantabria (España), que aporta apoyo
+          económico y técnico para el desarrollo de las actividades.
+        </p>
       </div>
     ),
     url: "/documents/projects/proyecto-nutricion.pdf",
