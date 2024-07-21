@@ -7,10 +7,22 @@ export interface Campaign {
   icon: IconType;
   url?: string;
   link?: string;
+  fileUrl?: string;
 }
 
 export default function CampaignPreview(props: { campaign: Campaign }) {
-  return (
+  return props.campaign.fileUrl ? (
+    <a
+      className={styles.noLink}
+      href={props.campaign.fileUrl}
+      download={props.campaign.fileUrl}
+    >
+      <div key={props.campaign.name} className={styles.campaignBox}>
+        <props.campaign.icon size={70} className={styles.campaignIcon} />
+        <h2 className={styles.campaignName}>{props.campaign.name}</h2>
+      </div>
+    </a>
+  ) : (
     <Link
       {...(props.campaign.link
         ? { href: props.campaign.link }

@@ -6,12 +6,18 @@ import {
   PiHandshakeLight,
   PiFilmSlateLight,
 } from "react-icons/pi";
+import { MdOutlineHealthAndSafety } from "react-icons/md";
 import CampaignPreview, {
   Campaign,
 } from "@/components/campaign-preview/campaign-preview.component";
 
 export default function SupportUs() {
   const CAMPAIGNS: Campaign[] = [
+    {
+      name: "Convocatoria PostMIR 2025",
+      icon: MdOutlineHealthAndSafety,
+      fileUrl: "documents/convocatoria-post-mir.pdf",
+    },
     {
       name: "Mi grano de arena",
       icon: PiHandshakeLight,
@@ -155,6 +161,15 @@ export default function SupportUs() {
             <h2>00107</h2>
           </div>
         </div>
+
+        {/* <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://buy.stripe.com/test_dR68xM2fWg4u2kw3cd"
+          className={styles.teamingButton}
+        >
+          Dona ahora
+        </a> */}
 
         <h2 className={styles.donationMethodTitle}>Teaming</h2>
         <p>¡En OAN International te lo ponemos fácil!</p>
