@@ -313,6 +313,14 @@ export default function AboutUs() {
             poner en marcha junto a ellos proyectos coherentes con su realidad y
             que generen un verdadero impacto en su día a día.
           </p>
+
+          <a
+            className={styles.fileDownloadLink}
+            href="documents/contexto-benin-2024.pdf"
+            download="contexto-sobre-benin.pdf"
+          >
+            Contexto sobre Benin
+          </a>
         </div>
 
         <div className={styles.historyBlock}>
