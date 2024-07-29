@@ -162,14 +162,43 @@ export default function SupportUs() {
           </div>
         </div>
 
-        {/* <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://buy.stripe.com/test_dR68xM2fWg4u2kw3cd"
-          className={styles.teamingButton}
-        >
-          Dona ahora
-        </a> */}
+        <div className={styles.donationButtons}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://buy.stripe.com/8wMeV3ft30GxgWAcMN"
+            className={styles.teamingButton}
+          >
+            Dona 10€ al mes
+          </a>
+
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://buy.stripe.com/28o4gp94FcpfbCg3ce"
+            className={styles.teamingButton}
+          >
+            Dona 25€ al mes
+          </a>
+
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://buy.stripe.com/dR64gpft3cpfcGkeUX"
+            className={styles.teamingButton}
+          >
+            Dona 50€ al mes
+          </a>
+
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://buy.stripe.com/5kAbIR3KlfBrcGk7sw"
+            className={styles.teamingButton}
+          >
+            Dona 100€ al mes
+          </a>
+        </div>
 
         <h2 className={styles.donationMethodTitle}>Teaming</h2>
         <p>¡En OAN International te lo ponemos fácil!</p>
