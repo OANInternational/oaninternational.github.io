@@ -146,10 +146,9 @@ export default function SupportUs() {
               transferencia periódica a nuestra cuenta:
             </p>
             <div>
-              <p>Banco Santander</p>
+              <p>Caja Ingenieros</p>
               <p>OAN International</p>
-              <p>IBAN: ES04 0049 6109 60 2516359826</p>
-              <p>BIC / SWIFT: BSCHESMMXXX</p>
+              <p>IBAN: ES37 3025 0003 9614 3335 5692</p>
             </div>
           </div>
           <div className={styles.donationTextSection}>

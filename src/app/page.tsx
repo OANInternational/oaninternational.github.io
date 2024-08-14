@@ -36,8 +36,8 @@ export default function Home() {
             acerca de las desigualdades norte-sur.
           </p>
 
-          <Link href={"/news"} className={styles.noLink}>
-            <p className={styles.primaryButton}>SÍGUENOS LOS PASOS</p>
+          <Link href={"/10-years"} className={styles.noLink}>
+            <p className={styles.primaryButton}>¡Cumplimos 10 años!</p>
           </Link>
         </div>
 
