@@ -2,7 +2,6 @@ export interface MainMenuItem {
   id: number;
   label: string;
   path: string;
-  subItems: string[];
 }
 
 export const MAIN_MENU_ITEMS: MainMenuItem[] = [
@@ -10,30 +9,30 @@ export const MAIN_MENU_ITEMS: MainMenuItem[] = [
     id: 0,
     label: "Sobre Nosotros",
     path: "/about-us",
-    subItems: [],
-  },
-  {
-    id: 1,
-    label: "Proyectos",
-    path: "/projects",
-    subItems: [],
   },
   {
     id: 2,
-    label: "Colabora",
-    path: "/support-us",
-    subItems: [],
+    label: "10 años",
+    path: "/10-years",
+  },
+  {
+    id: 2,
+    label: "Proyectos",
+    path: "/projects",
   },
   {
     id: 3,
+    label: "Colabora",
+    path: "/support-us",
+  },
+  {
+    id: 4,
     label: "Actualidad",
     path: "/news",
-    subItems: [],
   },
   {
     id: 4,
     label: "Contacto",
     path: "/contact",
-    subItems: [],
   },
 ];
