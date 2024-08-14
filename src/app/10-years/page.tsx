@@ -148,9 +148,9 @@ export default function AboutUs() {
               ayudando a a pequeñas empresarias a que impulsen sus negocios y
               mejoren su calidad de vida. Hemos apoyado la constitución de una
               red de solidaridad entre mujeres autodenominada Soukiana
-              ("Amémonos" en lengua batonou), acompañándolas con más de{" "}
-              <strong>30 sesiones de formación</strong> y puesta en común sobre
-              temas de igualdad de género y empoderamiento de la mujer.
+              (&apos;Amémonos&apos; en lengua batonou), acompañándolas con más
+              de <strong>30 sesiones de formación</strong> y puesta en común
+              sobre temas de igualdad de género y empoderamiento de la mujer.
             </p>
           </div>
         </div>
