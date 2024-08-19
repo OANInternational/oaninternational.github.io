@@ -19,11 +19,6 @@ export default function SupportUs() {
       fileUrl: "documents/convocatoria-post-mir.pdf",
     },
     {
-      name: "Mi grano de arena",
-      icon: PiHandshakeLight,
-      link: "https://www.migranodearena.org/reto/apoya-la-autonomia-de-mujeres-en-benin-frica-colabora-con-nikarit-",
-    },
-    {
       name: "Adopta un karite",
       icon: PiPottedPlantLight,
       link: "https://nikarit.es/collections/oan-international/products/hermanate-con-un-karite",
