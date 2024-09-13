@@ -182,6 +182,10 @@ export default function AboutUs() {
       url: "documents/activity-memories/memoria-actividades-oan-2022.pdf",
       name: "Memoria de Actividades - 2022",
     },
+    {
+      url: "documents/activity-memories/memoria-actividades-oan-2023.pdf",
+      name: "Memoria de Actividades - 2023",
+    },
   ];
 
   const ECONOMIC_MEMORIES: File[] = [
