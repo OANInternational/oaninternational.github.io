@@ -16,7 +16,7 @@ export default function SupportUs() {
     {
       name: "Convocatoria PostMIR 2025",
       icon: MdOutlineHealthAndSafety,
-      fileUrl: "documents/convocatoria-post-mir.pdf",
+      fileUrl: "documents/convocatoria-post-mir-2025.pdf",
     },
     {
       name: "Adopta un karite",
