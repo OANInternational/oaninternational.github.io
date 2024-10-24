@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Header from "@/components/header/header.component";
 import Footer from "@/components/footer/footer.component";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "OAN International",
@@ -22,6 +23,7 @@ export default function RootLayout({
         {children}
         <Footer></Footer>
       </body>
+      <GoogleAnalytics gaId="G-RQ406VZD1P" />
     </html>
   );
 }
