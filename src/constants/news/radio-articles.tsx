@@ -2,7 +2,7 @@ import { Article } from "@/components/article-preview/article-preview.component"
 
 export const RADIO_ARTICLES: Article[] = [
   {
-    title: "3enRed en África hoy",
+    title: "OAN en Las tardes de RNE",
     imageUrl: "/logos/RTVE-logo.png",
     description: "Min. 36:34",
     date: "29 Abril 2024",
