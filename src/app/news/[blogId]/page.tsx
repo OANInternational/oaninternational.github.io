@@ -11,8 +11,13 @@ export function generateStaticParams() {
   }));
 }
 
-export default function BlogEntry({ params }: { params: { blogId: string } }) {
-  const article = BLOG_ARTICLES.find((article) => article.id === params.blogId);
+export default async function BlogEntry({
+  params,
+}: {
+  params: Promise<{ blogId: string }>;
+}) {
+  const { blogId } = await params;
+  const article = BLOG_ARTICLES.find((article) => article.id === blogId);
   if (!article) {
     return;
   }
