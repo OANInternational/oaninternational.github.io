@@ -51,7 +51,7 @@ export const PROJECT_CATEGORIES: IProjectCategory[] = [
         </p>
 
         <p>
-          En este conexto, promovemos la autosuficiencia económica de las
+          En este contexto, promovemos la autosuficiencia económica de las
           mujeres en Nikki, en línea con el ODS 1 (fin de la pobreza), el ODS 5
           (lograr la igualdad de género), y el ODS 7 (trabajo digno y
           crecimiento económico).
@@ -64,18 +64,13 @@ export const PROJECT_CATEGORIES: IProjectCategory[] = [
   },
   {
     id: "heath",
-    title: "Nutrición",
+    title: "Seguridad alimentaria",
     icon: <TbHealthRecognition size={100} />,
     url: "/proyectos/salud",
     backgroundColor: "var(--health-color)",
     backgroundColorLight: "var(--health-color-light)",
     description: (
       <div style={wrapper}>
-        <p>
-          El derecho a la salud es un derecho humano reconocido entre otros en
-          el
-        </p>
-
         <p>
           La FAO considera a la República de Benín uno de los 51 Países de Bajos
           Ingresos y Déficit de Alimentos (PBIDA). La malnutrición es un
@@ -131,7 +126,7 @@ export const PROJECT_CATEGORIES: IProjectCategory[] = [
         </p>
 
         <p>
-          Esta actuación se enmarca denteo del ODS 6 (Agua limpia y saneamiento)
+          Esta actuación se enmarca dentro del ODS 6 (Agua limpia y saneamiento)
           y se alinea con los Planes de Desarrollo Comunitario de Nikki (PDC
           2017-2021) que incluyen el objetivo específico de “mejorar los
           servicios de aprovisionamiento de agua, saneamiento y protección del

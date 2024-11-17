@@ -48,9 +48,9 @@ export const AGRICULTURE_PROJECTS: IProjectPreview[] = [
     summary: (
       <div style={wrapper}>
         <p>
-          Este Proyecto busca <b>apoyar a grupos de mujeres rurales</b> para que
+          Este proyecto busca <b>apoyar a grupos de mujeres rurales</b> para que
           desarrollen huertas comunitarias en sus pueblos que les permitan tener
-          acceso a alimentos variados, y poder vender los excedentes para
+          acceso a alimentos variados y poder vender los excedentes para
           conseguir una fuente de ingresos adicional.
         </p>
       </div>
@@ -65,9 +65,9 @@ export const AGRICULTURE_PROJECTS: IProjectPreview[] = [
         <p>
           Este proyecto apoya a un grupo de mujeres emprendedoras en la ciudad
           de Nikki, facilitándoles el acceso a microcréditos con los que pueden
-          impulsar sus pequeños negocios, y creado espacios de aprendizaje
+          impulsar sus pequeños negocios, y creando espacios de aprendizaje
           colectivo donde comparten experiencias, se apoyan para resolver sus
-          problemas, se forman con personas especialistas, y ponen en marcha
+          problemas, se forman con personas especialistas y ponen en marcha
           proyectos colectivos.
         </p>
 

@@ -19,7 +19,7 @@ export default function SupportUs() {
       fileUrl: "documents/convocatoria-post-mir-2025.pdf",
     },
     {
-      name: "Adopta un karite",
+      name: "Hermánate con un karité",
       icon: PiPottedPlantLight,
       link: "https://nikarit.es/collections/oan-international/products/hermanate-con-un-karite",
     },
