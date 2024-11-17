@@ -72,7 +72,7 @@ export default function AboutUs() {
     },
     {
       name: "Oscar de la Concha Barrio",
-      title: "Voluntaria",
+      title: "Voluntario",
       imageUrl: "/people/person-placeholder.svg",
     },
   ];
