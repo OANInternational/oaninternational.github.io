@@ -123,7 +123,7 @@ export default function AboutUs() {
                 para la producción de manteca cumpliendo con los estándares de
                 calidad nacionales e internacionales. Todo ello ha mejorado la
                 vida de las alrededor de <strong>2.500 personas</strong> que
-                viven en estos pueblos. Gracias a esto, las mujeres han
+                viven en estos pueblos. Gracias a esto, las mujeres han{" "}
                 <strong>aumentado sus ingresos en un 70%</strong> desde el
                 inicio del proyecto.
               </p>
@@ -224,7 +224,7 @@ export default function AboutUs() {
           </div>
           <Image
             className={styles.valuesBlockImage}
-            src="/oan-web-justicia-social.jpg"
+            src="/oan-web-044.jpg"
             width={400}
             height={400}
             alt="OAN history"

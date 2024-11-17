@@ -22,7 +22,7 @@ export default function AboutUs() {
     {
       name: "Alvaro Pascual",
       title: "Secretario general",
-      imageUrl: "/people/person-placeholder.svg",
+      imageUrl: "/people/alvaro.jpg",
     },
     {
       name: "Beatriz Vázquez",
@@ -42,41 +42,37 @@ export default function AboutUs() {
     {
       name: "Almudena Vázquez",
       title: "Comunicación",
-      imageUrl: "/people/person-placeholder.svg",
+      imageUrl: "/people/almudena.jpeg",
     },
     {
       name: "Ángela Hidalgo",
       title: "Proyecto Nikarit",
-      imageUrl: "/people/person-placeholder.svg",
-    },
-    {
-      name: "Patricia de Blas",
-      title: "Financiación",
-      imageUrl: "/people/person-placeholder.svg",
-    },
-    {
-      name: "Hanna Botello",
-      title: "Proyecto Malnutrición",
-      imageUrl: "/people/person-placeholder.svg",
+      imageUrl: "/people/angela.jpeg",
     },
     {
       name: "Alfonso García",
       title: "Tecnología",
       imageUrl: "/people/alfonso.jpg",
     },
-    {
-      name: "Marta Cuenca",
-      title: "Voluntaria",
-      imageUrl: "/people/marta.jpeg",
-    },
+
     {
       name: "Eva Diaz",
       title: "Voluntaria",
-      imageUrl: "/people/person-placeholder.svg",
+      imageUrl: "/people/eva.jpeg",
     },
     {
       name: "Andrea Triquet",
       title: "Voluntaria",
+      imageUrl: "/people/andrea.jpeg",
+    },
+    {
+      name: "Isabel",
+      title: "Voluntaria",
+      imageUrl: "/people/person-placeholder.svg",
+    },
+    {
+      name: "Oscar de la Concha Barrio",
+      title: "Voluntario",
       imageUrl: "/people/person-placeholder.svg",
     },
   ];
@@ -98,12 +94,7 @@ export default function AboutUs() {
       imageUrl: "/people/lamatou.jpeg",
     },
     {
-      name: "Yacoubou Seh",
-      title: "Secretario general",
-      imageUrl: "/people/person-placeholder.svg",
-    },
-    {
-      name: "Mousa Yacoubou",
+      name: "Moussa Yacoubou",
       title: "",
       imageUrl: "/people/moussa.jpeg",
     },
@@ -134,16 +125,6 @@ export default function AboutUs() {
     },
     {
       name: "Alimatou Soumaila",
-      title: "",
-      imageUrl: "/people/person-placeholder.svg",
-    },
-    {
-      name: "Imourou Worou",
-      title: "",
-      imageUrl: "/people/person-placeholder.svg",
-    },
-    {
-      name: "Chabi Gafarou",
       title: "",
       imageUrl: "/people/person-placeholder.svg",
     },
@@ -220,6 +201,14 @@ export default function AboutUs() {
     {
       url: "documents/economic-memories/memoria-economica-oan-2021.pdf",
       name: "Memoria de Economica - 2021",
+    },
+    {
+      url: "documents/economic-memories/memoria-economica-oan-2022.pdf",
+      name: "Memoria de Economica - 2022",
+    },
+    {
+      url: "documents/economic-memories/memoria-economica-oan-2023.pdf",
+      name: "Memoria de Economica - 2023",
     },
   ];
 
@@ -301,43 +290,51 @@ export default function AboutUs() {
 
           <p>
             En 2013, uno de los fundadores de OAN International, Daniel Alfaro,
-            viaja a Nikki como voluntario. Un año más tarde, un grupo de 8
-            jóvenes fundan la ONG OAN International (Objetivo Analizar Nikki).
+            viaja a Nikki como voluntario.
           </p>
 
           <p>
-            Un año después, en 2014, nos constituimos como la ONGD que somos hoy
-            en Nikki, una población de 70.000 habitantes situada en una de las
-            zonas más rurales y con menos recursos del país.
+            Un año más tarde, en 2014, un grupo de 8 jóvenes fundan OAN
+            International (Objetivo Analizar Nikki), la ONGD que somos hoy en
+            Nikki, una región de 1600.000 habitantes situada en una de las zonas
+            más rurales y con menos recursos del país.
           </p>
 
           <p>
-            Desde sus inicios, OAN Internacional ha puesto a disposición de los
+            Desde sus inicios, OAN International ha puesto a disposición de los
             agentes de cambio de Nikki sus conocimientos y experiencia para
             poner en marcha junto a ellos proyectos coherentes con su realidad y
             que generen un verdadero impacto en su día a día.
           </p>
 
-          <a
-            className={styles.fileDownloadLink}
-            href="documents/contexto-benin-2024.pdf"
-            download="contexto-sobre-benin.pdf"
-          >
-            Contexto sobre Benin
-          </a>
+          <p>
+            Conoce más sobre Benin gracias a
+            <a
+              className={styles.fileDownloadLink}
+              href="documents/contexto-benin-2024.pdf"
+              download="contexto-sobre-benin.pdf"
+            >
+              ESTE DOCUMENTO
+            </a>
+          </p>
         </div>
 
         <div className={styles.historyBlock}>
           <div className={styles.historyBlockTextWrapper}>
             <div className={styles.historyBlockText}>
               <p>
-                En los últimos 10 años, más de 50 jóvenes de diversas
+                En los últimos 10 años, más de 450 personas ha trabajado
+                voluntariamente en OAN, más de 120 jóvenes de diversas
                 nacionalidades se han desplazado a Nikki para colaborar en
-                proyectos de desarrollo con la población local. Actualmente, OAN
-                Internacional cuenta con más de 80 personas voluntarias. Además,
-                más de 30 estudiantes han realizado sus TFG y TFM con nosotros,
-                permitiendo a los universitarios (en Benín y en España) tomar
-                conciencia sobre esta realidad.
+                proyectos de desarrollo con la población local, se han
+                desarrollado más de 60 trabajos fin de grado y trabajos fin de
+                máster permitiendo a los universitarios (en Benín y en España)
+                tomar conciencia sobre esta realidad.
+              </p>
+
+              <p>
+                Actualmente, OAN International cuenta con 10 personas
+                contratadas en Benín y más de 20 personas voluntarias en España.
               </p>
             </div>
           </div>
