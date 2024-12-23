@@ -64,6 +64,19 @@ export default function Header() {
 
         <div className={styles.menuItems}>{menuItems}</div>
 
+        <div className={styles.menuItems}>
+          <Link
+            className={`${styles.label} ${styles.becomePartnerButton}`}
+            key={"Hazte Socio"}
+            href={"/become-partner"}
+            onClick={() => {
+              setIsMobileNavBarOpen(false);
+            }}
+          >
+            Hazte Socio
+          </Link>
+        </div>
+
         <button
           className={styles.menuMobile}
           onClick={() => setIsMobileNavBarOpen(!isMobileNavBarOpen)}

@@ -64,6 +64,13 @@
     }
   }
 
+  .becomePartnerButton {
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 5px 10px;
+    
+  }
+
   .menuMobile {
     margin-left: auto;
     display: flex;
