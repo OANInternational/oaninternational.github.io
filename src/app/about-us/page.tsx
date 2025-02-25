@@ -37,7 +37,7 @@ export default function AboutUs() {
     {
       name: "Sofía Fernández",
       title: "Comunicación",
-      imageUrl: "/people/person-placeholder.svg",
+      imageUrl: "/people/sofia.jpeg",
     },
     {
       name: "Almudena Vázquez",
