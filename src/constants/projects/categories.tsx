@@ -22,7 +22,7 @@ const list: CSSProperties = {
 
 export const PROJECT_CATEGORIES: IProjectCategory[] = [
   {
-    id: "agriculture",
+    id: "woman",
     title: "Mujer y medios de vida sostenibles",
     icon: <TbPlant size={100} />,
     url: "/proyectos/agricultura",
@@ -63,7 +63,7 @@ export const PROJECT_CATEGORIES: IProjectCategory[] = [
     projects: AGRICULTURE_PROJECTS,
   },
   {
-    id: "heath",
+    id: "food-security",
     title: "Seguridad alimentaria",
     icon: <TbHealthRecognition size={100} />,
     url: "/proyectos/salud",
@@ -100,7 +100,7 @@ export const PROJECT_CATEGORIES: IProjectCategory[] = [
     projects: HEALTH_PROJECTS,
   },
   {
-    id: "engineering",
+    id: "water-access",
     title: "Acceso al agua",
     icon: <RiWaterFlashLine size={100} />,
     url: "/proyectos/energia",

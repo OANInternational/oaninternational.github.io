@@ -1,15 +1,27 @@
 "use client";
 
+import { useEffect } from "react";
+import { scrollToSection } from "@/utils/scrollToSection";
 import styles from "./page.module.css";
 import TitlePage from "@/components/title-page/title-page.component";
+import { useSearchParams } from "next/navigation";
 
 import ProjectCategorySection, {
   IProjectCategory,
 } from "@/components/project-category-section/project-category-section.component";
 import { PROJECT_CATEGORIES } from "@/constants/projects/categories";
 import { CSSProperties } from "react";
+import TitleSection from "@/components/title-section/title-section.component";
 
 export default function Projects() {
+  const searchParams = useSearchParams();
+
+  // Use the scrollToSection utility on page load or URL change
+  useEffect(() => {
+    const section = searchParams.get("section");
+    scrollToSection(section || undefined);
+  }, [searchParams]);
+
   const projectCategories = PROJECT_CATEGORIES.map((category) => {
     const categoryStyle: CSSProperties = {
       backgroundColor: category.backgroundColor,
@@ -50,6 +62,10 @@ export default function Projects() {
       </section>
 
       {projectCategorySections}
+
+      <section id="objectives" className={styles.projectCategoriesSection}>
+        <TitleSection title="Objetivos 2025 por proyectos" />
+      </section>
     </main>
   );
 }

@@ -1,3 +1,8 @@
+"use client";
+
+import { useEffect } from "react";
+import { scrollToSection } from "@/utils/scrollToSection";
+import { useSearchParams } from "next/navigation";
 import styles from "./page.module.css";
 
 import TitleSection from "@/components/title-section/title-section.component";
@@ -11,6 +16,14 @@ import { PRESS_ARTICLES } from "@/constants/news/press-articles";
 import { BLOG_ARTICLES } from "@/constants/news/blog-articles";
 
 export default function News() {
+  const searchParams = useSearchParams();
+
+  // Use the scrollToSection utility on page load or URL change
+  useEffect(() => {
+    const section = searchParams.get("section");
+    scrollToSection(section || undefined);
+  }, [searchParams]);
+
   const radioArticles = RADIO_ARTICLES.map((article) => (
     <ArticlePreview key={article.title} article={article} />
   ));
@@ -35,25 +48,25 @@ export default function News() {
         subTitle="Artículos, entrevistas y apariciones en los medios de OAN International"
       />
 
-      <section className={styles.blogSection}>
+      <section id="blog" className={styles.blogSection}>
         <TitleSection title="Blog" />
 
         {blogArticles}
       </section>
 
-      <section className={styles.articleSection}>
+      <section id="press" className={styles.articleSection}>
         <TitleSection title="Prensa Escrita y Digital" />
 
         {pressArticles}
       </section>
 
-      <section className={styles.articleSection}>
+      <section id="events" className={styles.articleSection}>
         <TitleSection title="Congreso 3enRed" />
 
         {congressArticles}
       </section>
 
-      <section className={styles.articleSection}>
+      <section id="radio" className={styles.articleSection}>
         <TitleSection title="Radio" />
 
         {radioArticles}

@@ -1,10 +1,23 @@
+"use client";
+
+import { useEffect } from "react";
+import { scrollToSection } from "@/utils/scrollToSection";
+import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 
 import styles from "./page.module.css";
 import TitleSection from "@/components/title-section/title-section.component";
 import TitlePage from "@/components/title-page/title-page.component";
 
-export default function AboutUs() {
+export default function TenYears() {
+  const searchParams = useSearchParams();
+
+  // Use the scrollToSection utility on page load or URL change
+  useEffect(() => {
+    const section = searchParams.get("section");
+    scrollToSection(section || undefined);
+  }, [searchParams]);
+
   return (
     <main>
       <TitlePage
@@ -32,7 +45,7 @@ export default function AboutUs() {
       </section>
 
       {/* ACHIEVEMENTS */}
-      <section className={styles.donationSection}>
+      <section id="achievements" className={styles.donationSection}>
         <TitleSection title="Nuestros logros" />
       </section>
 
@@ -192,7 +205,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className={styles.historySection}>
+      <section id="faq" className={styles.historySection}>
         <div className={styles.historyBlock}>
           <div className={styles.historyBlockTextWrapper}>
             <div className={styles.historyBlockText}>
