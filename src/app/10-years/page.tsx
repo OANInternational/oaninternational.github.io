@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import { scrollToSection } from "@/utils/scrollToSection";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
@@ -9,7 +9,8 @@ import styles from "./page.module.css";
 import TitleSection from "@/components/title-section/title-section.component";
 import TitlePage from "@/components/title-page/title-page.component";
 
-export default function TenYears() {
+// Create a client component that uses useSearchParams
+function TenYearsContent() {
   const searchParams = useSearchParams();
 
   // Use the scrollToSection utility on page load or URL change
@@ -249,26 +250,22 @@ export default function TenYears() {
 
         <h3>¿Mi aportación está sujeta a desgravación fiscal?</h3>
         <p>
-          Todas las donaciones a OAN International desgravan en función de la
-          Ley 49/2002, de 23 de diciembre, de régimen fiscal de las entidades
-          sin fines lucrativos y de los incentivos fiscales del mecenazgo.
+          Sí. OAN International está declarada como Asociación de Utilidad
+          Pública por el Ministerio de Interior por lo que tu aportación, siendo
+          socio/a, está sujeta a desgravación fiscal. Las cuotas de los socios/a
+          adscritos a esta iniciativa desgravan hasta un 80% en los primeros
+          150€ y un 35% en el resto.
         </p>
-
-        <p>
-          Hacienda te devuelve el 80% de lo que dones, hasta los primeros 250€
-          (al superar esta cuantía se desgrava el 40%, y si llevas 3 años
-          colaborando con nosotros el 45%).
-        </p>
-
-        <h3>¿Mis datos personales están protegidos?</h3>
-        <p>
-          OAN International cumple con la Ley Orgánica 15/1999, de 13 de
-          diciembre, de Protección de Datos de Carácter Personal.
-        </p>
-
-        <h3>¿Cómo puedo modificar mi cuota o datos personales?</h3>
-        <p>Escribe a contacto@oaninternational para cualquier consulta</p>
       </section>
     </main>
+  );
+}
+
+// Main component that wraps the content with Suspense
+export default function TenYears() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <TenYearsContent />
+    </Suspense>
   );
 }

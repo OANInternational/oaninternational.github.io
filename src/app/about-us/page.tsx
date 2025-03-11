@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import { scrollToSection } from "@/utils/scrollToSection";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
@@ -17,7 +17,8 @@ interface File {
   name: string;
 }
 
-export default function AboutUs() {
+// Create a client component that uses useSearchParams
+function AboutUsContent() {
   const SPAIN_TEAM: Person[] = [
     {
       name: "Daniel Alfaro",
@@ -363,7 +364,7 @@ export default function AboutUs() {
       </section>
 
       {/* WORK PLACE */}
-      <section className={styles.workPlaceSection}>
+      <section id="values" className={styles.workPlaceSection}>
         <TitleSection title="Nuestros pilares" />
 
         <p>
@@ -548,5 +549,14 @@ export default function AboutUs() {
         <div className={styles.countryTeamSection}>{beninTeam}</div>
       </section>
     </main>
+  );
+}
+
+// Main component that wraps the content with Suspense
+export default function AboutUs() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <AboutUsContent />
+    </Suspense>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import { scrollToSection } from "@/utils/scrollToSection";
 import styles from "./page.module.css";
 import TitlePage from "@/components/title-page/title-page.component";
@@ -13,7 +13,8 @@ import { PROJECT_CATEGORIES } from "@/constants/projects/categories";
 import { CSSProperties } from "react";
 import TitleSection from "@/components/title-section/title-section.component";
 
-export default function Projects() {
+// Create a client component that uses useSearchParams
+function ProjectsContent() {
   const searchParams = useSearchParams();
 
   // Use the scrollToSection utility on page load or URL change
@@ -67,5 +68,14 @@ export default function Projects() {
         <TitleSection title="Objetivos 2025 por proyectos" />
       </section>
     </main>
+  );
+}
+
+// Main component that wraps the content with Suspense
+export default function Projects() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ProjectsContent />
+    </Suspense>
   );
 }
