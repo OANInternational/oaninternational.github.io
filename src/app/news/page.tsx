@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import { scrollToSection } from "@/utils/scrollToSection";
 import { useSearchParams } from "next/navigation";
 import styles from "./page.module.css";
@@ -15,7 +15,8 @@ import { CONGRESS_ARTICLES } from "@/constants/news/congress-articles";
 import { PRESS_ARTICLES } from "@/constants/news/press-articles";
 import { BLOG_ARTICLES } from "@/constants/news/blog-articles";
 
-export default function News() {
+// Create a client component that uses useSearchParams
+function NewsContent() {
   const searchParams = useSearchParams();
 
   // Use the scrollToSection utility on page load or URL change
@@ -72,5 +73,14 @@ export default function News() {
         {radioArticles}
       </section>
     </main>
+  );
+}
+
+// Main component that wraps the content with Suspense
+export default function News() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <NewsContent />
+    </Suspense>
   );
 }

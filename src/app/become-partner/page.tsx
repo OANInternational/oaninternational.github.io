@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import { scrollToSection } from "@/utils/scrollToSection";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
@@ -9,7 +9,8 @@ import styles from "./page.module.css";
 import TitleSection from "@/components/title-section/title-section.component";
 import TitlePage from "@/components/title-page/title-page.component";
 
-export default function BecomePartner() {
+// Create a client component that uses useSearchParams
+function BecomePartnerContent() {
   const searchParams = useSearchParams();
 
   // Use the scrollToSection utility on page load or URL change
@@ -72,5 +73,14 @@ export default function BecomePartner() {
         </div>
       </section>
     </main>
+  );
+}
+
+// Main component that wraps the content with Suspense
+export default function BecomePartner() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <BecomePartnerContent />
+    </Suspense>
   );
 }
