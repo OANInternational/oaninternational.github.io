@@ -2,14 +2,68 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 
 import styles from "./header.module.css";
-import { MAIN_MENU_ITEMS } from "@/app/constants";
+import { MAIN_MENU_ITEMS, SubMenuItem } from "@/app/constants";
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { scrollToSection } from "@/utils/scrollToSection";
 
 export default function Header() {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  // Handle submenu item click
+  const handleSubMenuClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    subItem: SubMenuItem,
+    parentPath: string
+  ) => {
+    // If we're already on the same page, prevent default navigation and manually handle scrolling
+    if (pathname === parentPath) {
+      e.preventDefault();
+      // Update URL without triggering navigation
+      window.history.pushState({}, "", subItem.path);
+      // Directly call scrollToSection with the section
+      if (subItem.section) {
+        scrollToSection(subItem.section);
+      }
+      // Close mobile menu if it's open
+      setIsMobileNavBarOpen(false);
+    }
+  };
+
   const menuItems = MAIN_MENU_ITEMS.map((menuItem) => (
+    <div className={styles.menuItemWrapper} key={menuItem.label}>
+      <Link
+        className={styles.label}
+        href={menuItem.path}
+        onClick={() => {
+          setIsMobileNavBarOpen(false);
+        }}
+      >
+        {menuItem.label}
+      </Link>
+      {menuItem.subItems && menuItem.subItems.length > 0 && (
+        <div className={styles.submenu}>
+          {menuItem.subItems.map((subItem) => (
+            <Link
+              className={styles.submenuItem}
+              key={subItem.label}
+              href={subItem.path}
+              onClick={(e) => handleSubMenuClick(e, subItem, menuItem.path)}
+            >
+              {subItem.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  ));
+
+  // For mobile view, keep the original menu items without submenu
+  const mobileMenuItems = MAIN_MENU_ITEMS.map((menuItem) => (
     <Link
       className={styles.label}
       key={menuItem.label}
@@ -32,6 +86,19 @@ export default function Header() {
       setScrolled(false);
     }
   };
+
+  // Listen for URL changes from browser navigation (back/forward)
+  useEffect(() => {
+    const handleUrlChange = () => {
+      scrollToSection();
+    };
+
+    window.addEventListener("popstate", handleUrlChange);
+
+    return () => {
+      window.removeEventListener("popstate", handleUrlChange);
+    };
+  }, []);
 
   useEffect(() => {
     document.addEventListener("scroll", handleScroll, true);
@@ -98,7 +165,7 @@ export default function Header() {
             : styles.mobileNavBarClosed
         }`}
       >
-        {menuItems}
+        {mobileMenuItems}
       </div>
     </div>
   );

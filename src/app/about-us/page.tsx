@@ -1,4 +1,9 @@
+"use client";
+
+import { useEffect } from "react";
+import { scrollToSection } from "@/utils/scrollToSection";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 
 import styles from "./page.module.css";
 import TitleSection from "@/components/title-section/title-section.component";
@@ -275,6 +280,14 @@ export default function AboutUs() {
     </li>
   );
 
+  const searchParams = useSearchParams();
+
+  // Use the scrollToSection utility on page load or URL change
+  useEffect(() => {
+    const section = searchParams.get("section");
+    scrollToSection(section || undefined);
+  }, [searchParams]);
+
   return (
     <main>
       <TitlePage
@@ -284,7 +297,7 @@ export default function AboutUs() {
       />
 
       {/* HISTORY */}
-      <section className={styles.historySection}>
+      <section id="history" className={styles.historySection}>
         <div className={styles.historyWrapper}>
           <TitleSection title="Nuestra Historia" />
 
@@ -499,7 +512,7 @@ export default function AboutUs() {
       </section>
 
       {/* TRANSPARENCY */}
-      <section className={styles.teamSection}>
+      <section id="transparency" className={styles.teamSection}>
         <TitleSection title="Transparencia" />
 
         <p>
@@ -519,7 +532,7 @@ export default function AboutUs() {
       </section>
 
       {/* TEAM */}
-      <section className={styles.teamSection}>
+      <section id="team" className={styles.teamSection}>
         <TitleSection title="Nuestro Equipo" />
 
         <p>

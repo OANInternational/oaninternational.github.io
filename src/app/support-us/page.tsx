@@ -36,7 +36,7 @@ export default function SupportUs() {
 
   return (
     <main>
-      <section className={styles.mainSection}>
+      <section className={styles.mainSection} id="support-main">
         <div className={styles.wrapper}>
           <div className={styles.headlines}>
             <h2 className={styles.headlineBox}>Comités</h2>
@@ -91,13 +91,13 @@ export default function SupportUs() {
         />
       </section>
 
-      <section className={styles.campaignsSection}>
+      <section className={styles.campaignsSection} id="campaigns">
         <TitleSection title="Campañas" />
 
         <div className={styles.campaignsWrapper}>{campaigns}</div>
       </section>
 
-      <section className={styles.donationSection}>
+      <section className={styles.donationSection} id="donate">
         <TitleSection title="Dona" />
 
         <p>
@@ -215,7 +215,56 @@ export default function SupportUs() {
         </a>
       </section>
 
-      <section className={styles.thesisSection}>
+      <section className={styles.donationSection} id="companies">
+        <TitleSection title="Empresas" />
+
+        <p>
+          ¿Eres una empresa y quieres apoyar a proyectos como los de OAN
+          International? ¿Quieres dar un paso más en tu RSC siendo impulsor del
+          cambio en terreno? Las formas de ayudarnos son muchas, se trata de que
+          elijas la que mejor se ajuste a tu entidad:
+        </p>
+
+        <ul style={{ marginLeft: "20px" }}>
+          <li style={{ marginBottom: "16px" }}>
+            <strong>Donación puntual</strong>
+          </li>
+          <li style={{ marginBottom: "16px" }}>
+            Haz a tu <strong>empresa socia</strong> de OAN International
+          </li>
+          <li style={{ marginBottom: "16px" }}>
+            Financia uno de nuestros proyectos directamente (completa o
+            parcialmente).
+          </li>
+          <li style={{ marginBottom: "16px" }}>
+            <strong>Regalos a clientes/empleados</strong>: para tener un detalle
+            solidario con clientes o empleados, desde OAN ofrecemos kits de
+            productos del proyecto Nikarit o el calendario anual de OAN
+            International.
+          </li>
+          <li style={{ marginBottom: "16px" }}>
+            <strong>Evento solidario</strong>: organizando un concierto,
+            actividad deportiva o encuentro en el que se visibilice la labor de
+            OAN International.
+          </li>
+          <li style={{ marginBottom: "16px" }}>
+            ¿Tenéis una <strong>propuesta</strong>? Si tienes nuevas ideas de
+            cómo apoyarnos, rellena el siguiente formulario y contacta
+            directamente con nosotros.
+          </li>
+        </ul>
+
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="mailto:empresas@oaninternational.org"
+          className={styles.emailButton}
+        >
+          empresas@oaninternational.org
+        </a>
+      </section>
+
+      <section className={styles.thesisSection} id="thesis">
         <div className={styles.thesisText}>
           <TitleSection title="Tu TFG/TFM con OAN" />
 

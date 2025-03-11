@@ -40,9 +40,44 @@
     .label {
       color: var(--primary-color);
       text-decoration: none;
-
       display: inline-block;
       position: relative;
+    }
+
+    .menuItemWrapper {
+      position: relative;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: var(--white);
+      min-width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 11;
+      padding: 10px 0;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .submenuItem {
+      display: block;
+      color: var(--primary-color);
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      white-space: nowrap;
+      transition: background-color 0.2s ease;
+    }
+
+    .submenuItem:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .menuItemWrapper:hover .submenu {
+      display: block;
     }
 
     .label::after {
@@ -130,6 +165,10 @@
   .menuItems {
     display: none !important;
   }
+  
+  .submenu {
+    display: none !important;
+  }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -147,3 +186,4 @@
     transform: none;
   }
 }
+

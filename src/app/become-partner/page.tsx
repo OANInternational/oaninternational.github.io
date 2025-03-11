@@ -1,15 +1,28 @@
+"use client";
+
+import { useEffect } from "react";
+import { scrollToSection } from "@/utils/scrollToSection";
+import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 
 import styles from "./page.module.css";
 import TitleSection from "@/components/title-section/title-section.component";
 import TitlePage from "@/components/title-page/title-page.component";
 
-export default function AboutUs() {
+export default function BecomePartner() {
+  const searchParams = useSearchParams();
+
+  // Use the scrollToSection utility on page load or URL change
+  useEffect(() => {
+    const section = searchParams.get("section");
+    scrollToSection(section || undefined);
+  }, [searchParams]);
+
   return (
     <main>
       <TitlePage title="¡Hazte Socio!" backgroundImageUrl="/oan-web-042.jpg" />
 
-      <section className={styles.donationSection}>
+      <section id="donations" className={styles.donationSection}>
         <p>
           Siendo socio/a de OAN International contribuyes con el funcionamiento
           de la organización y con la consecución de todos los objetivos.
