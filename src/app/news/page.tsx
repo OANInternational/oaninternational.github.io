@@ -14,6 +14,8 @@ import { RADIO_ARTICLES } from "@/constants/news/radio-articles";
 import { CONGRESS_ARTICLES } from "@/constants/news/congress-articles";
 import { PRESS_ARTICLES } from "@/constants/news/press-articles";
 import { BLOG_ARTICLES } from "@/constants/news/blog-articles";
+import EventPreview from "@/components/event-preview/event-preview.component";
+import { NEXT_EVENTS } from "@/constants/news/next-events";
 
 // Create a client component that uses useSearchParams
 function NewsContent() {
@@ -41,6 +43,10 @@ function NewsContent() {
     <ArticlePreview key={article.title} article={article} />
   ));
 
+  const nextEvents = NEXT_EVENTS.map((event) => (
+    <EventPreview key={event.title} event={event} />
+  ));
+
   return (
     <main>
       <TitlePage
@@ -49,11 +55,29 @@ function NewsContent() {
         subTitle="Artículos, entrevistas y apariciones en los medios de OAN International"
       />
 
-      <section id="blog" className={styles.blogSection}>
-        <TitleSection title="Blog" />
+      {NEXT_EVENTS.length > 0 && (
+        <div className={styles.newsWrapper}>
+          <section id="blog" className={styles.latestEventsSection}>
+            <TitleSection title="Próximos Eventos" />
 
-        {blogArticles}
-      </section>
+            {nextEvents}
+          </section>
+
+          <section id="blog" className={styles.blogSection}>
+            <TitleSection title="Blog" />
+
+            {blogArticles}
+          </section>
+        </div>
+      )}
+
+      {NEXT_EVENTS.length === 0 && (
+        <section id="blog" className={styles.blogSection}>
+          <TitleSection title="Blog" />
+
+          {blogArticles}
+        </section>
+      )}
 
       <section id="press" className={styles.articleSection}>
         <TitleSection title="Prensa Escrita y Digital" />

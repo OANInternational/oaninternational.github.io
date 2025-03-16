@@ -1,29 +1,28 @@
-.articleSection {
+.eventSection {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 40px;
-  max-width: 800px;
+  max-width: 300px;
   align-items: center;
+
   align-self: center;
-  width: 100%;
 }
 
 @media only screen and (max-width: 700px) {
-  .articleSection {
+  .eventSection {
     flex-direction: column;
     gap: 0;
   }
 
-  .articleTitle {
+  .eventTitle {
     text-align: center;
   }
   .textWrapper {
     align-items: center;
-    width: 100%;
   }
 }
 
-.articleImage {
+.eventImage {
   width: 300px;
   min-width: 300px;
   height: 200px;
@@ -32,7 +31,7 @@
   transition: transform 0.3s;
 }
 
-.articleImage:hover {
+.eventImage:hover {
   transform: scale(1.2);
 }
 
@@ -43,22 +42,19 @@
   width: 100%;
 }
 
-.articleTitle {
+.eventTitle {
   color: var(--black);
   display: inline-block;
   position: relative;
-  width: 100%;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  min-width: 40vw;
 }
 
-.articleTitle:hover {
+.eventTitle:hover {
   font-weight: 800;
   transition: all 1s;
 }
 
-.articleDescription {
+.eventDescription {
   color: var(--black);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  font-style: italic;
 }

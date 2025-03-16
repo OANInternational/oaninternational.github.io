@@ -86,12 +86,6 @@ export const MAIN_MENU_ITEMS: MainMenuItem[] = [
         path: "/projects?section=water-access",
         section: "water-access",
       },
-      {
-        id: 3,
-        label: "Objetivos 2025 por proyectos",
-        path: "/projects?section=objectives",
-        section: "objectives",
-      },
     ],
   },
   {
@@ -141,12 +135,6 @@ export const MAIN_MENU_ITEMS: MainMenuItem[] = [
         label: "Prensa",
         path: "/news?section=press",
         section: "press",
-      },
-      {
-        id: 2,
-        label: "Eventos",
-        path: "/news?section=events",
-        section: "events",
       },
     ],
   },

@@ -16,7 +16,183 @@ const image: CSSProperties = {
   objectFit: "contain",
 };
 
+const interviewSection: CSSProperties = {
+  marginBottom: "2rem",
+  width: "100%",
+};
+
+const question: CSSProperties = {
+  fontWeight: "bold",
+  marginBottom: "0.5rem",
+};
+
+const answer: CSSProperties = {
+  marginLeft: "2rem",
+};
+
+const answerList: CSSProperties = {
+  ...answer,
+  listStyle: "none",
+};
+
+const sectionTitle: CSSProperties = {
+  fontSize: "1.5rem",
+  fontWeight: "bold",
+  marginBottom: "1rem",
+};
+
 export const BLOG_ARTICLES: BlogArticle[] = [
+  {
+    id: "entrevista-a-abdou-waliou",
+    imageUrl: "/people/waliou.jpeg",
+    description: "Álvaro Pascual",
+    author: "Álvaro Pascual",
+    date: "16 de marzo 2025",
+    link: "/news/entrevista-a-abdou-waliou",
+    title: "Entrevista a Abdou Waliou",
+    content: (
+      <div style={wrapper}>
+        <div style={interviewSection}>
+          <h2 style={sectionTitle}>Trabajar con OAN International</h2>
+          <p style={question}>
+            ¿Puedes hablarnos un poco de ti antes de conocer OAN?
+          </p>
+          <ul style={answerList}>
+            <li>Tu nombre: MAMA Abdou Waliou</li>
+            <li>¿De dónde eres? De Nikki</li>
+            <li>
+              ¿A qué te dedicabas antes de unirte a OAN? Era asistente consultor
+              independiente en Fi-Agri 4 para el proyecto de acondicionamiento
+              de tierras bajas, jardinero doméstico y veterinario ambulante.
+            </li>
+            <li>
+              ¿Qué formación has recibido? He recibido formación en Ciencias y
+              Técnicas Agrícolas.
+            </li>
+            <li>
+              ¿Cómo imaginabas tu futuro en aquel momento? Me imaginaba siendo
+              un gran agricultor y ganadero.
+            </li>
+            <li>
+              ¿Hay algo más que te gustaría añadir? También me gustaría ser un
+              gran jugador de voleibol a nivel internacional.
+            </li>
+          </ul>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>¿Qué es OAN Nikki?</p>
+          <p style={answer}>
+            Es una organización internacional con sede en la comuna de Nikki que
+            trabaja en proyectos sociales comunitarios para mejorar las
+            condiciones de vida de las comunidades desfavorecidas en los ámbitos
+            de la salud, lo social y el medio ambiente, promoviendo su bienestar
+            integral.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>
+            ¿Qué te convenció para unirte al equipo de OAN Nikki?
+          </p>
+          <p style={answer}>
+            Quería aportar mi granito de arena para contribuir al desarrollo de
+            nuestras comunidades desfavorecidas.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>
+            ¿Cuál es tu trabajo en OAN y qué ha supuesto para ti unirte al
+            equipo?
+          </p>
+          <p style={answer}>
+            En OAN, soy animador del proyecto de lucha contra la malnutrición y
+            anteriormente fui técnico en jardinería. Para mí, formar parte de
+            este equipo significa trabajar en la lucha contra la malnutrición
+            infantil en las aldeas donde intervenimos.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>
+            ¿Qué te motiva a seguir trabajando con OAN Nikki?
+          </p>
+          <p style={answer}>
+            Lo que me motiva a seguir trabajando con OAN es el ambiente de
+            trabajo amigable, la dinámica del equipo y su rigor en el trabajo.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <h2 style={sectionTitle}>
+            Desafíos y oportunidades de la cooperación para el desarrollo
+          </h2>
+          <p style={question}>
+            En tu opinión, ¿qué enfoque debería adoptar la cooperación
+            internacional para fomentar el desarrollo?
+          </p>
+          <p style={answer}>
+            La cooperación internacional ya está haciendo un gran esfuerzo para
+            el desarrollo de nuestras comunidades. Sin embargo, si pudiera
+            reforzar sus acciones en el proyecto de lucha contra la
+            malnutrición, sería ideal que asumiera completamente y de manera
+            gratuita los casos de malnutrición detectados y referidos al
+            hospital. Además, si se retomara el proyecto de jardinería, sería
+            conveniente cercar los espacios con estructuras metálicas y
+            garantizar fuentes de agua inagotables para el riego permanente de
+            los cultivos en el jardín.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>
+            ¿Cómo describirías el desarrollo ideal para Nikki? / ¿Qué modelo de
+            desarrollo crees que quiere la población de Nikki?
+          </p>
+          <p style={answer}>
+            El desarrollo ideal para Nikki estaría basado en la autonomía
+            financiera de los jóvenes a través de la creación de actividades
+            generadoras de ingresos. Creo que el modelo de desarrollo que la
+            población de Nikki desea es el desarrollo agronómico.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <h2 style={sectionTitle}>
+            La vida en Nikki más allá de la cooperación para el desarrollo
+          </h2>
+          <p style={question}>
+            ¿A qué te dedicas cuando no estás en horario laboral?
+          </p>
+          <p style={answer}>
+            Fuera del trabajo, me dedico a la agricultura, la ganadería y
+            también gestiono un pequeño puesto de transacciones y venta de
+            recargas telefónicas.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>
+            ¿Has tenido algún referente en tu vida? (¿Quién y por qué?)
+          </p>
+          <p style={answer}>
+            Sí, he tenido un modelo y una persona inspiradora en mi vida:
+            NZAMUJO Godfrey. Es el promotor del Centro Songhaï y posee granjas
+            de renombre en África Occidental.
+          </p>
+        </div>
+
+        <Image
+          style={image}
+          width="100"
+          height="100"
+          src="/people/waliou.jpeg"
+          alt=""
+        />
+      </div>
+    ),
+  },
   {
     id: "10-aniversario",
     imageUrl: "/oan-web-043.jpg",
@@ -97,11 +273,11 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     content: (
       <div style={wrapper}>
         <p>
-          Con el lema “Faire du karité un vecteur d’autonomisation économique de
-          la femme rurale” (Hacer del karité un vector de autonomía económica de
-          la mujer rural) se ha celebrado en Nikki segunda edición de la
-          conferencia anual sobre el árbol del karité durante el día 5 de junio
-          de 2024.
+          Con el lema &quot;Faire du karité un vecteur d&apos;autonomisation
+          économique de la femme rurale&quot; (Hacer del karité un vector de
+          autonomía económica de la mujer rural) se ha celebrado en Nikki
+          segunda edición de la conferencia anual sobre el árbol del karité
+          durante el día 5 de junio de 2024.
         </p>
 
         <p>
