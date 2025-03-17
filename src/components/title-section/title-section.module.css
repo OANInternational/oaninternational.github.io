@@ -9,7 +9,7 @@
 .sectionTitle:after{    
   content: "";
   position: absolute;
-  width: 10%;
+  width: calc(max(10%,70px));
   height: 3px;
   bottom: 0;
   left: 0%;

@@ -227,14 +227,29 @@ export default function SupportUs() {
 
         <ul style={{ marginLeft: "20px" }}>
           <li style={{ marginBottom: "16px" }}>
-            <strong>Donación puntual</strong>
+            <strong>Donación puntual.</strong> Si no podéis comprometeros a
+            largo plazo y preferís hacer una aportación puntual, la ayuda
+            siempre es bienvenida. Tened por seguro que el 100% de vuestras
+            donaciones se invertirán en los proyectos en terreno.
           </li>
           <li style={{ marginBottom: "16px" }}>
-            Haz a tu <strong>empresa socia</strong> de OAN International
+            Haz a tu <strong>empresa socia</strong> de OAN International. Las
+            aportaciones periódicas nos permiten mantener un trabajo
+            ininterrumpido y perseguir objetivos a medio y largo plazo. Con esta
+            opción tu empresa formará parte activa del desarrollo de cada
+            proyecto. Además, nuestra proximidad a la comunidad y con el equipo
+            local garantiza que tu contribución se traduzca en un cambio real y
+            visible en la vida en Nikki.
           </li>
           <li style={{ marginBottom: "16px" }}>
-            Financia uno de nuestros proyectos directamente (completa o
-            parcialmente).
+            <strong>Financia uno de nuestros proyectos directamente</strong>{" "}
+            (completa o parcialmente). Si los valores de tu equipo o tu entidad
+            se encuentran especialmente alineados con alguno de nuestros
+            proyectos, puedes apoyar a la población de Nikki específicamente a
+            través de una de las áreas de actuación en las cuales OAN
+            International interviene junto a los agentes de cambio locales.
+            actuación en las cuales OAN International interviene junto a los
+            agentes de cambio locales.
           </li>
           <li style={{ marginBottom: "16px" }}>
             <strong>Regalos a clientes/empleados</strong>: para tener un detalle

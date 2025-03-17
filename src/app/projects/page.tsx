@@ -63,10 +63,6 @@ function ProjectsContent() {
       </section>
 
       {projectCategorySections}
-
-      <section id="objectives" className={styles.projectCategoriesSection}>
-        <TitleSection title="Objetivos 2025 por proyectos" />
-      </section>
     </main>
   );
 }
