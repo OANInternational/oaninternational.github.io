@@ -310,7 +310,7 @@ function AboutUsContent() {
           <p>
             Un año más tarde, en 2014, un grupo de 8 jóvenes fundan OAN
             International (Objetivo Analizar Nikki), la ONGD que somos hoy en
-            Nikki, una región de 1600.000 habitantes situada en una de las zonas
+            Nikki, una región de 170.000 habitantes situada en una de las zonas
             más rurales y con menos recursos del país.
           </p>
 

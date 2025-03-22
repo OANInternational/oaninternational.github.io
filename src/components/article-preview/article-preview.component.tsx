@@ -6,7 +6,7 @@ import Link from "next/link";
 export interface Article {
   title: string;
   imageUrl: string;
-  description: string;
+  description?: string;
   date: string;
   link: string;
 }
