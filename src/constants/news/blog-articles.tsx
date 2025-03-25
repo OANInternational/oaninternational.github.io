@@ -43,6 +43,133 @@ const sectionTitle: CSSProperties = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    id: "foro-voluntariado-benin",
+    imageUrl: "/oan-web-foro-nacional-blog-3.jpeg",
+    author: "Kader Madougou y traducido por Almudena Vázquez",
+    date: "25 de marzo 2025",
+    link: "/news/foro-voluntariado-benin",
+    title:
+      "OAN participa en el II Foro Nacional sobre el Voluntariado en Benín",
+    content: (
+      <div style={wrapper}>
+        <p>
+          Del 17 al 19 de marzo de 2025, la Agencia Nacional para el Empleo
+          (AnpE) celebró en Bohicon la segunda edición del Foro Nacional sobre
+          el Voluntariado. Este encuentro tuvo como principal objetivo reforzar
+          el papel del voluntariado dentro del tejido socio-profesional de
+          Benín.
+        </p>
+
+        <p>
+          Desde 2021, el gobierno beninés impulsa una ambiciosa reforma
+          destinada a mejorar la inserción laboral de la juventud y a fortalecer
+          la colaboración entre las entidades que trabajan por su futuro. En
+          este marco, la AnpE coordina los programas de voluntariado con el
+          apoyo de la Unión Africana y la CEDEAO.
+        </p>
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-foro-nacional-blog-4.jpeg"
+          alt="oan-international-foro-nacional-blog-4"
+        />
+
+        <p>
+          El foro de Bohicon formó parte de esta dinámica, destacando el
+          voluntariado como una herramienta clave para la empleabilidad y el
+          desarrollo comunitario. Durante el evento, se sensibilizó a jóvenes
+          sobre las oportunidades que ofrece el voluntariado: adquirir
+          competencias prácticas, ampliar su red profesional, mejorar su
+          empleabilidad y, al mismo tiempo, contribuir al desarrollo de sus
+          comunidades.
+        </p>
+
+        <p>
+          En definitiva, esta iniciativa busca promover el voluntariado como una
+          vía de inserción profesional para la juventud beninesa, reforzando su
+          compromiso ciudadano y su participación activa en el desarrollo
+          socioeconómico del país.
+        </p>
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-foro-nacional-blog-5.jpeg"
+          alt="oan-international-foro-nacional-blog-5"
+        />
+
+        <p>
+          Cabe destacar que este segundo Foro Nacional sobre el Voluntariado
+          reunió a 35 participantes provenientes de 11 de los 12 departamentos
+          de Benín. Los asistentes debatieron sobre temáticas clave para el
+          fortalecimiento de la Plataforma Nacional de Organizaciones de
+          Voluntariado e Intercambio de Jóvenes (PNOVEJ).
+        </p>
+
+        <p>
+          El foro brindó una oportunidad valiosa para que los actores del sector
+          compartieran enfoques innovadores que permitan integrar plenamente el
+          voluntariado en las estrategias de desarrollo e inserción profesional
+          del país.
+        </p>
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-foro-nacional-blog-6.jpeg"
+          alt="oan-international-foro-nacional-blog-6"
+        />
+
+        <p>
+          La participación de representantes de casi todo el territorio —con la
+          única excepción del departamento de Alibori— es muestra de la eficacia
+          de las acciones de sensibilización realizadas previamente.
+        </p>
+
+        <p>
+          En el foro participaron 24 organizaciones de la sociedad civil y 2
+          organizaciones internacionales de voluntariado, entre ellas France
+          Volontaires.
+        </p>
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-foro-nacional-blog-7.jpeg"
+          alt="oan-international-foro-nacional-blog-7"
+        />
+
+        <p>
+          Al término del encuentro, OAN fue elegida, junto a otras
+          organizaciones, como punto focal departamental de la Plataforma
+          Nacional de Organizaciones de Voluntariado e Intercambio de Jóvenes en
+          Benín (PNOVEJ BENÍN).
+        </p>
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-foro-nacional-blog-8.jpeg"
+          alt="oan-international-foro-nacional-blog-8"
+        />
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-foro-nacional-blog-9.jpeg"
+          alt="oan-international-foro-nacional-blog-9"
+        />
+      </div>
+    ),
+  },
+  {
     id: "magia-por-benin-2025",
     imageUrl: "/oan-web-magia-por-benin-2025.png",
     author: "Álvaro Pascual",
