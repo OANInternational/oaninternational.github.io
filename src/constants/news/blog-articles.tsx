@@ -43,6 +43,133 @@ const sectionTitle: CSSProperties = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    id: "entrevista-a-yasminatou-imorou",
+    imageUrl: "/people/yasminatou.jpeg",
+    author: "Selene Sanchez",
+    date: "21 de abril 2025",
+    link: "/news/entrevista-a-yasminatou-imorou",
+    title: "Entrevista a Yasminatou Imorou",
+    content: (
+      <div style={wrapper}>
+        <div style={interviewSection}>
+          <h2 style={sectionTitle}>Trabajar con OAN International</h2>
+          <p style={question}>
+            ¿Puedes hablarnos un poco de ti antes de conocer OAN?
+          </p>
+          <ul style={answerList}>
+            <li>Tu nombre: Yasminatou Imorou</li>
+            <li>¿De dónde eres? De Nikki.</li>
+            <li>
+              ¿A qué te dedicabas antes de unirte a OAN? Trabajé como
+              facilitadora en temas de agua, saneamiento e higiene (WASH) en
+              Pèrèrè.
+            </li>
+            <li>
+              ¿Qué formación has recibido? Formación Hidráulica y Saneamiento.
+            </li>
+            <li>
+              ¿Cómo imaginabas tu futuro en aquel momento? Me imaginaba con
+              mayor estabilidad financiera para realizar mis proyectos.
+            </li>
+          </ul>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>¿Qué es OAN Nikki?</p>
+          <p style={answer}>
+            OAN Nikki (Objetivo Analizar Nikki) es una organización que ayuda y
+            asiste a las comunidades para su empoderamiento y desarrollo.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>
+            ¿Qué te convenció para unirte al equipo de OAN Nikki?
+          </p>
+          <p style={answer}>
+            El deseo de contribuir al desarrollo de mi comunidad.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>
+            ¿Cuál es tu trabajo en OAN y qué ha supuesto para ti unirte al
+            equipo?
+          </p>
+          <p style={answer}>Estoy a cargo del proyecto ASEP-AGUAPP.</p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>
+            ¿Qué te motiva a seguir trabajando con OAN Nikki?
+          </p>
+          <p style={answer}>
+            Contribuir al desarrollo comunitario y tener un trabajo remunerado.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>¿Qué suele formar parte de tu rutina diaria?</p>
+          <p style={answer}>
+            Un día laboral consiste en estar en la oficina de 8:30h a 12:30h, y
+            a partir de las 15:00h hasta las 18:00h, registrarse en el libro de
+            asistencia, limpiar el asiento si es tu turno y comenzar las
+            actividades planeadas durante la semana.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <h2 style={sectionTitle}>
+            Desafíos y oportunidades de la cooperación para el desarrollo
+          </h2>
+          <p style={question}>
+            En tu opinión, ¿qué enfoque debería adoptar la cooperación
+            internacional para fomentar el desarrollo?
+          </p>
+          <p style={answer}>
+            La cooperación debe adoptar un enfoque de desarrollo sostenible.
+            Encontrar un equilibrio entre los aspectos financieros, ambientales
+            y sociales.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>
+            ¿Cómo describirías el desarrollo ideal para Nikki? / ¿Qué modelo de
+            desarrollo crees que quiere la población de Nikki?
+          </p>
+          <p style={answer}>
+            Creo que la población de Nikki desea un desarrollo sostenible, un
+            desarrollo a largo plazo.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <h2 style={sectionTitle}>
+            La vida en Nikki más allá de la cooperación para el desarrollo
+          </h2>
+          <p style={question}>
+            ¿A qué te dedicas cuando no estás en horario laboral?
+          </p>
+          <p style={answer}>Nada, el horario laboral no permite nada más.</p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>¿Has tenido algún referente en tu vida?</p>
+          <p style={answer}>Mi querida mamá.</p>
+        </div>
+
+        <Image
+          style={image}
+          width="100"
+          height="100"
+          src="/people/yasminatou.jpeg"
+          alt=""
+        />
+      </div>
+    ),
+  },
+  {
     id: "foro-voluntariado-benin",
     imageUrl: "/oan-web-foro-nacional-blog-3.jpeg",
     author: "Kader Madougou y traducido por Almudena Vázquez",
