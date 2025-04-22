@@ -47,6 +47,15 @@ function BecomePartnerContent() {
           <a
             target="_blank"
             rel="noopener noreferrer"
+            href="https://buy.stripe.com/4gwfZ7a8JdtjaycaEK"
+            className={styles.teamingButton}
+          >
+            Dona 20€ al mes
+          </a>
+
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://buy.stripe.com/28o4gp94FcpfbCg3ce"
             className={styles.teamingButtonPreferred}
           >

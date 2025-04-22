@@ -169,6 +169,15 @@ export default function SupportUs() {
           <a
             target="_blank"
             rel="noopener noreferrer"
+            href="https://buy.stripe.com/4gwfZ7a8JdtjaycaEK"
+            className={styles.teamingButton}
+          >
+            Dona 20€ al mes
+          </a>
+
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://buy.stripe.com/28o4gp94FcpfbCg3ce"
             className={styles.teamingButton}
           >
@@ -248,8 +257,6 @@ export default function SupportUs() {
             proyectos, puedes apoyar a la población de Nikki específicamente a
             través de una de las áreas de actuación en las cuales OAN
             International interviene junto a los agentes de cambio locales.
-            actuación en las cuales OAN International interviene junto a los
-            agentes de cambio locales.
           </li>
           <li style={{ marginBottom: "16px" }}>
             <strong>Regalos a clientes/empleados</strong>: para tener un detalle
