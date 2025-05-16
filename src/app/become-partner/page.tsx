@@ -66,6 +66,26 @@ function BecomePartnerContent() {
 
         <DonationButtons options={donationOptions} />
       </section>
+
+      <section id="free-trial" className={styles.freeTrialSection}>
+        <h2>Prueba Gratuita de 1 Mes</h2>
+        <p>
+          ¿Quieres conocer mejor OAN International antes de comprometerte?
+          ¡Únete como socio/a durante un mes de forma gratuita!
+        </p>
+        <div className={styles.formContainer}>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdEzozye97uAEvzSn7d0WZEuwCsWpjXFlYvMdDcSVJdUFKI2w/viewform?embedded=true"
+            width="640"
+            height="900"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          >
+            Cargando…
+          </iframe>
+        </div>
+      </section>
     </main>
   );
 }
