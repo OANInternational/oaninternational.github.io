@@ -1,3 +1,5 @@
+"use client";
+
 import TitleSection from "@/components/title-section/title-section.component";
 import styles from "./page.module.css";
 import Image from "next/image";
@@ -10,6 +12,7 @@ import { MdOutlineHealthAndSafety } from "react-icons/md";
 import CampaignPreview, {
   Campaign,
 } from "@/components/campaign-preview/campaign-preview.component";
+import DonationButtons from "@/components/donation-buttons/donation-buttons.component";
 
 export default function SupportUs() {
   const CAMPAIGNS: Campaign[] = [
@@ -33,6 +36,35 @@ export default function SupportUs() {
   const campaigns = CAMPAIGNS.map((campaign) => (
     <CampaignPreview key={campaign.name} campaign={campaign} />
   ));
+
+  const donationOptions = [
+    {
+      amount: 10,
+      url: "https://buy.stripe.com/8wMeV3ft30GxgWAcMN",
+      hoverText: "¡Tu pagas 2,5€ al mes!",
+    },
+    {
+      amount: 20,
+      url: "https://buy.stripe.com/4gwfZ7a8JdtjaycaEK",
+      hoverText: "¡Tu pagas 4€ al mes!",
+    },
+    {
+      amount: 25,
+      url: "https://buy.stripe.com/28o4gp94FcpfbCg3ce",
+      isPreferred: true,
+      hoverText: "¡Tu pagas 7€ al mes!",
+    },
+    {
+      amount: 50,
+      url: "https://buy.stripe.com/dR64gpft3cpfcGkeUX",
+      hoverText: "¡Tu pagas 22€ al mes!",
+    },
+    // {
+    //   amount: 100,
+    //   url: "https://buy.stripe.com/5kAbIR3KlfBrcGk7sw",
+    //   hoverText: "¡Tu pagas 51,7€ al mes!",
+    // },
+  ];
 
   return (
     <main>
@@ -156,52 +188,7 @@ export default function SupportUs() {
           </div>
         </div>
 
-        <div className={styles.donationButtons}>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://buy.stripe.com/8wMeV3ft30GxgWAcMN"
-            className={styles.teamingButton}
-          >
-            Dona 10€ al mes
-          </a>
-
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://buy.stripe.com/4gwfZ7a8JdtjaycaEK"
-            className={styles.teamingButton}
-          >
-            Dona 20€ al mes
-          </a>
-
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://buy.stripe.com/28o4gp94FcpfbCg3ce"
-            className={styles.teamingButton}
-          >
-            Dona 25€ al mes
-          </a>
-
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://buy.stripe.com/dR64gpft3cpfcGkeUX"
-            className={styles.teamingButton}
-          >
-            Dona 50€ al mes
-          </a>
-
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://buy.stripe.com/5kAbIR3KlfBrcGk7sw"
-            className={styles.teamingButton}
-          >
-            Dona 100€ al mes
-          </a>
-        </div>
+        <DonationButtons options={donationOptions} />
 
         <h2 className={styles.donationMethodTitle}>Teaming</h2>
         <p>¡En OAN International te lo ponemos fácil!</p>
