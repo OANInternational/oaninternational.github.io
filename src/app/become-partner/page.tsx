@@ -78,9 +78,9 @@ function BecomePartnerContent() {
             src="https://docs.google.com/forms/d/e/1FAIpQLSdEzozye97uAEvzSn7d0WZEuwCsWpjXFlYvMdDcSVJdUFKI2w/viewform?embedded=true"
             width="640"
             height="900"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
+            frameBorder="0"
+            marginHeight={0}
+            marginWidth={0}
           >
             Cargando…
           </iframe>
