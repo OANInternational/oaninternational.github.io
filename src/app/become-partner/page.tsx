@@ -8,10 +8,40 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import TitleSection from "@/components/title-section/title-section.component";
 import TitlePage from "@/components/title-page/title-page.component";
+import DonationButtons from "@/components/donation-buttons/donation-buttons.component";
 
 // Create a client component that uses useSearchParams
 function BecomePartnerContent() {
   const searchParams = useSearchParams();
+
+  const donationOptions = [
+    {
+      amount: 10,
+      url: "https://buy.stripe.com/8wMeV3ft30GxgWAcMN",
+      hoverText: "¡Tu pagas 2,5€ al mes!",
+    },
+    {
+      amount: 20,
+      url: "https://buy.stripe.com/4gwfZ7a8JdtjaycaEK",
+      hoverText: "¡Tu pagas 4€ al mes!",
+    },
+    {
+      amount: 25,
+      url: "https://buy.stripe.com/28o4gp94FcpfbCg3ce",
+      isPreferred: true,
+      hoverText: "¡Tu pagas 7€ al mes!",
+    },
+    {
+      amount: 50,
+      url: "https://buy.stripe.com/dR64gpft3cpfcGkeUX",
+      hoverText: "¡Tu pagas 22€ al mes!",
+    },
+    // {
+    //   amount: 100,
+    //   url: "https://buy.stripe.com/5kAbIR3KlfBrcGk7sw",
+    //   hoverText: "¡Tu pagas 51,7€ al mes!",
+    // },
+  ];
 
   // Use the scrollToSection utility on page load or URL change
   useEffect(() => {
@@ -34,51 +64,26 @@ function BecomePartnerContent() {
           la cuota que decidas y completar el breve formulario:
         </p>
 
-        <div className={styles.donationButtons}>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://buy.stripe.com/8wMeV3ft30GxgWAcMN"
-            className={styles.teamingButton}
-          >
-            Dona 10€ al mes
-          </a>
+        <DonationButtons options={donationOptions} />
+      </section>
 
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://buy.stripe.com/4gwfZ7a8JdtjaycaEK"
-            className={styles.teamingButton}
+      <section id="free-trial" className={styles.freeTrialSection}>
+        <h2>Prueba Gratuita de 1 Mes</h2>
+        <p>
+          ¿Quieres conocer mejor OAN International antes de comprometerte?
+          ¡Únete como socio/a durante un mes de forma gratuita!
+        </p>
+        <div className={styles.formContainer}>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdEzozye97uAEvzSn7d0WZEuwCsWpjXFlYvMdDcSVJdUFKI2w/viewform?embedded=true"
+            width="640"
+            height="900"
+            frameBorder="0"
+            marginHeight={0}
+            marginWidth={0}
           >
-            Dona 20€ al mes
-          </a>
-
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://buy.stripe.com/28o4gp94FcpfbCg3ce"
-            className={styles.teamingButtonPreferred}
-          >
-            Dona 25€ al mes
-          </a>
-
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://buy.stripe.com/dR64gpft3cpfcGkeUX"
-            className={styles.teamingButton}
-          >
-            Dona 50€ al mes
-          </a>
-
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://buy.stripe.com/5kAbIR3KlfBrcGk7sw"
-            className={styles.teamingButton}
-          >
-            Dona 100€ al mes
-          </a>
+            Cargando…
+          </iframe>
         </div>
       </section>
     </main>
