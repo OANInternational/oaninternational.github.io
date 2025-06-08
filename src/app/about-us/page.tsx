@@ -173,6 +173,10 @@ function AboutUsContent() {
       url: "documents/activity-memories/memoria-actividades-oan-2023.pdf",
       name: "Memoria de Actividades - 2023",
     },
+    {
+      url: "documents/activity-memories/memoria-actividades-oan-2024.pdf",
+      name: "Memoria de Actividades - 2024",
+    },
   ];
 
   const ECONOMIC_MEMORIES: File[] = [
@@ -215,6 +219,10 @@ function AboutUsContent() {
     {
       url: "documents/economic-memories/memoria-economica-oan-2023.pdf",
       name: "Memoria de Economica - 2023",
+    },
+    {
+      url: "documents/economic-memories/memoria-economica-oan-2024.pdf",
+      name: "Memoria de Economica - 2024",
     },
   ];
 
