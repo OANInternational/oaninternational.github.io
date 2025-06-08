@@ -75,7 +75,7 @@ function BecomePartnerContent() {
         </p>
         <div className={styles.formContainer}>
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdEzozye97uAEvzSn7d0WZEuwCsWpjXFlYvMdDcSVJdUFKI2w/viewform?embedded=true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdKR-TX8zy1D9XX_JWydKeiKiuVzp4YvuLxUZAm9XeNtdFZEQ/viewform?embedded=true"
             width="640"
             height="900"
             frameBorder="0"
