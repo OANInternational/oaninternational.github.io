@@ -7,6 +7,7 @@ import Card from "@/components/card/card.component";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { LiaPeopleCarrySolid, LiaUserFriendsSolid } from "react-icons/lia";
 import { GoChecklist } from "react-icons/go";
+import { FaUsers, FaHeart } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -52,8 +53,8 @@ export default function Home() {
 
       <section className={styles.secondSection}>
         <h2 className={styles.quote}>
-          “Un modelo de cooperación al desarrollo sostenible, responsable y
-          replicable”
+          &ldquo;Un modelo de cooperación al desarrollo sostenible, responsable
+          y replicable&rdquo;
         </h2>
 
         <div className={styles.cardWrapper}>
@@ -88,6 +89,68 @@ export default function Home() {
             description="por el presente de Nikki"
             icon={<LiaUserFriendsSolid size={70} />}
           ></Card>
+        </div>
+      </section>
+
+      <section className={styles.membershipSection}>
+        <div className={styles.membershipContainer}>
+          <div className={styles.membershipContent}>
+            <div className={styles.membershipText}>
+              <h2 className={styles.membershipTitle}>
+                ¡Únete a Nuestra Comunidad!
+              </h2>
+              <p className={styles.membershipDescription}>
+                Estamos muy cerca de alcanzar nuestro objetivo de{" "}
+                <span className={styles.membershipHighlight}>100 socios</span>{" "}
+                que nos permita consolidar nuestros proyectos en Nikki y
+                expandir nuestro impacto. ¡Solo faltan 11 personas más!
+              </p>
+
+              <div className={styles.progressContainer}>
+                <div className={styles.progressBar}>
+                  <div className={styles.progressFill}></div>
+                </div>
+                <div className={styles.progressText}>
+                  <span className={styles.currentMembers}>89</span>
+                  <span className={styles.separator}>/</span>
+                  <span className={styles.targetMembers}>100</span>
+                  <span className={styles.progressLabel}>socios</span>
+                </div>
+              </div>
+
+              <div className={styles.membershipButtons}>
+                <Link
+                  href="/become-partner"
+                  className={styles.membershipButton}
+                >
+                  <FaUsers size={20} />
+                  <span>¡Hazte Socio!</span>
+                </Link>
+                <Link
+                  href="/support-us"
+                  className={styles.membershipButtonSecondary}
+                >
+                  <FaHeart size={20} />
+                  <span>Otras formas de ayudar</span>
+                </Link>
+              </div>
+            </div>
+
+            <div className={styles.membershipImageContainer}>
+              <Image
+                className={styles.membershipImage}
+                src="/oan-web-023.jpg"
+                alt="OAN International community"
+                width={400}
+                height={300}
+              />
+              <div className={styles.membershipImageOverlay}>
+                <p className={styles.overlayText}>
+                  Tu apoyo hace la diferencia
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
