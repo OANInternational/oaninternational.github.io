@@ -9,6 +9,9 @@ import { LiaPeopleCarrySolid, LiaUserFriendsSolid } from "react-icons/lia";
 import { GoChecklist } from "react-icons/go";
 import { FaUsers, FaHeart } from "react-icons/fa";
 
+const currentMembers = 65;
+const targetMembers = 100;
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -103,7 +106,8 @@ export default function Home() {
                 Estamos muy cerca de alcanzar nuestro objetivo de{" "}
                 <span className={styles.membershipHighlight}>100 socios</span>{" "}
                 que nos permita consolidar nuestros proyectos en Nikki y
-                expandir nuestro impacto. ¡Solo faltan 11 personas más!
+                expandir nuestro impacto. ¡Solo faltan{" "}
+                {targetMembers - currentMembers} personas más!
               </p>
 
               <div className={styles.progressContainer}>
@@ -111,9 +115,11 @@ export default function Home() {
                   <div className={styles.progressFill}></div>
                 </div>
                 <div className={styles.progressText}>
-                  <span className={styles.currentMembers}>89</span>
+                  <span className={styles.currentMembers}>
+                    {currentMembers}
+                  </span>
                   <span className={styles.separator}>/</span>
-                  <span className={styles.targetMembers}>100</span>
+                  <span className={styles.targetMembers}>{targetMembers}</span>
                   <span className={styles.progressLabel}>socios</span>
                 </div>
               </div>
