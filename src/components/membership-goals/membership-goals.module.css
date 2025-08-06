@@ -1,0 +1,322 @@
+.membershipGoalsSection {
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #f8fdf6 0%, #eef8ec 100%);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2d5016;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.titleHighlight {
+  background: linear-gradient(135deg, #4a7c59, #2d5016);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.currentMembersDisplay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, #89e2e8, #b0e66b);
+  color: #2d3748;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 20px rgba(137, 226, 232, 0.4);
+  border: 3px solid #4a7c59;
+}
+
+.currentNumber {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.currentLabel {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.goalsContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.progressLine {
+  position: absolute;
+  left: 4.75rem;
+  top: 2rem;
+  bottom: 2rem;
+  width: 6px;
+  background: linear-gradient(to bottom, #89e2e8, #b0e66b, #ffc15e, #ffb3bd);
+  border-radius: 3px;
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.goalItem {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1rem;
+}
+
+.goalMemberCount {
+  min-width: 160px;
+  width: 160px;
+  text-align: center;
+  padding: 0.5rem 0.25rem;
+  border-radius: 40px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.goalBlue .goalMemberCount {
+  background: #89e2e8;
+  color: #2d3748;
+}
+
+.goalGreen .goalMemberCount {
+  background: #b0e66b;
+  color: #2d3748;
+}
+
+.goalOrange .goalMemberCount {
+  background: #ffc15e;
+  color: #2d3748;
+}
+
+.goalPink .goalMemberCount {
+  background: #ffb3bd;
+  color: #2d3748;
+}
+
+.goalCountPrefix,
+.goalCountSuffix,
+.goalCountAction {
+  font-size: 0.75rem;
+  opacity: 0.95;
+  font-weight: 600;
+}
+
+.goalCountNumber {
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.goalContent {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  min-height: 120px;
+}
+
+.goalBlue .goalContent {
+  background: #89e2e8;
+  color: #2d3748;
+}
+
+.goalGreen .goalContent {
+  background: #b0e66b;
+  color: #2d3748;
+}
+
+.goalOrange .goalContent {
+  background: #ffc15e;
+  color: #2d3748;
+}
+
+.goalPink .goalContent {
+  background: #ffb3bd;
+  color: #2d3748;
+}
+
+.goalContent:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.goalText {
+  flex: 1;
+}
+
+.goalTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.goalDescription {
+  line-height: 1.4;
+  font-size: 0.85rem;
+  opacity: 0.95;
+}
+
+.goalImageContainer {
+  flex-shrink: 0;
+}
+
+.goalImage {
+  width: 140px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.progressIndicator {
+  text-align: center;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.arrowDown {
+  font-size: 3rem;
+  color: #2d5016;
+  font-weight: bold;
+  animation: bounce 2s infinite;
+}
+
+.finalGoalText {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d5016;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  max-width: 600px;
+  line-height: 1.4;
+  box-shadow: 0 4px 20px rgba(45, 80, 22, 0.15);
+  border: 2px solid #4a7c59;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .currentMembersDisplay {
+    position: static;
+    margin: 0 auto 2rem;
+    width: fit-content;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .membershipGoalsSection {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .goalItem {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .goalMemberCount {
+    min-width: auto;
+    width: 140px;
+  }
+
+  .goalContent {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    min-height: 100px;
+  }
+
+  .progressLine {
+    display: none;
+  }
+
+  .goalsContainer {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .goalContent {
+    padding: 1.5rem;
+  }
+
+  .goalTitle {
+    font-size: 1.1rem;
+  }
+
+  .goalDescription {
+    font-size: 0.9rem;
+  }
+
+  .currentNumber {
+    font-size: 1.5rem;
+  }
+
+  .finalGoalText {
+    font-size: 1.1rem;
+    padding: 1.25rem 1.5rem;
+    max-width: 90%;
+  }
+  
+  .arrowDown {
+    font-size: 2.5rem;
+  }
+}

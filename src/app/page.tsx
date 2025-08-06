@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import styles from "./page.module.css";
 import Card from "@/components/card/card.component";
+import MembershipGoals from "@/components/membership-goals/membership-goals.component";
 
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { LiaPeopleCarrySolid, LiaUserFriendsSolid } from "react-icons/lia";
@@ -159,6 +160,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <MembershipGoals currentMembers={currentMembers} />
 
       <section className={styles.videoSection}>
         <iframe
