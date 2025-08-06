@@ -9,6 +9,7 @@ import styles from "./page.module.css";
 import TitleSection from "@/components/title-section/title-section.component";
 import TitlePage from "@/components/title-page/title-page.component";
 import DonationButtons from "@/components/donation-buttons/donation-buttons.component";
+import MembershipGoals from "@/components/membership-goals/membership-goals.component";
 
 // Create a client component that uses useSearchParams
 function BecomePartnerContent() {
@@ -66,6 +67,8 @@ function BecomePartnerContent() {
 
         <DonationButtons options={donationOptions} />
       </section>
+
+      <MembershipGoals />
 
       <section id="free-trial" className={styles.freeTrialSection}>
         <h2>Prueba Gratuita de 1 Mes</h2>
