@@ -43,6 +43,149 @@ const sectionTitle: CSSProperties = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    id: "entrevista-a-moussa-yacoubou",
+    imageUrl: "/people/moussa.jpeg",
+    author: "Selene Sanchez",
+    date: "5 de mayo 2025",
+    link: "/news/entrevista-a-moussa-yacoubou",
+    title: "Entrevista a Moussa Yacoubou",
+    content: (
+      <div style={wrapper}>
+        <div style={interviewSection}>
+          <h2 style={sectionTitle}>Trabajar con OAN International</h2>
+          <p style={question}>
+            ¿Puedes hablarnos un poco de ti antes de conocer OAN?
+          </p>
+          <ul style={answerList}>
+            <li>Tu nombre: Moussa Yacoubou</li>
+            <li>¿De dónde eres? Soy nativo de Nikki.</li>
+            <li>
+              ¿A qué te dedicabas antes de unirte a OAN? Realicé estudios de
+              campo basados en las necesidades de las organizaciones que me
+              contrataron y también fui distribuidor de productos tropicales.
+            </li>
+            <li>
+              ¿Qué formación has recibido? Recibí formación en geografía,
+              planificación y desarrollo del territorio.
+            </li>
+            <li>
+              ¿Cómo imaginabas tu futuro en aquel momento? En aquella época,
+              imaginaba ser un agente de una organización internacional.
+            </li>
+          </ul>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>¿Qué es OAN Nikki?</p>
+          <p style={answer}>
+            Es una organización comunitaria que trabaja con fines sociales en
+            beneficio de la comunidad de Nikki.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>
+            ¿Qué te convenció para unirte al equipo de OAN Nikki?
+          </p>
+          <p style={answer}>
+            Lo que me motivó fueron los viajes y la asistencia a las
+            comunidades.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>
+            ¿Cuál es tu trabajo en OAN y qué ha supuesto para ti unirte al
+            equipo?
+          </p>
+          <p style={answer}>
+            Dentro de la organización, soy responsable de los materiales de
+            servicio y, específicamente, soy responsable del proyecto de
+            reducción de la malnutrición y la mejora de la salud infantil
+            (PRéMASE).
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>
+            ¿Qué te motiva a seguir trabajando con OAN Nikki?
+          </p>
+          <p style={answer}>
+            El espíritu de equipo. Descubrir gente nueva. La protección social a
+            comunidades vulnerables y, sobre todo, la inocencia de los bebés a
+            los que asistimos.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>¿Qué suele formar parte de tu rutina diaria?</p>
+          <p style={answer}>
+            En un día laboral cualquiera, estoy de servicio desde las 8h de la
+            mañana hasta las 12h del medio día, y luego regreso a la oficina
+            para continuar desde las 15h hasta las 18h. El resto del día estoy
+            en casa con mi familia. Únicamente los fines de semana aprovecho
+            para hacer otras actividades personales.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <h2 style={sectionTitle}>
+            Desafíos y oportunidades de la cooperación para el desarrollo
+          </h2>
+          <p style={question}>
+            En tu opinión, ¿qué enfoque debería adoptar la cooperación
+            internacional para fomentar el desarrollo?
+          </p>
+          <p style={answer}>
+            En mi opinión, la mejor manera de promover el desarrollo es enseñar
+            a las comunidades aquello que ignoran, pero necesitan.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>
+            ¿Cómo describirías el desarrollo ideal para Nikki? / ¿Qué modelo de
+            desarrollo crees que quiere la población de Nikki?
+          </p>
+          <p style={answer}>
+            A través de un desarrollo puramente social y bien organizado, creo
+            que Nikki podrá lograr fácilmente otros tipos de desarrollo
+            económico y político.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <h2 style={sectionTitle}>
+            La vida en Nikki más allá de la cooperación para el desarrollo
+          </h2>
+          <p style={question}>
+            ¿A qué te dedicas cuando no estás en horario laboral?
+          </p>
+          <p style={answer}>
+            Fuera del trabajo, cultivo y también vendo algunos productos
+            tropicales.
+          </p>
+        </div>
+
+        <div style={interviewSection}>
+          <p style={question}>¿Has tenido algún referente en tu vida?</p>
+          <p style={answer}>
+            Por el momento no, porque nunca he pensado que me parezca a nadie.
+            Siempre he creído que cada persona está hecha de manera única.
+          </p>
+        </div>
+
+        <Image
+          style={image}
+          width="100"
+          height="100"
+          src="/people/moussa.jpeg"
+          alt=""
+        />
+      </div>
+    ),
+  },
+  {
     id: "entrevista-a-orou-donkore-sinagahoue",
     imageUrl: "/people/marc.jpeg",
     author: "Selene Sanchez",
