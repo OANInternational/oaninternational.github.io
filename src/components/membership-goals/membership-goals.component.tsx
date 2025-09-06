@@ -15,14 +15,14 @@ const membershipGoals: MembershipGoal[] = [
     title: "Prevenir la malnutrición de 1875 niños",
     description:
       "Evaluando el estado nutricional de 1875 niños de entre 6 y 59 meses de edad y así detectar casos de malnutrición moderada y severa.",
-    imageUrl: "/oan-web-017.jpg", // You may need to replace with actual image
+    imageUrl: "/oan-web-047.png",
     color: "blue",
   },
   {
     memberCount: 100,
     title: "Dar acceso a agua potable en más de 100 comunidades",
     description: "Revisado y gestionando 300 bombas de agua potable.",
-    imageUrl: "/oan-web-020.jpg", // You may need to replace with actual image
+    imageUrl: "/oan-web-045.jpg",
     color: "green",
   },
   {
@@ -30,7 +30,7 @@ const membershipGoals: MembershipGoal[] = [
     title: "Apoyar Nikarit, nuestra empresa social de karité",
     description:
       "Mejorando las condiciones de trabajo de 450 mujeres de cooperativas de recolección y transformación de manteca.",
-    imageUrl: "/oan-web-025.jpg", // You may need to replace with actual image
+    imageUrl: "/oan-web-025.jpg",
     color: "orange",
   },
   {
@@ -38,7 +38,7 @@ const membershipGoals: MembershipGoal[] = [
     title: "Desarrollar la recogida de residuos",
     description:
       "Apoyando la recogida de residuos de 550 hogares durante un mes.",
-    imageUrl: "/oan-web-031.jpg", // You may need to replace with actual image
+    imageUrl: "/oan-web-046.jpg",
     color: "pink",
   },
 ];
