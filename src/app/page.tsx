@@ -10,7 +10,7 @@ import { LiaPeopleCarrySolid, LiaUserFriendsSolid } from "react-icons/lia";
 import { GoChecklist } from "react-icons/go";
 import { FaUsers, FaHeart } from "react-icons/fa";
 
-const currentMembers = 65;
+const currentMembers = 71;
 const targetMembers = 100;
 
 export default function Home() {

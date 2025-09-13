@@ -5,7 +5,7 @@
   justify-content: center;
   gap: 40px;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(41, 118, 222, 0.8);
   color: var(--white);
 }
 
@@ -90,7 +90,7 @@
 }
 
 .membershipSection {
-  background: linear-gradient(135deg, var(--primary-background-color) 0%, var(--white) 100%);
+  background: linear-gradient(135deg, rgba(41, 118, 222, 0.1) 0%, rgba(204, 222, 39, 0.1) 100%);
   padding: 60px 20px;
   overflow: hidden;
   position: relative;
@@ -165,7 +165,7 @@
 .progressFill {
   height: 100%;
   width: 0%;
-  background-color: var(--primary-color);
+  background-color: var(--health-color);
   border-radius: 6px;
   animation: fillProgress 2s ease-in-out forwards;
 }
@@ -175,7 +175,7 @@
     width: 0%;
   }
   100% {
-    width: 65%;
+    width: 71%;
   }
 }
 
@@ -218,14 +218,14 @@
   align-items: center;
   gap: 12px;
   padding: 18px 30px;
-  background-color: var(--primary-color);
+  background-color: var(--health-color);
   color: var(--white);
   text-decoration: none;
   border-radius: 20px;
   font-weight: 600;
   font-size: 1.1rem;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 15px rgba(56, 70, 37, 0.2);
+  box-shadow: 0 4px 15px rgba(41, 118, 222, 0.2);
 }
 
 .membershipButton:hover {
@@ -251,7 +251,7 @@
 }
 
 .membershipButtonSecondary:hover {
-  background-color: var(--primary-color);
+  background-color: var(--health-color);
   color: var(--white);
   transform: translateY(-2px);
 }

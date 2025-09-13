@@ -48,7 +48,7 @@ interface MembershipGoalsProps {
 }
 
 export default function MembershipGoals({
-  currentMembers = 65,
+  currentMembers = 71,
 }: MembershipGoalsProps) {
   return (
     <section className={styles.membershipGoalsSection}>
