@@ -61,15 +61,15 @@ function AboutUsContent() {
       imageUrl: "/people/alfonso.jpg",
     },
     {
-      name: "Selene",
+      name: "Selene Sanchez",
       title: "Voluntaria",
       imageUrl: "/people/person-placeholder.svg",
     },
     {
-      name: "Laura",
+      name: "Laura Estrella",
       title: "Voluntaria",
       imageUrl: "/people/person-placeholder.svg",
-    }
+    },
     {
       name: "Eva Diaz",
       title: "Voluntaria",
