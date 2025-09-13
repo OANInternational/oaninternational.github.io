@@ -68,7 +68,7 @@ function AboutUsContent() {
     {
       name: "Laura Albaladejo",
       title: "Voluntaria",
-      imageUrl: "/people/person-placeholder.svg",
+      imageUrl: "/people/laura.jpeg",
     },
     {
       name: "Eva Diaz",
