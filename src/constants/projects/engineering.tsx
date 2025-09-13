@@ -30,6 +30,7 @@ export const ENGINEERING_PROJECTS: IProjectPreview[] = [
       </div>
     ),
     imageUrl: "/oan-web-031.jpg",
+    videoUrl: "https://www.youtube.com/embed/9lKR1aJTu1Y?si=8931l6GUk5D_qXLZ",
     url: "/documents/projects/asep.pdf",
   },
   {

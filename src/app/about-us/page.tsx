@@ -60,7 +60,16 @@ function AboutUsContent() {
       title: "Tecnología",
       imageUrl: "/people/alfonso.jpg",
     },
-
+    {
+      name: "Selene",
+      title: "Voluntaria",
+      imageUrl: "/people/person-placeholder.svg",
+    },
+    {
+      name: "Laura",
+      title: "Voluntaria",
+      imageUrl: "/people/person-placeholder.svg",
+    }
     {
       name: "Eva Diaz",
       title: "Voluntaria",
