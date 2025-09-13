@@ -66,7 +66,7 @@ function AboutUsContent() {
       imageUrl: "/people/person-placeholder.svg",
     },
     {
-      name: "Laura Estrella",
+      name: "Laura Albaladejo",
       title: "Voluntaria",
       imageUrl: "/people/person-placeholder.svg",
     },
