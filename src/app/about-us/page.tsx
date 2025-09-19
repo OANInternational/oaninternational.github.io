@@ -96,7 +96,7 @@ function AboutUsContent() {
     {
       name: "Kader Madougou",
       title: "Coordinador general",
-      imageUrl: "/people/kader.jpeg",
+      imageUrl: "/people/kader.jpg",
     },
     {
       name: "Mireille Gnammi",
@@ -116,7 +116,7 @@ function AboutUsContent() {
     {
       name: "Hafiz Djaouga",
       title: "",
-      imageUrl: "/people/hafiz.jpeg",
+      imageUrl: "/people/hafiz.jpg",
     },
     {
       name: "Waliou",
