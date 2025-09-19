@@ -66,9 +66,9 @@ function AboutUsContent() {
       imageUrl: "/people/person-placeholder.svg",
     },
     {
-      name: "Laura Estrella",
+      name: "Laura Albaladejo",
       title: "Voluntaria",
-      imageUrl: "/people/person-placeholder.svg",
+      imageUrl: "/people/laura.jpeg",
     },
     {
       name: "Eva Diaz",
@@ -96,7 +96,7 @@ function AboutUsContent() {
     {
       name: "Kader Madougou",
       title: "Coordinador general",
-      imageUrl: "/people/person-placeholder.svg",
+      imageUrl: "/people/kader.jpeg",
     },
     {
       name: "Mireille Gnammi",
@@ -116,7 +116,7 @@ function AboutUsContent() {
     {
       name: "Hafiz Djaouga",
       title: "",
-      imageUrl: "/people/person-placeholder.svg",
+      imageUrl: "/people/hafiz.jpeg",
     },
     {
       name: "Waliou",
@@ -141,7 +141,7 @@ function AboutUsContent() {
     {
       name: "Alimatou Soumaila",
       title: "",
-      imageUrl: "/people/person-placeholder.svg",
+      imageUrl: "/people/alima.jpeg",
     },
   ];
 
