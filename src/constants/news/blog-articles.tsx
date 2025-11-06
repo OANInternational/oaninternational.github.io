@@ -92,6 +92,125 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     ),
   },
   {
+    id: "premio-fundacion-prandi-2025",
+    imageUrl: "/oan-web-049.jpg",
+    author: "OAN International",
+    date: "18 de octubre 2025",
+    link: "/news/premio-fundacion-prandi-2025",
+    title:
+      "OAN International recibe el Premio Fundación Prandi por su proyecto de reducción de la malnutrición infantil en Nikki",
+    content: (
+      <div style={wrapper}>
+        <p>
+          El pasado 18 de octubre de 2025, en el marco del 39º Congreso Nacional
+          de la Sociedad Española de Pediatría Extrahospitalaria y Atención
+          Primaria (SEPEAP) celebrado en Sevilla, la Fundación Prandi de
+          Pediatría Extrahospitalaria otorgó su Premio Fundación Prandi, dotado
+          con 10.000 euros, a la ONG OAN International. El reconocimiento destaca
+          el trabajo de la organización por su proyecto de Reducción de la
+          Malnutrición Infantil en Nikki, una iniciativa que busca mejorar de
+          forma sostenible la salud y la nutrición de los niños en esta región del
+          norte de Benín.
+        </p>
+
+        <h2 style={sectionTitle}>
+          Un reconocimiento a la cooperación y la salud infantil
+        </h2>
+
+        <p>
+          El premio Fundación Prandi valora iniciativas que contribuyen de manera
+          tangible al bienestar de la infancia, tanto en España como a nivel
+          internacional. En esta ocasión, el jurado quiso reconocer el impacto del
+          trabajo de OAN International en el terreno de la cooperación sanitaria,
+          su enfoque basado en la colaboración con la comunidad local y su
+          compromiso con la investigación aplicada para la mejora de la salud
+          infantil.
+        </p>
+
+        <p>
+          Durante la entrega, los representantes de la Fundación destacaron que el
+          proyecto de Nikki &quot;refleja la esencia de la pediatría
+          extrahospitalaria: acompañar, educar y prevenir desde la cercanía, con
+          soluciones reales que nacen de la comunidad y se sostienen en el
+          tiempo&quot;.
+        </p>
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-049.jpg"
+          alt="Entrega del Premio Fundación Prandi a OAN International en el 39º Congreso Nacional de SEPEAP"
+        />
+
+        <h2 style={sectionTitle}>
+          OAN International: jóvenes al servicio de un desarrollo sostenible
+        </h2>
+
+        <p>
+          OAN International es una organización sin ánimo de lucro fundada por
+          jóvenes universitarios españoles en 2013. Su misión es crear un modelo
+          de cooperación internacional horizontal y sostenible, conectando la
+          investigación académica con la acción social sobre el terreno. Desde su
+          base en España, la ONG trabaja en Nikki (Benín) en proyectos que
+          abarcan la salud, la nutrición, el acceso al agua, la igualdad de género
+          y la educación.
+        </p>
+
+        <p>
+          El proyecto premiado por la Fundación Prandi aborda uno de los mayores
+          retos sanitarios de la región: la malnutrición infantil. A través de un
+          programa integral, OAN International promueve la educación alimentaria,
+          el seguimiento nutricional y el fortalecimiento de los servicios
+          sanitarios locales. Además, impulsa huertos comunitarios y formación
+          agrícola sostenible, con el objetivo de garantizar una mejora duradera en
+          la dieta infantil y en la economía familiar.
+        </p>
+
+        <h2 style={sectionTitle}>
+          La Fundación Prandi: compromiso con la salud más allá del hospital
+        </h2>
+
+        <p>
+          La Fundación Prandi de Pediatría Extrahospitalaria es una entidad sin
+          ánimo de lucro que centra su labor en mejorar la asistencia sanitaria y
+          las condiciones de vida de los niños. Su misión se materializa en la
+          formación de profesionales sanitarios, la promoción de la investigación
+          pediátrica y la colaboración en proyectos de acción social que beneficien
+          directamente a la infancia, especialmente a aquellos niños en riesgo de
+          exclusión social.
+        </p>
+
+        <p>
+          Con la entrega anual de este premio, la Fundación reafirma su compromiso
+          con la acción social y la salud infantil global, reconociendo el trabajo
+          de entidades que, como OAN International, transforman la realidad de
+          miles de niños mediante proyectos sostenibles e innovadores.
+        </p>
+
+        <h2 style={sectionTitle}>Un impulso para seguir creciendo</h2>
+
+        <p>
+          El Premio Fundación Prandi 2025 permitirá a OAN International reforzar su
+          labor en Nikki, ampliando la cobertura del programa y mejorando los
+          recursos destinados a la atención y seguimiento de los casos de
+          malnutrición. Desde la organización, sus representantes agradecieron el
+          reconocimiento, destacando que este apoyo &quot;supone un impulso para
+          seguir trabajando por un mundo donde ningún niño sufra las consecuencias
+          de la malnutrición&quot;.
+        </p>
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-050.jpg"
+          alt="39º Congreso Nacional de la Sociedad Española de Pediatría Extrahospitalaria y Atención Primaria en Sevilla"
+        />
+      </div>
+    ),
+  },
+  {
     id: "entrevista-a-moussa-yacoubou",
     imageUrl: "/people/moussa.jpeg",
     author: "Selene Sanchez",

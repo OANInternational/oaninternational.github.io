@@ -2,6 +2,13 @@ import { Article } from "@/components/article-preview/article-preview.component"
 
 export const PRESS_ARTICLES: Article[] = [
   {
+    title: `"Premio Ayuda Solidaria de la Fundación Prandi 2025 a un Proyecto para Reducir la Malnutrición y Mejorar la Salud Infantil en Benín"`,
+    imageUrl: "/logos/ogimage.jpg",
+    description: "",
+    date: "6 noviembre 2025",
+    link: "https://www.corresponsables.com/actualidad/premio-ayuda-solidaria-de-la-fundacion-prandi-2025-a-un-proyecto-para-reducir-la-malnutricion-y-mejorar-la-salud-infantil-en-benin/",
+  },
+  {
     title: `"Pozuelo entrega los Premios Iniciativa que reconocer el esfuerzo y el emprendimiento"`,
     imageUrl: "/logos/diario-de-pozuelo-logo.png",
     description: "",
