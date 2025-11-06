@@ -43,6 +43,55 @@ const sectionTitle: CSSProperties = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    id: "taller-plan-campana-karite-2026",
+    imageUrl: "/oan-web-048.jpg",
+    author: "OAN Nikki",
+    date: "5 de noviembre 2025",
+    link: "/news/taller-plan-campana-karite-2026",
+    title:
+      "OAN participa en el taller del plan de campaña 2026 para la manteca de karité",
+    content: (
+      <div style={wrapper}>
+        <p>
+          OAN Nikki ha participado en el taller para desarrollar el plan de
+          campaña de 2026 para el sector de la manteca de Karité en Benín.
+        </p>
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-048.jpg"
+          alt="Participantes del taller para desarrollar el plan de campaña 2026 para el sector de la manteca de karité en Atakora, Natitingou"
+        />
+
+        <p>
+          Nuestra participación fue llevada a cabo por Mireille como
+          Coordinadora del Proyecto Nikarit y por Kader como Presidente de OAN
+          Nikki. El taller, al que fuimos invitados por ATDA 3 (Agence
+          Territoriale de Développement Agricole pôle 3), fue una experiencia
+          única y enriquecedora. Participar en un verdadero intercambio de ideas
+          con actores clave del sector nos permitió estar en el centro de las
+          discusiones y decisiones que darán forma al futuro de un sector que
+          nos toca muy de cerca.
+        </p>
+
+        <p>
+          Desde 2014, OAN ha trabajado junto a las mujeres de nuestras
+          comunidades para promover la manteca de karité y empoderarlas
+          económicamente.
+        </p>
+
+        <p>
+          Saber que nuestras voces y contribuciones ahora se toman en cuenta al
+          mismo nivel que nuestro trabajo de campo nos motiva aún más a continuar
+          nuestros esfuerzos por el desarrollo económico y social de las mujeres
+          de Nikarit.
+        </p>
+      </div>
+    ),
+  },
+  {
     id: "entrevista-a-moussa-yacoubou",
     imageUrl: "/people/moussa.jpeg",
     author: "Selene Sanchez",
