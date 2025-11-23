@@ -60,8 +60,7 @@ function NewsContent() {
           <section id="blog" className={styles.latestEventsSection}>
             <TitleSection title="Próximos Eventos" />
 
-            <p>Ningún evento programado en este momento</p>
-            {/* {nextEvents} */}
+            {nextEvents}
           </section>
 
           <section id="blog" className={styles.blogSection}>
