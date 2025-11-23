@@ -9,6 +9,7 @@ export interface Event {
   description: string;
   date: string;
   price: string;
+  ticketUrl?: string;
 }
 
 export interface BlogEvent extends Event {
@@ -39,6 +40,17 @@ export default function EventPreview(props: { event: Event }) {
         <p className={styles.eventDate}>Fecha: {props.event.date}</p>
 
         <p className={styles.eventPrice}>Precio: {props.event.price}</p>
+
+        {props.event.ticketUrl ? (
+          <a
+            href={props.event.ticketUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.ticketButton}
+          >
+            Comprar entrada
+          </a>
+        ) : undefined}
       </div>
     </article>
   );
