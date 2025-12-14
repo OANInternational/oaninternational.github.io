@@ -1,8 +1,6 @@
 import Image from "next/image";
-
 import styles from "./event-preview.module.css";
-import Link from "next/link";
-
+import type { ReactElement } from "react";
 export interface Event {
   title: string;
   imageUrl: string;
@@ -14,7 +12,7 @@ export interface Event {
 
 export interface BlogEvent extends Event {
   id: string;
-  content: JSX.Element;
+  content:  ReactElement;
   author: string;
 }
 

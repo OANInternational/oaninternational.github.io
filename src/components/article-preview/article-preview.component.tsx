@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { ReactElement } from "react";
 
 import styles from "./article-preview.module.css";
 import Link from "next/link";
@@ -13,7 +14,7 @@ export interface Article {
 
 export interface BlogArticle extends Article {
   id: string;
-  content: JSX.Element;
+  content: ReactElement;
   author: string;
 }
 
