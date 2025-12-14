@@ -43,6 +43,188 @@ const sectionTitle: CSSProperties = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    id: "encuentro-anual-2025",
+    imageUrl: "/oan-web-052.jpg",
+    author: "Álvaro Pascual",
+    date: "14 de diciembre 2025",
+    link: "/news/encuentro-anual-2025",
+    title: "Encuentro anual 2025",
+    content: (
+      <div style={wrapper}>
+        <p>
+          El pasado 29 de noviembre de 2025, OAN International celebró su ya
+          tradicional Encuentro anual, un espacio pensado para reunir a todas las
+          personas que forman parte de este proyecto de transformación social.
+          Cerca de 100 asistentes se dieron cita para compartir una tarde llena de
+          emoción, aprendizaje y recuerdos, en la que la comunidad OAN volvió a
+          demostrar su fuerza y compromiso.
+        </p>
+
+        <p>
+          Hace ya 11 años, un grupo de jóvenes soñadores decidió unir su energía y
+          su esperanza para crear una organización capaz de generar impacto real en
+          Nikki (Benín). Hoy, más de una década después, OAN International ha
+          evolucionado gracias al esfuerzo colectivo, construyendo proyectos que
+          fomentan el desarrollo sostenible, el acceso a servicios básicos y la
+          autonomía de las comunidades locales.
+        </p>
+
+        <p>
+          El Encuentro Anual fue una oportunidad perfecta para mirar atrás, honrar
+          el camino recorrido y, sobre todo, celebrar los logros alcanzados junto a
+          quienes han hecho posible cada paso.
+        </p>
+
+        <p>
+          La jornada comenzó con una bienvenida a los que quisieron acompañarnos,
+          seguida de una presentación detallada sobre los avances de los proyectos
+          en Nikki durante el último año. Los asistentes pudieron conocer de primera
+          mano las novedades en áreas como salud, agua, educación y emprendimiento,
+          y acercarse más a la realidad cotidiana de la región gracias a historias
+          reales del equipo que ha estado en Nikki este 2025. También pudimos
+          conectarnos por videollamada con nuestros compañeros de Nikki que
+          saludaron a los amigos de OAN desde la distancia.
+        </p>
+
+        <p>
+          La tarde continuó con un espacio para conocer más los proyectos con los
+          puestos dedicados a cada uno de ellos en los que los asistentes pudieron
+          preguntar sobre sus inquietudes y conocer las herramientas que se
+          utilizan. Todo ello mientras se disfrutó de una deliciosa comida
+          senegalesa, acompañada de buena música
+        </p>
+
+        <p>
+          El Encuentro Anual 2025 no solo celebró lo conseguido, sino que también
+          abrió la puerta a los planes y retos de los próximos años. Con nuevas
+          ideas, equipos motivados y una comunidad más fuerte que nunca, OAN
+          International continúa trabajando para que cada proyecto tenga un impacto
+          duradero y transformador.
+        </p>
+
+        <p>
+          Una vez más, gracias a todas las personas que asistieron, colaboraron o
+          apoyaron el evento de alguna manera. OAN International es posible gracias
+          a vosotros.
+        </p>
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-052.jpg"
+          alt="Encuentro anual 2025"
+        />
+      </div>
+    ),
+  },
+  {
+    id: "25n-dia-internacional-eliminacion-violencia-mujer-2025",
+    imageUrl: "/oan-web-051.jpg",
+    author: "Álvaro Pascual",
+    date: "14 de diciembre 2025",
+    link: "/news/25n-dia-internacional-eliminacion-violencia-mujer-2025",
+    title:
+      "25N Día Internacional de la Eliminación de la Violencia contra la Mujer 2025",
+    content: (
+      <div style={wrapper}>
+        <h2 style={sectionTitle}>
+          Nikki se une contra la Violencia de Género: Así Conmemoró OAN
+          International el 25N en 2025
+        </h2>
+
+        <p>
+          El pasado 25 de noviembre de 2025, con motivo del Día Internacional de
+          la Eliminación de la Violencia contra la Mujer, el equipo de OAN
+          International en Nikki (Benín) organizó una jornada de reflexión y
+          diálogo comunitario centrada en la lucha contra las violencias basadas
+          en el género. Un año más, la organización reafirmó su compromiso con la
+          defensa de los derechos de las mujeres y con la prevención de todas las
+          formas de violencia que afectan a su bienestar y desarrollo.
+        </p>
+
+        <h2 style={sectionTitle}>
+          Una conmemoración sobria pero profundamente significativa
+        </h2>
+
+        <p>
+          A diferencia de ediciones anteriores, la conmemoración de este año se
+          desarrolló en un ambiente de mayor sobriedad, atendiendo al contexto
+          social de la comunidad. Sin embargo, la profundidad de las conversaciones
+          y la calidad de las contribuciones hicieron de esta jornada un momento
+          especialmente valioso para la construcción colectiva de soluciones.
+        </p>
+
+        <p>
+          OAN International reunió alrededor de una misma mesa a sabios y líderes
+          tradicionales, representantes de la sociedad civil, ciudadanos y
+          ciudadanas, líderes religiosos, así como a estructuras comunales y otras
+          ONGs presentes en la zona. Esta diversidad de voces permitió un análisis
+          amplio y participativo sobre las diversas manifestaciones de la violencia
+          de género en Nikki y sus alrededores.
+        </p>
+
+        <h2 style={sectionTitle}>
+          Presentación de avances y desafíos desde 2017
+        </h2>
+
+        <p>
+          Durante el encuentro, OAN International presentó sus logros y acciones
+          realizadas desde 2017 en la lucha contra este grave problema social. Se
+          compartieron experiencias de sensibilización, acompañamiento comunitario,
+          formación y trabajo conjunto con autoridades locales para promover
+          entornos más seguros para las mujeres y las niñas.
+        </p>
+
+        <p>
+          La organización también aprovechó la ocasión para exponer las dificultades
+          encontradas en la implementación de sus actividades: limitaciones de
+          recursos, barreras socio-culturales y desafíos estructurales que siguen
+          obstaculizando la protección efectiva de los derechos de las mujeres.
+        </p>
+
+        <h2 style={sectionTitle}>
+          Un espacio para la reflexión y la construcción conjunta
+        </h2>
+
+        <p>
+          Uno de los momentos más relevantes de la jornada fue el diálogo abierto
+          entre los distintos participantes. A partir de las experiencias
+          compartidas, se formularon propuestas de solución orientadas a mejorar la
+          prevención, el acompañamiento y la respuesta frente a la violencia basada
+          en el género.
+        </p>
+
+        <p>
+          Fruto de este intercambio, se elaboró y aprobó una hoja de ruta conjunta,
+          que guiará las próximas acciones y permitirá reforzar el trabajo
+          colaborativo entre organizaciones, líderes comunitarios y actores
+          institucionales.
+        </p>
+
+        <h2 style={sectionTitle}>
+          Compromiso renovado para un futuro sin violencia
+        </h2>
+
+        <p>
+          La lucha contra la violencia de género requiere perseverancia, trabajo
+          coordinado y la implicación activa de toda la comunidad. Con actividades
+          como la del 25N, OAN International reafirma su voluntad de seguir
+          construyendo espacios seguros y de promover una transformación social
+          duradera en Nikki.
+        </p>
+
+        <Image
+          style={image}
+          width="300"
+          height="300"
+          src="/oan-web-051.jpg"
+          alt="25N Día Internacional de la Eliminación de la Violencia contra la Mujer 2025"
+        />
+      </div>
+    ),
+  },
+  {
     id: "taller-plan-campana-karite-2026",
     imageUrl: "/oan-web-048.jpg",
     author: "OAN Nikki",
