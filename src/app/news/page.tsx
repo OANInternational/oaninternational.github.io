@@ -55,12 +55,13 @@ function NewsContent() {
         subTitle="Artículos, entrevistas y apariciones en los medios de OAN International"
       />
 
-      {NEXT_EVENTS.length > 0 && (
+       
         <div className={styles.newsWrapper}>
           <section id="blog" className={styles.latestEventsSection}>
             <TitleSection title="Próximos Eventos" />
 
-            {nextEvents}
+            <p>Ningún evento programado en este momento</p>
+            {/* {nextEvents} */}
           </section>
 
           <section id="blog" className={styles.blogSection}>
@@ -69,7 +70,7 @@ function NewsContent() {
             {blogArticles}
           </section>
         </div>
-      )}
+      
 
       {NEXT_EVENTS.length === 0 && (
         <section id="blog" className={styles.blogSection}>
