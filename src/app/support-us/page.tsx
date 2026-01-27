@@ -214,12 +214,31 @@ export default function SupportUs() {
       <section className={styles.donationSection} id="companies">
         <TitleSection title="Empresas" />
 
-        <p>
-          ¿Eres una empresa y quieres apoyar a proyectos como los de OAN
-          International? ¿Quieres dar un paso más en tu RSC siendo impulsor del
-          cambio en terreno? Las formas de ayudarnos son muchas, se trata de que
-          elijas la que mejor se ajuste a tu entidad:
-        </p>
+        <div className={styles.donationImageSection}>
+          <Image
+            src="/donation_business.jpeg"
+            alt=""
+            width={400}
+            height={250}
+          />
+
+          <div className={styles.donationTextSection}>
+            <p>
+              ¿Eres una empresa y quieres apoyar a proyectos como los de OAN
+              International? ¿Quieres dar un paso más en tu RSC siendo impulsor
+              del cambio en terreno?
+            </p>
+            <p>
+              A través de la realización de una donación periódica, podrás
+              colaborar en el día a día de los proyectos de manera directa y,
+              además, tu aportación desgrava en un 40%.
+            </p>
+            <p>
+              Las formas de ayudarnos son muchas, se trata de que elijas la que
+              mejor se ajuste a tu entidad:
+            </p>
+          </div>
+        </div>
 
         <ul style={{ marginLeft: "20px" }}>
           <li style={{ marginBottom: "16px" }}>
@@ -258,8 +277,16 @@ export default function SupportUs() {
           </li>
           <li style={{ marginBottom: "16px" }}>
             ¿Tenéis una <strong>propuesta</strong>? Si tienes nuevas ideas de
-            cómo apoyarnos, rellena el siguiente formulario y contacta
-            directamente con nosotros.
+            cómo apoyarnos, rellena el siguiente{" "}
+            <a
+              style={{ color: "var(--black)" }}
+              href="https://docs.google.com/forms/d/e/1FAIpQLSesVw6RZbW6-CHJUG90L9fmJpBq5PFAt4OFYtz_quIjLGOKSg/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              formulario
+            </a>{" "}
+            y contacta directamente con nosotros.
           </li>
         </ul>
 
