@@ -63,7 +63,7 @@ function AboutUsContent() {
     {
       name: "Selene Sanchez",
       title: "Voluntaria",
-      imageUrl: "/people/person-placeholder.svg",
+      imageUrl: "/people/selene.jpeg",
     },
     {
       name: "Laura Albaladejo",
