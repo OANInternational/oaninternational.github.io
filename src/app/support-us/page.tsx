@@ -16,11 +16,11 @@ import DonationButtons from "@/components/donation-buttons/donation-buttons.comp
 
 export default function SupportUs() {
   const CAMPAIGNS: Campaign[] = [
-    {
-      name: "Convocatoria PostMIR 2025",
-      icon: MdOutlineHealthAndSafety,
-      fileUrl: "documents/convocatoria-post-mir-2025.pdf",
-    },
+    // {
+    //   name: "Convocatoria PostMIR 2025",
+    //   icon: MdOutlineHealthAndSafety,
+    //   fileUrl: "documents/convocatoria-post-mir-2025.pdf",
+    // },
     {
       name: "Hermánate con un karité",
       icon: PiPottedPlantLight,
