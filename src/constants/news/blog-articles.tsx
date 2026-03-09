@@ -43,6 +43,112 @@ const sectionTitle: CSSProperties = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    id: "vii-jornada-voluntariado-cooperacion-sanitaria-2026",
+    imageUrl: "/oan-web-054.jpg",
+    author: "Sara Triquet",
+    date: "23 de febrero de 2026",
+    link: "/news/vii-jornada-voluntariado-cooperacion-sanitaria-2026",
+    title:
+      "VII Jornada de Voluntariado en Cooperación Internacional para Estudiantes de Profesiones Sanitarias",
+    content: (
+      <div style={wrapper}>
+        <p>
+          El pasado 23 de febrero de 2026 participamos en la VII Jornada de
+          Voluntariado en Cooperación Internacional para Estudiantes de
+          Profesiones Sanitarias, un evento al que hemos sido invitados los
+          últimos años, dirigida a complementar la formación académica con una
+          mirada comprometida y global de la salud.
+        </p>
+        <p>
+          La jornada tuvo lugar en la Sala de Sesiones del Servicio de Cuidados
+          Intensivos Pediátricos del Hospital MaternoInfantil Gregorio
+          Marañón, organizada por el Departamento de Salud Pública y
+          Maternoinfantil de la Universidad Complutense de Madrid.
+        </p>
+        <h2 style={sectionTitle}>
+          Un espacio para descubrir el voluntariado en cooperación
+        </h2>
+        <p>
+          Dirigida a estudiantes de Medicina, Enfermería y otras profesiones
+          sanitarias, la jornada tuvo como principales objetivos:
+        </p>
+        <ul style={answerList}>
+          <li>
+            Explicar las características del voluntariado en cooperación
+            internacional durante la etapa universitaria.
+          </li>
+          <li>
+            Informar sobre oportunidades concretas de participación en proyectos
+            de distintas ONG.
+          </li>
+          <li>
+            Mostrar experiencias reales de profesionales con trayectoria en el
+            terreno.
+          </li>
+          <li>
+            Inspirar una visión ética, responsable y comprometida del ejercicio
+            sanitario.
+          </li>
+        </ul>
+        <h2 style={sectionTitle}>
+          OAN International: compromiso y formación
+        </h2>
+        <p>
+          En representación de OAN International, Sara Triquet compartió la
+          misión y líneas de trabajo de la organización, destacando la
+          importancia de una cooperación estructurada, sostenible y centrada en
+          el fortalecimiento de los sistemas locales de salud, presentando
+          nuestro proyecto PreMaSe de lucha contra la malnutrición infantil.
+        </p>
+        <p>
+          Se abordaron aspectos clave para los estudiantes: preparación previa,
+          acompañamiento, responsabilidad ética y el valor del trabajo en equipo
+          interdisciplinar.
+        </p>
+        <h2 style={sectionTitle}>Experiencias que inspiran</h2>
+        <p>
+          El programa incluyó también la participación de diversas
+          organizaciones que trabajan en cooperación sanitaria y social:
+        </p>
+        <ul style={answerList}>
+          <li>
+            El proyecto Cirugía en Turkana, presentado por Carmen Hernández,
+            acercó la realidad quirúrgica en contextos de recursos limitados.
+          </li>
+          <li>
+            AISE, de la mano de Zahida Jiménez, expuso sus iniciativas y el
+            papel activo que pueden desempeñar los estudiantes.
+          </li>
+          <li>
+            Zerca y Lejos, representada por Laura Portela, compartió su
+            experiencia en cooperación en África Central.
+          </li>
+          <li>
+            Asociación Colaboración y Esfuerzo (ACOES), con Javier Urbano, puso
+            el foco en la educación y el desarrollo comunitario.
+          </li>
+          <li>
+            La Fundación Omar Mosquera, presentada por Maxwel Omar Mosquera,
+            destacó la importancia de la continuidad y el impacto a largo plazo
+            en los proyectos.
+          </li>
+        </ul>
+        <p>
+          Cada intervención permitió a los estudiantes conocer diferentes
+          modelos de cooperación: desde intervenciones quirúrgicas puntuales
+          hasta programas educativos y comunitarios sostenidos en el tiempo.
+        </p>
+        <p>
+          Desde OAN International agradecemos a la organización, a los
+          ponentes y a todos los estudiantes asistentes su entusiasmo y
+          compromiso. Seguimos trabajando para ofrecer espacios de formación y
+          reflexión que impulsen una cooperación sanitaria ética, profesional y
+          transformadora.
+        </p>
+      </div>
+    ),
+  },
+  {
     id: "encuentro-parakou-karite-2026",
     imageUrl: "/oan-web-053.jpg",
     author: "Mireille Gnammi",

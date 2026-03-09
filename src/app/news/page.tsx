@@ -57,11 +57,14 @@ function NewsContent() {
 
        
         <div className={styles.newsWrapper}>
-          <section id="blog" className={styles.latestEventsSection}>
+          <section id="events-upcoming" className={styles.latestEventsSection}>
             <TitleSection title="Próximos Eventos" />
 
-            <p>Ningún evento programado en este momento</p>
-            {/* {nextEvents} */}
+            {NEXT_EVENTS.length > 0 ? (
+              nextEvents
+            ) : (
+              <p>Ningún evento programado en este momento</p>
+            )}
           </section>
 
           <section id="blog" className={styles.blogSection}>
