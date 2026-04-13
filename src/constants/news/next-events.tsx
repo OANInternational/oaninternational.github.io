@@ -1,16 +1,16 @@
 import { Event } from "@/components/event-preview/event-preview.component";
 
 export const NEXT_EVENTS: Event[] = [
-  {
-    title: "Concierto Solidario OAN International",
-    imageUrl: "/oan-web-053.jpg",
-    description:
-      "Concierto en directo con FullStop en la Sala Moby Dick de Madrid. Una noche de música donde cada acorde apoya los proyectos de OAN International en Nikki (Benín): acceso al agua, autonomía de mujeres rurales y lucha contra la malnutrición infantil. Música con impacto, energía y buen ambiente.",
-    date: "18 de marzo de 2026, 19:30",
-    price: "Consultar en Eventbrite",
-    ticketUrl:
-      "https://www.eventbrite.es/e/entradas-concierto-solidario-oan-international-1983885441761",
-  },
+  // {
+  //   title: "Concierto Solidario OAN International",
+  //   imageUrl: "/oan-web-053.jpg",
+  //   description:
+  //     "Concierto en directo con FullStop en la Sala Moby Dick de Madrid. Una noche de música donde cada acorde apoya los proyectos de OAN International en Nikki (Benín): acceso al agua, autonomía de mujeres rurales y lucha contra la malnutrición infantil. Música con impacto, energía y buen ambiente.",
+  //   date: "18 de marzo de 2026, 19:30",
+  //   price: "Consultar en Eventbrite",
+  //   ticketUrl:
+  //     "https://www.eventbrite.es/e/entradas-concierto-solidario-oan-international-1983885441761",
+  // },
   // {
   //   title: "Las novedades de OAN International - 11º Aniversario",
   //   imageUrl: "/oan-web-043.jpg",

@@ -186,6 +186,10 @@ function AboutUsContent() {
       url: "documents/activity-memories/memoria-actividades-oan-2024.pdf",
       name: "Memoria de Actividades - 2024",
     },
+    {
+      url: "https://drive.google.com/file/d/16-rC4O8bwdya3z_kPHobWkawU42bVSGP/view?usp=sharing",
+      name: "Memoria de Actividades - 2025",
+    },
   ];
 
   const ECONOMIC_MEMORIES: File[] = [
