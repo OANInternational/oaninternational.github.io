@@ -68,7 +68,7 @@ function BecomePartnerContent() {
         <DonationButtons options={donationOptions} />
       </section>
 
-      <MembershipGoals currentMembers={71} />
+      <MembershipGoals currentMembers={84} />
 
       <section id="free-trial" className={styles.freeTrialSection}>
         <h2>Prueba Gratuita de 1 Mes</h2>
