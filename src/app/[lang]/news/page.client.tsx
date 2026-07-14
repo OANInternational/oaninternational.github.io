@@ -15,6 +15,10 @@ import { BLOG_ARTICLES } from "@/constants/news/blog-articles";
 import EventPreview from "@/components/event-preview/event-preview.component";
 import { NEXT_EVENTS } from "@/constants/news/next-events";
 import { Locale } from "@/i18n/config";
+import { Article } from "@/components/article-preview/article-preview.component";
+
+// Metadata of markdown-authored posts, passed from the server page.
+export type MarkdownPostSummary = Article & { id: string };
 
 interface NewsContentText {
   pageTitle: string;
@@ -53,7 +57,11 @@ const content: Record<Locale, NewsContentText> = {
 };
 
 // Create a client component that uses useSearchParams
-function NewsContent() {
+function NewsContent({
+  markdownPosts,
+}: {
+  markdownPosts: MarkdownPostSummary[];
+}) {
   const searchParams = useSearchParams();
   const { lang } = useParams<{ lang: Locale }>();
   const locale = lang;
@@ -77,9 +85,16 @@ function NewsContent() {
     <ArticlePreview key={article.title} article={article} locale={locale} />
   ));
 
-  const blogArticles = BLOG_ARTICLES[locale].map((article) => (
-    <ArticlePreview key={article.title} article={article} locale={locale} />
-  ));
+  // Markdown-authored posts (newest first) appear before the legacy in-code
+  // articles.
+  const blogArticles = [
+    ...markdownPosts.map((article) => (
+      <ArticlePreview key={article.id} article={article} locale={locale} />
+    )),
+    ...BLOG_ARTICLES[locale].map((article) => (
+      <ArticlePreview key={article.title} article={article} locale={locale} />
+    )),
+  ];
 
   const nextEvents = NEXT_EVENTS[locale].map((event) => (
     <EventPreview key={event.title} event={event} locale={locale} />
@@ -143,10 +158,14 @@ function NewsContent() {
 }
 
 // Main component that wraps the content with Suspense
-export default function News() {
+export default function News({
+  markdownPosts = [],
+}: {
+  markdownPosts?: MarkdownPostSummary[];
+}) {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <NewsContent />
+      <NewsContent markdownPosts={markdownPosts} />
     </Suspense>
   );
 }

@@ -1,16 +1,23 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 import TitlePage from "@/components/title-page/title-page.component";
 import styles from "./page.module.css";
 
 import { BLOG_ARTICLES } from "@/constants/news/blog-articles";
 import { isLocale, Locale, locales } from "@/i18n/config";
+import {
+  getMarkdownPost,
+  getMarkdownPostParams,
+} from "@/lib/blog-posts";
 
 export function generateStaticParams() {
-  return locales.flatMap((lang) =>
+  const jsxParams = locales.flatMap((lang) =>
     BLOG_ARTICLES[lang].map((a) => ({ lang, blogId: a.id }))
   );
+  return [...getMarkdownPostParams(locales), ...jsxParams];
 }
 
 export async function generateMetadata({
@@ -22,14 +29,14 @@ export async function generateMetadata({
   if (!isLocale(lang)) {
     return {};
   }
-  const article = BLOG_ARTICLES[lang].find((a) => a.id === blogId);
-  if (!article) {
-    return {};
+  const md = getMarkdownPost(lang, blogId);
+  if (md) {
+    return { title: md.title, description: md.description };
   }
-  return {
-    title: article.title,
-    description: article.description,
-  };
+  const article = BLOG_ARTICLES[lang].find((a) => a.id === blogId);
+  return article
+    ? { title: article.title, description: article.description }
+    : {};
 }
 
 export default async function BlogEntry({
@@ -42,6 +49,25 @@ export default async function BlogEntry({
     notFound();
   }
   const locale = lang as Locale;
+
+  // Markdown-authored posts take precedence; fall back to the legacy in-code
+  // (JSX) articles.
+  const md = getMarkdownPost(locale, blogId);
+  if (md) {
+    return (
+      <main>
+        <TitlePage
+          title={md.title}
+          backgroundImageUrl={md.imageUrl}
+          subTitle={md.date + " - " + md.author}
+        />
+        <section className={`${styles.articleSection} ${styles.markdownBody}`}>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{md.body}</ReactMarkdown>
+        </section>
+      </main>
+    );
+  }
+
   const article = BLOG_ARTICLES[locale].find((a) => a.id === blogId);
   if (!article) {
     notFound();

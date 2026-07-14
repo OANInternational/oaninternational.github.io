@@ -1,0 +1,60 @@
+# Sveltia CMS configuration (Decap-compatible).
+# Commits content to the deploy branch, which triggers the GitHub Pages build.
+backend:
+  name: github
+  repo: OANInternational/oaninternational.github.io
+  branch: main
+
+# Uploaded images go here and are referenced as /blog-images/<file>.
+media_folder: public/blog-images
+public_folder: /blog-images
+
+# Each post is stored as two files: <slug>.es.md and <slug>.en.md
+i18n:
+  structure: multiple_files
+  locales: [es, en]
+  default_locale: es
+
+collections:
+  - name: blog
+    label: "Blog / Actualidad"
+    label_singular: "Blog post"
+    folder: content/blog
+    create: true
+    i18n: true
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { label: "Title", name: title, widget: string, i18n: true }
+      - {
+          label: "Date",
+          name: date,
+          widget: datetime,
+          date_format: "YYYY-MM-DD",
+          time_format: false,
+          i18n: duplicate,
+        }
+      - {
+          label: "Author",
+          name: author,
+          widget: string,
+          default: "OAN International",
+          i18n: duplicate,
+        }
+      - { label: "Short description", name: description, widget: text, i18n: true }
+      - { label: "Cover image", name: image, widget: image, i18n: duplicate }
+      - { label: "Body", name: body, widget: markdown, i18n: true }
+
+  - name: settings
+    label: "Site settings"
+    files:
+      - name: members
+        label: "Members counter"
+        file: content/site.json
+        fields:
+          - label: "Members"
+            name: members
+            widget: object
+            fields:
+              - { label: "Current members", name: current, widget: number, value_type: int }
+              - { label: "Target members", name: target, widget: number, value_type: int }
