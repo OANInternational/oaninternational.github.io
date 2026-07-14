@@ -88,3 +88,15 @@ a {
     transform: rotate(0deg);
   }
 }
+
+/* Accessibility: visible keyboard focus for interactive elements */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 2px;
+  border-radius: 2px;
+}

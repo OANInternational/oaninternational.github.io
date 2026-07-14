@@ -1,8 +1,32 @@
+import type { Metadata } from "next";
 import TitlePage from "@/components/title-page/title-page.component";
 
 import styles from "./page.module.css";
 import { isLocale, Locale } from "@/i18n/config";
 import { notFound } from "next/navigation";
+
+const meta: Record<Locale, { title: string; description: string }> = {
+  es: {
+    title: "Aviso Legal",
+    description:
+      "Condiciones de uso, propiedad intelectual y política de privacidad de OAN International.",
+  },
+  en: {
+    title: "Legal Notice",
+    description:
+      "Terms of use, intellectual property and privacy policy of OAN International.",
+  },
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  if (!isLocale(lang)) return {};
+  return meta[lang];
+}
 
 interface LegalContent {
   title: string;

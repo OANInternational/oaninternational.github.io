@@ -5,6 +5,10 @@ export interface Dictionary {
   header: {
     becomePartner: string;
     languageLabel: Record<Locale, string>;
+    languageName: Record<Locale, string>;
+    openMenu: string;
+    closeMenu: string;
+    switchTo: string;
   };
   footer: {
     slogan: string;
@@ -49,6 +53,10 @@ const es: Dictionary = {
   header: {
     becomePartner: "Hazte Socio",
     languageLabel: { es: "ES", en: "EN" },
+    languageName: { es: "Español", en: "English" },
+    openMenu: "Abrir menú",
+    closeMenu: "Cerrar menú",
+    switchTo: "Cambiar a",
   },
   footer: {
     slogan: "¡Juntos por y con Nikki!",
@@ -94,6 +102,10 @@ const en: Dictionary = {
   header: {
     becomePartner: "Become a Member",
     languageLabel: { es: "ES", en: "EN" },
+    languageName: { es: "Español", en: "English" },
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
+    switchTo: "Switch to",
   },
   footer: {
     slogan: "Together for and with Nikki!",

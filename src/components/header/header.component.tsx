@@ -136,6 +136,8 @@ export default function Header({ locale }: { locale: Locale }) {
               code === locale ? styles.languageOptionActive : ""
             }`}
             onClick={() => switchLanguage(code)}
+            aria-label={`${dict.header.switchTo} ${dict.header.languageName[code]}`}
+            aria-current={code === locale ? "true" : undefined}
           >
             {dict.header.languageLabel[code]}
           </button>
@@ -185,6 +187,10 @@ export default function Header({ locale }: { locale: Locale }) {
         <button
           className={styles.menuMobile}
           onClick={() => setIsMobileNavBarOpen(!isMobileNavBarOpen)}
+          aria-label={
+            isMobileNavBarOpen ? dict.header.closeMenu : dict.header.openMenu
+          }
+          aria-expanded={isMobileNavBarOpen}
         >
           {!isMobileNavBarOpen ? (
             <AiOutlineMenu size={50} />

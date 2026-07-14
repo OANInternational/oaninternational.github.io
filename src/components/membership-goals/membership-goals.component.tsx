@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./membership-goals.module.css";
 import { Locale } from "@/i18n/config";
+import { MEMBERSHIP } from "@/constants/membership";
 
 interface MembershipGoal {
   memberCount: number;
@@ -117,7 +118,7 @@ interface MembershipGoalsProps {
 }
 
 export default function MembershipGoals({
-  currentMembers = 71,
+  currentMembers = MEMBERSHIP.current,
   locale,
 }: MembershipGoalsProps) {
   const goals = membershipGoals[locale];

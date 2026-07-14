@@ -1,8 +1,32 @@
+import type { Metadata } from "next";
 import TitlePage from "@/components/title-page/title-page.component";
 
 import styles from "./page.module.css";
 import { isLocale, Locale } from "@/i18n/config";
 import { notFound } from "next/navigation";
+
+const meta: Record<Locale, { title: string; description: string }> = {
+  es: {
+    title: "Política de Cookies",
+    description:
+      "Información sobre el uso de cookies en la web de OAN International.",
+  },
+  en: {
+    title: "Cookie Policy",
+    description:
+      "Information about how OAN International uses cookies on its website.",
+  },
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  if (!isLocale(lang)) return {};
+  return meta[lang];
+}
 
 const content: Record<
   Locale,

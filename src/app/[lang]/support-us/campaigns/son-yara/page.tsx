@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import TitleSection from "@/components/title-section/title-section.component";
@@ -5,6 +6,29 @@ import styles from "./page.module.css";
 import TitlePage from "@/components/title-page/title-page.component";
 import Image from "next/image";
 import { isLocale, Locale } from "@/i18n/config";
+
+const meta: Record<Locale, { title: string; description: string }> = {
+  es: {
+    title: "Son Yara",
+    description:
+      "Documental de OAN International sobre el trabajo de la mujer en Nikki y su papel en la comunidad.",
+  },
+  en: {
+    title: "Son Yara",
+    description:
+      "OAN International's documentary about women's work in Nikki and their role in the community.",
+  },
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  if (!isLocale(lang)) return {};
+  return meta[lang];
+}
 
 interface SonYaraContent {
   title: string;
