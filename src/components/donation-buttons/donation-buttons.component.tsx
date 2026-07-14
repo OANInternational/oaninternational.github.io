@@ -19,21 +19,16 @@ const DonationButtons = ({ options, locale }: DonationButtonsProps) => {
   const [showHoverText, setShowHoverText] = useState<number | null>(null);
 
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout;
-
-    if (hoveredButton !== null) {
-      timeoutId = setTimeout(() => {
-        setShowHoverText(hoveredButton);
-      }, 300);
-    } else {
-      setShowHoverText(null);
+    // Hiding on unhover is handled synchronously in onMouseLeave; the effect
+    // only schedules the delayed reveal so it doesn't setState synchronously.
+    if (hoveredButton === null) {
+      return;
     }
+    const timeoutId = setTimeout(() => {
+      setShowHoverText(hoveredButton);
+    }, 300);
 
-    return () => {
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-    };
+    return () => clearTimeout(timeoutId);
   }, [hoveredButton]);
 
   return (
@@ -50,7 +45,10 @@ const DonationButtons = ({ options, locale }: DonationButtonsProps) => {
               : styles.teamingButton
           } ${hoveredButton === option.amount ? styles.hovered : ""}`}
           onMouseEnter={() => setHoveredButton(option.amount)}
-          onMouseLeave={() => setHoveredButton(null)}
+          onMouseLeave={() => {
+            setHoveredButton(null);
+            setShowHoverText(null);
+          }}
         >
           <span
             className={`${styles.buttonText} ${

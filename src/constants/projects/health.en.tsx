@@ -1,18 +1,10 @@
 import { IProjectPreview } from "@/components/project-preview/project-preview.component";
-import Image from "next/image";
 import { CSSProperties } from "react";
 
 const wrapper: CSSProperties = {
   display: "flex",
   flexDirection: "column",
   gap: "20px",
-};
-
-const list: CSSProperties = {
-  marginLeft: "20px",
-  display: "flex",
-  flexDirection: "column",
-  gap: "10px",
 };
 
 export const HEALTH_PROJECTS_EN: IProjectPreview[] = [

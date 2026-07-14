@@ -13,13 +13,6 @@ const wrapper: CSSProperties = {
   gap: "20px",
 };
 
-const list: CSSProperties = {
-  marginLeft: "20px",
-  display: "flex",
-  flexDirection: "column",
-  gap: "10px",
-};
-
 export const PROJECT_CATEGORIES_ES: IProjectCategory[] = [
   {
     id: "woman",

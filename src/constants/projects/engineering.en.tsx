@@ -7,13 +7,6 @@ const wrapper: CSSProperties = {
   gap: "20px",
 };
 
-const list: CSSProperties = {
-  marginLeft: "20px",
-  display: "flex",
-  flexDirection: "column",
-  gap: "10px",
-};
-
 export const ENGINEERING_PROJECTS_EN: IProjectPreview[] = [
   {
     title: "ASEP",
