@@ -11,7 +11,6 @@ import TitlePage from "@/components/title-page/title-page.component";
 import { RADIO_ARTICLES } from "@/constants/news/radio-articles";
 import { CONGRESS_ARTICLES } from "@/constants/news/congress-articles";
 import { PRESS_ARTICLES } from "@/constants/news/press-articles";
-import { BLOG_ARTICLES } from "@/constants/news/blog-articles";
 import EventPreview from "@/components/event-preview/event-preview.component";
 import { NEXT_EVENTS } from "@/constants/news/next-events";
 import { Locale } from "@/i18n/config";
@@ -85,16 +84,10 @@ function NewsContent({
     <ArticlePreview key={article.title} article={article} locale={locale} />
   ));
 
-  // Markdown-authored posts (newest first) appear before the legacy in-code
-  // articles.
-  const blogArticles = [
-    ...markdownPosts.map((article) => (
-      <ArticlePreview key={article.id} article={article} locale={locale} />
-    )),
-    ...BLOG_ARTICLES[locale].map((article) => (
-      <ArticlePreview key={article.title} article={article} locale={locale} />
-    )),
-  ];
+  // All blog posts are markdown-authored (newest first).
+  const blogArticles = markdownPosts.map((article) => (
+    <ArticlePreview key={article.id} article={article} locale={locale} />
+  ));
 
   const nextEvents = NEXT_EVENTS[locale].map((event) => (
     <EventPreview key={event.title} event={event} locale={locale} />

@@ -1,0 +1,50 @@
+# Pages CMS configuration (https://pagescms.org).
+# Sign in at https://app.pagescms.org with GitHub, authorize this repo, then
+# edit content here. Changes are committed to the repo and deployed automatically.
+
+media:
+  input: public/blog-images
+  output: /blog-images
+
+content:
+  - name: blog_es
+    label: "Blog (Español)"
+    type: collection
+    path: content/blog/es
+    filename: "{primary}.md"
+    view:
+      fields: [title, date]
+    fields:
+      - { name: title, label: "Título", type: string }
+      - { name: date, label: "Fecha", type: date }
+      - { name: author, label: "Autor/a", type: string, default: "OAN International" }
+      - { name: description, label: "Descripción breve", type: text }
+      - { name: image, label: "Imagen de portada", type: image }
+      - { name: body, label: "Contenido", type: rich-text }
+
+  - name: blog_en
+    label: "Blog (English)"
+    type: collection
+    path: content/blog/en
+    filename: "{primary}.md"
+    view:
+      fields: [title, date]
+    fields:
+      - { name: title, label: "Title", type: string }
+      - { name: date, label: "Date", type: date }
+      - { name: author, label: "Author", type: string, default: "OAN International" }
+      - { name: description, label: "Short description", type: text }
+      - { name: image, label: "Cover image", type: image }
+      - { name: body, label: "Content", type: rich-text }
+
+  - name: members
+    label: "Members counter"
+    type: file
+    path: content/site.json
+    fields:
+      - name: members
+        label: "Members"
+        type: object
+        fields:
+          - { name: current, label: "Current members", type: number }
+          - { name: target, label: "Target members", type: number }

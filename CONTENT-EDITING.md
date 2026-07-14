@@ -1,55 +1,73 @@
 # Editing content (no code needed)
 
 Two things on the site can be edited without a developer: the **members
-counter** and the **blog posts**. There are two ways to do it — a direct one
-that works today, and a visual editor that needs a one-time setup.
+counter** and the **blog posts**. There are two ways to do it — a **visual
+editor** (easiest) and a **direct** method on GitHub.
 
 ---
 
 ## Quick reference
 
-| What | File(s) | Effect |
+| What | Where | Effect |
 | --- | --- | --- |
 | Members counter | `content/site.json` | Home hero, "Become a member", goals section |
-| Blog post | `content/blog/<slug>.es.md` and `<slug>.en.md` | `/es/news/<slug>` and `/en/news/<slug>` + the news list |
+| Blog post (Spanish) | `content/blog/es/<slug>.md` | `/es/news/<slug>` + the Spanish news list |
+| Blog post (English) | `content/blog/en/<slug>.md` | `/en/news/<slug>` + the English news list |
 | Post images | `public/blog-images/…` | Referenced in a post as `/blog-images/<file>` |
 
-Any change to these files is picked up by the automatic deploy — the site
-updates ~1–2 minutes after the change is saved.
+Any change is picked up by the automatic deploy — the site updates ~1–2 minutes
+after the change is saved.
 
 ---
 
-## Updating the members counter
+## Option A — Visual editor (Pages CMS) — recommended
 
-1. Open [`content/site.json`](content/site.json) on GitHub.
-2. Click the ✏️ (edit) button.
-3. Change the number(s):
+[Pages CMS](https://pagescms.org) is a free, hosted editor. There's **no server
+to run and no OAuth app to create** — you just sign in and authorize it.
+
+**One-time setup (once per person, done by someone with repo access):**
+
+1. Go to **https://app.pagescms.org** and click **Sign in with GitHub**.
+2. When prompted, **authorize the Pages CMS GitHub app** and give it access to
+   the **`oaninternational.github.io`** repository. (This is what lets the
+   editor save changes back to the site.)
+3. Open the repository in Pages CMS. You'll see three sections, defined by the
+   [`.pages.yml`](.pages.yml) file already in the repo:
+   - **Blog (Español)** and **Blog (English)** — the posts
+   - **Members counter** — the number
+
+**To add a blog post:**
+
+1. Write the post in Google Docs as usual. **File → Download → Markdown (.md)**.
+2. In Pages CMS, open **Blog (Español)** (or English) → **Add entry**.
+3. Fill in Title, Date, Author, a short Description, upload a Cover image, and
+   paste the post into the **Content** field.
+4. **Save.** Pages CMS commits it and the site redeploys.
+5. Repeat in the other language collection to publish the post in both
+   languages (use the **same slug/filename** so the two versions line up).
+
+**To update the members counter:** open **Members counter**, change the number,
+Save.
+
+---
+
+## Option B — Direct on GitHub (no setup, always works)
+
+### Members counter
+1. Open [`content/site.json`](content/site.json) on GitHub → ✏️ edit.
+2. Change the number(s), then **Commit changes**:
    ```json
-   {
-     "members": {
-       "current": 84,
-       "target": 100
-     }
-   }
+   { "members": { "current": 84, "target": 100 } }
    ```
-4. Click **Commit changes**. Done — the site redeploys automatically.
 
----
-
-## Adding a blog post (from Google Docs)
-
-Blog posts are **Markdown** files. Authors keep writing in Google Docs and
-export to Markdown:
-
-1. Write the post in Google Docs as usual.
-2. **File → Download → Markdown (.md)** (built into Google Docs).
-3. In GitHub, go to the `content/blog/` folder and **Add file → Create new
-   file** (or **Upload files**).
-4. Name the file `<slug>.es.md` for Spanish (e.g. `magia-por-benin.es.md`) and
-   add a second file `<slug>.en.md` for the English version. The `<slug>` is
-   the URL: `magia-por-benin.es.md` → `/es/news/magia-por-benin`.
-5. At the top of each file add this header (the "front matter"), then paste the
-   Markdown body from Google Docs below it:
+### Blog post
+1. Write in Google Docs → **File → Download → Markdown (.md)**.
+2. On GitHub, add the file under `content/blog/es/` (Spanish) and/or
+   `content/blog/en/` (English). Name it `<slug>.md` — the `<slug>` is the URL:
+   `content/blog/es/magia-por-benin.md` → `/es/news/magia-por-benin`. Use the
+   **same `<slug>`** in both language folders.
+3. At the top of each file add this header ("front matter"), then paste the
+   Markdown body below it:
    ```markdown
    ---
    title: "Your post title"
@@ -61,38 +79,17 @@ export to Markdown:
 
    Your post text in Markdown goes here…
    ```
-6. **Images:** upload them into `public/blog-images/` (Add file → Upload files),
-   then reference them in the post as `![description](/blog-images/your-image.jpg)`.
-7. Commit. The post appears in both the news list and at
-   `/es/news/<slug>` / `/en/news/<slug>` after the deploy.
-
-**Bilingual note:** a post only appears in a language if that language's file
-exists. You can publish `…es.md` first and add `…en.md` later — the site simply
-won't show an English version until the `.en.md` file is added.
-
-Existing older posts still live in the code (`src/constants/news/…`) and keep
-working; new posts should use the Markdown files above.
+4. **Images:** upload them into `public/blog-images/` and reference them as
+   `![description](/blog-images/your-image.jpg)`.
+5. Commit. The post appears at `/es/news/<slug>` / `/en/news/<slug>` and in the
+   news list after the deploy.
 
 ---
 
-## Optional: the visual editor (Sveltia CMS)
+## Notes
 
-A friendly admin UI lives at **`/admin`** on the site. It gives a form with
-side-by-side Spanish/English fields, an image uploader, and a Markdown editor,
-and commits the files for you — no GitHub knowledge needed.
-
-It needs **one one-time setup** by someone with repo admin access, because it
-has to be allowed to write to the repository on your behalf:
-
-1. Create a **GitHub OAuth App** (Settings → Developer settings → OAuth Apps):
-   - Homepage URL: `https://www.oaninternational.org`
-   - Authorization callback URL: use the Sveltia auth relay per its docs
-     (https://github.com/sveltia/sveltia-cms#readme).
-2. Connect that OAuth App to Sveltia (client ID) following the Sveltia CMS
-   setup guide.
-3. Visit `/admin`, sign in with GitHub, and edit.
-
-The configuration (`public/admin/config.yml`) is already in place — it defines
-the **Blog** collection (bilingual) and the **Members counter** field. Until
-the OAuth step above is done, use the direct GitHub method described in the
-sections above.
+- **Both languages:** a post appears in a language only if that language's file
+  exists. You can publish Spanish first and add the English version later.
+- **Ordering:** posts are shown newest-first, by the `date` field.
+- **Dates** must be `YYYY-MM-DD` in the front matter (the site formats them per
+  language automatically).
