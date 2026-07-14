@@ -1,9 +1,32 @@
+import type { Metadata } from "next";
 import TitlePage from "@/components/title-page/title-page.component";
 
 import styles from "./page.module.css";
 import TitleSection from "@/components/title-section/title-section.component";
 import { isLocale, Locale } from "@/i18n/config";
 import { notFound } from "next/navigation";
+
+const meta: Record<Locale, { title: string; description: string }> = {
+  es: {
+    title: "Contacto",
+    description:
+      "Ponte en contacto con OAN International a través de nuestro formulario.",
+  },
+  en: {
+    title: "Contact",
+    description: "Get in touch with OAN International through our contact form.",
+  },
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  if (!isLocale(lang)) return {};
+  return meta[lang];
+}
 
 const content: Record<
   Locale,

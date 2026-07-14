@@ -12,9 +12,10 @@ import { GoChecklist } from "react-icons/go";
 import { FaUsers, FaHeart } from "react-icons/fa";
 import { isLocale, Locale } from "@/i18n/config";
 import { notFound } from "next/navigation";
+import { MEMBERSHIP } from "@/constants/membership";
 
-const currentMembers = 80;
-const targetMembers = 100;
+const currentMembers = MEMBERSHIP.current;
+const targetMembers = MEMBERSHIP.target;
 
 interface HomeCard {
   subtitle: string;

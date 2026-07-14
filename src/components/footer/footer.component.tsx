@@ -43,6 +43,7 @@ export default function Footer({ locale }: { locale: Locale }) {
           <a
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Facebook"
             href="https://facebook.com/oaninternational"
           >
             <BsFacebook size={25} className={styles.link} />
@@ -51,6 +52,7 @@ export default function Footer({ locale }: { locale: Locale }) {
           <a
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Twitter / X"
             href="https://twitter.com/OAN_Int"
           >
             <BsTwitter size={25} className={styles.link} />
@@ -59,6 +61,7 @@ export default function Footer({ locale }: { locale: Locale }) {
           <a
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
             href="https://linkedin.com/company/10281709/"
           >
             <BsLinkedin size={25} className={styles.link} />
@@ -67,6 +70,7 @@ export default function Footer({ locale }: { locale: Locale }) {
           <a
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Instagram"
             href="https://instagram.com/oan.international"
           >
             <BsInstagram size={25} className={styles.link} />
