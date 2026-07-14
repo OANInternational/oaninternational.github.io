@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import styles from "./project-preview.module.css";
 import { ReactElement } from "react";
+import { Locale } from "@/i18n/config";
 
 export interface IProjectPreview {
   title: string;
@@ -12,7 +13,15 @@ export interface IProjectPreview {
   url: string;
 }
 
-export default function ProjectPreview(props: { project: IProjectPreview }) {
+const moreInfoLabel: Record<Locale, string> = {
+  es: "Más información sobre el proyecto",
+  en: "More about the project",
+};
+
+export default function ProjectPreview(props: {
+  project: IProjectPreview;
+  locale: Locale;
+}) {
   return (
     <div className={styles.projectSection}>
       {props.project.videoUrl && (
@@ -44,7 +53,7 @@ export default function ProjectPreview(props: { project: IProjectPreview }) {
             href={props.project.url}
             target="_blank"
           >
-            Mas información sobre el proyecto
+            {moreInfoLabel[props.locale]}
           </a>
         )}
       </div>

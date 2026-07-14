@@ -1,6 +1,7 @@
 import { IconType } from "react-icons";
 import styles from "./campaign-preview.module.css";
 import Link from "next/link";
+import { Locale } from "@/i18n/config";
 
 export interface Campaign {
   name: string;
@@ -10,7 +11,10 @@ export interface Campaign {
   fileUrl?: string;
 }
 
-export default function CampaignPreview(props: { campaign: Campaign }) {
+export default function CampaignPreview(props: {
+  campaign: Campaign;
+  locale: Locale;
+}) {
   return props.campaign.fileUrl ? (
     <a
       className={styles.noLink}
@@ -26,7 +30,9 @@ export default function CampaignPreview(props: { campaign: Campaign }) {
     <Link
       {...(props.campaign.link
         ? { href: props.campaign.link }
-        : { href: `support-us/campaigns/${props.campaign.url}` })}
+        : {
+            href: `/${props.locale}/support-us/campaigns/${props.campaign.url}`,
+          })}
       className={styles.noLink}
     >
       <div key={props.campaign.name} className={styles.campaignBox}>

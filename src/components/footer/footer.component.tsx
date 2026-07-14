@@ -3,23 +3,27 @@ import Image from "next/image";
 
 import styles from "./footer.module.css";
 import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { Locale } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
-export default function Footer() {
+export default function Footer({ locale }: { locale: Locale }) {
+  const dict = getDictionary(locale);
+
   return (
     <div className={styles.footer}>
       <div className={styles.legalColumn}>
-        <h2>¡Juntos por y con Nikki!</h2>
-        <p>​© 2020 OAN International</p>
+        <h2>{dict.footer.slogan}</h2>
+        <p>​{dict.footer.copyright}</p>
 
-        <p>Todos los derechos reservados</p>
+        <p>{dict.footer.rightsReserved}</p>
 
         <div className={styles.links}>
-          <Link href="/legal" className={styles.link}>
-            Aviso Legal
+          <Link href={`/${locale}/legal`} className={styles.link}>
+            {dict.footer.legalNotice}
           </Link>
           <p> | </p>
-          <Link href="/cookies" className={styles.link}>
-            Política de Cookies
+          <Link href={`/${locale}/cookies`} className={styles.link}>
+            {dict.footer.cookiePolicy}
           </Link>
         </div>
       </div>
@@ -32,7 +36,7 @@ export default function Footer() {
             className={styles.link}
             href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=6CQ9L2J38YVJL&source=url&ssrt=1698092206755"
           >
-            ¡DONA CON PAYPAL!
+            {dict.footer.donatePaypal}
           </a>
         </h2>
         <div className={styles.socialMediaWrapper}>
@@ -71,7 +75,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.emailColumn}>
-        <Link href="/">
+        <Link href={`/${locale}`}>
           <Image
             height={50}
             width={50}
@@ -80,7 +84,7 @@ export default function Footer() {
           />
         </Link>
         <p>
-          Tlf.{" "}
+          {dict.footer.phone}{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -91,7 +95,7 @@ export default function Footer() {
           </a>
         </p>
         <p className={styles.email}>
-          E-mail:{" "}
+          {dict.footer.email}{" "}
           <a
             className={styles.link}
             target="_blank"

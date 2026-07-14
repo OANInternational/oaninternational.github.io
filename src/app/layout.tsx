@@ -1,14 +1,15 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Header from "@/components/header/header.component";
-import Footer from "@/components/footer/footer.component";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { defaultLocale } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
+
+const dict = getDictionary(defaultLocale);
 
 export const metadata: Metadata = {
-  title: "OAN International",
+  title: dict.metadata.title,
   keywords: ["Nikki", "Benin", "ONG", "Nikarit"],
-  description:
-    "OAN International es una ONGD que tiene por objetivo la investigación de los recursos existentes y las vías de actuación para el desarrollo de la calidad de vida de la población beninesa de Nikki, así como la concienciación social de las desigualdades norte-sur que permitan generar un pensamiento crítico.",
+  description: dict.metadata.description,
 };
 
 export default function RootLayout({
@@ -17,12 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
-      <body>
-        <Header></Header>
-        {children}
-        <Footer></Footer>
-      </body>
+    <html lang={defaultLocale}>
+      <body>{children}</body>
       <GoogleAnalytics gaId="G-RQ406VZD1P" />
     </html>
   );
