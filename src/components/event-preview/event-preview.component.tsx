@@ -1,6 +1,27 @@
 import Image from "next/image";
 import styles from "./event-preview.module.css";
 import type { ReactElement } from "react";
+import { Locale } from "@/i18n/config";
+
+interface EventLabels {
+  date: string;
+  price: string;
+  buyTicket: string;
+}
+
+const labels: Record<Locale, EventLabels> = {
+  es: {
+    date: "Fecha",
+    price: "Precio",
+    buyTicket: "Comprar entrada",
+  },
+  en: {
+    date: "Date",
+    price: "Price",
+    buyTicket: "Buy ticket",
+  },
+};
+
 export interface Event {
   title: string;
   imageUrl: string;
@@ -16,7 +37,11 @@ export interface BlogEvent extends Event {
   author: string;
 }
 
-export default function EventPreview(props: { event: Event }) {
+export default function EventPreview(props: {
+  event: Event;
+  locale: Locale;
+}) {
+  const t = labels[props.locale];
   return (
     <article className={styles.eventSection}>
       <Image
@@ -35,9 +60,13 @@ export default function EventPreview(props: { event: Event }) {
           <p className={styles.eventDescription}>{props.event.description}</p>
         ) : undefined}
 
-        <p className={styles.eventDate}>Fecha: {props.event.date}</p>
+        <p className={styles.eventDate}>
+          {t.date}: {props.event.date}
+        </p>
 
-        <p className={styles.eventPrice}>Precio: {props.event.price}</p>
+        <p className={styles.eventPrice}>
+          {t.price}: {props.event.price}
+        </p>
 
         {props.event.ticketUrl ? (
           <a
@@ -46,7 +75,7 @@ export default function EventPreview(props: { event: Event }) {
             rel="noopener noreferrer"
             className={styles.ticketButton}
           >
-            Comprar entrada
+            {t.buyTicket}
           </a>
         ) : undefined}
       </div>

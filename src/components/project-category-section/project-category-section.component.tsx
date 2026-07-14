@@ -1,16 +1,14 @@
-import Image from "next/image";
-
 import styles from "./project-category-section.module.css";
 import ProjectPreview, {
   IProjectPreview,
 } from "../project-preview/project-preview.component";
-import { MutableRefObject, ReactElement } from "react";
+import { ReactElement } from "react";
+import { Locale } from "@/i18n/config";
 
 export interface IProjectCategory {
   id: string;
   title: string;
   icon: ReactElement;
-  url: string;
   description: ReactElement;
   backgroundColor: string;
   backgroundColorLight: string;
@@ -19,9 +17,14 @@ export interface IProjectCategory {
 
 export default function ProjectCategorySection(props: {
   projectCategory: IProjectCategory;
+  locale: Locale;
 }) {
   const projects = props.projectCategory.projects.map((project) => (
-    <ProjectPreview key={project.title} project={project} />
+    <ProjectPreview
+      key={project.title}
+      project={project}
+      locale={props.locale}
+    />
   ));
 
   const titleSectionStyle = {

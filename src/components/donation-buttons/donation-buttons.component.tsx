@@ -1,5 +1,6 @@
 import styles from "./donation-buttons.module.css";
 import { useState, useEffect } from "react";
+import { Locale } from "@/i18n/config";
 
 interface DonationOption {
   amount: number;
@@ -10,28 +11,24 @@ interface DonationOption {
 
 interface DonationButtonsProps {
   options: DonationOption[];
+  locale: Locale;
 }
 
-const DonationButtons = ({ options }: DonationButtonsProps) => {
+const DonationButtons = ({ options, locale }: DonationButtonsProps) => {
   const [hoveredButton, setHoveredButton] = useState<number | null>(null);
   const [showHoverText, setShowHoverText] = useState<number | null>(null);
 
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout;
-
-    if (hoveredButton !== null) {
-      timeoutId = setTimeout(() => {
-        setShowHoverText(hoveredButton);
-      }, 300);
-    } else {
-      setShowHoverText(null);
+    // Hiding on unhover is handled synchronously in onMouseLeave; the effect
+    // only schedules the delayed reveal so it doesn't setState synchronously.
+    if (hoveredButton === null) {
+      return;
     }
+    const timeoutId = setTimeout(() => {
+      setShowHoverText(hoveredButton);
+    }, 300);
 
-    return () => {
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-    };
+    return () => clearTimeout(timeoutId);
   }, [hoveredButton]);
 
   return (
@@ -48,7 +45,10 @@ const DonationButtons = ({ options }: DonationButtonsProps) => {
               : styles.teamingButton
           } ${hoveredButton === option.amount ? styles.hovered : ""}`}
           onMouseEnter={() => setHoveredButton(option.amount)}
-          onMouseLeave={() => setHoveredButton(null)}
+          onMouseLeave={() => {
+            setHoveredButton(null);
+            setShowHoverText(null);
+          }}
         >
           <span
             className={`${styles.buttonText} ${
@@ -56,8 +56,13 @@ const DonationButtons = ({ options }: DonationButtonsProps) => {
             }`}
           >
             {showHoverText === option.amount
-              ? option.hoverText || `¡Gracias por donar ${option.amount}€!`
-              : `Dona ${option.amount}€ al mes`}
+              ? option.hoverText ||
+                (locale === "en"
+                  ? `Thank you for donating ${option.amount}€!`
+                  : `¡Gracias por donar ${option.amount}€!`)
+              : locale === "en"
+                ? `Donate ${option.amount}€ per month`
+                : `Dona ${option.amount}€ al mes`}
           </span>
         </a>
       ))}

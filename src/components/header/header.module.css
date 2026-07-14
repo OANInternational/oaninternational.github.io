@@ -187,3 +187,42 @@
   }
 }
 
+.languageSwitcher {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+}
+
+.languageOption {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--primary-color);
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.languageOption:hover {
+  opacity: 1;
+}
+
+.languageOptionActive {
+  opacity: 1;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.languageSeparator {
+  color: var(--primary-color);
+}
+
+.mobileNavBar .languageSwitcher .languageOption,
+.mobileNavBar .languageSwitcher .languageSeparator {
+  color: var(--white);
+  font-size: xx-large;
+}
+

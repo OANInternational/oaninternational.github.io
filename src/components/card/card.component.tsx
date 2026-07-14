@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ReactNode } from "react";
 
 import styles from "./card.module.css";
 import Link from "next/link";
@@ -7,7 +7,7 @@ export default function Card(props: {
   title: string;
   subtitle: string;
   description: string;
-  icon: any;
+  icon: ReactNode;
   url: string;
 }) {
   return (

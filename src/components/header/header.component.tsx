@@ -9,10 +9,16 @@ import { MAIN_MENU_ITEMS, SubMenuItem } from "@/app/constants";
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { scrollToSection } from "@/utils/scrollToSection";
+import { Locale, locales } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
-export default function Header() {
+export default function Header({ locale }: { locale: Locale }) {
   const router = useRouter();
   const pathname = usePathname();
+  const dict = getDictionary(locale);
+
+  // Prefix a locale-agnostic path from the menu config with the active locale.
+  const localized = (path: string) => `/${locale}${path}`;
 
   // Handle submenu item click
   const handleSubMenuClick = (
@@ -21,10 +27,10 @@ export default function Header() {
     parentPath: string
   ) => {
     // If we're already on the same page, prevent default navigation and manually handle scrolling
-    if (pathname === parentPath) {
+    if (pathname === localized(parentPath)) {
       e.preventDefault();
       // Update URL without triggering navigation
-      window.history.pushState({}, "", subItem.path);
+      window.history.pushState({}, "", localized(subItem.path));
       // Directly call scrollToSection with the section
       if (subItem.section) {
         scrollToSection(subItem.section);
@@ -35,26 +41,26 @@ export default function Header() {
   };
 
   const menuItems = MAIN_MENU_ITEMS.map((menuItem) => (
-    <div className={styles.menuItemWrapper} key={menuItem.label}>
+    <div className={styles.menuItemWrapper} key={menuItem.key}>
       <Link
         className={styles.label}
-        href={menuItem.path}
+        href={localized(menuItem.path)}
         onClick={() => {
           setIsMobileNavBarOpen(false);
         }}
       >
-        {menuItem.label}
+        {dict.nav[menuItem.key]}
       </Link>
       {menuItem.subItems && menuItem.subItems.length > 0 && (
         <div className={styles.submenu}>
           {menuItem.subItems.map((subItem) => (
             <Link
               className={styles.submenuItem}
-              key={subItem.label}
-              href={subItem.path}
+              key={subItem.key}
+              href={localized(subItem.path)}
               onClick={(e) => handleSubMenuClick(e, subItem, menuItem.path)}
             >
-              {subItem.label}
+              {dict.nav[subItem.key]}
             </Link>
           ))}
         </div>
@@ -66,13 +72,13 @@ export default function Header() {
   const mobileMenuItems = MAIN_MENU_ITEMS.map((menuItem) => (
     <Link
       className={styles.label}
-      key={menuItem.label}
-      href={menuItem.path}
+      key={menuItem.key}
+      href={localized(menuItem.path)}
       onClick={() => {
         setIsMobileNavBarOpen(false);
       }}
     >
-      {menuItem.label}
+      {dict.nav[menuItem.key]}
     </Link>
   ));
 
@@ -85,6 +91,18 @@ export default function Header() {
     } else if (window.scrollY < 10) {
       setScrolled(false);
     }
+  };
+
+  // Switch the active language by swapping the first path segment, preserving
+  // the current section query (usePathname strips it).
+  const switchLanguage = (target: Locale) => {
+    if (target === locale) {
+      return;
+    }
+    const search = typeof window !== "undefined" ? window.location.search : "";
+    const nextPath = pathname.replace(/^\/(es|en)/, `/${target}`);
+    router.push(nextPath + search);
+    setIsMobileNavBarOpen(false);
   };
 
   // Listen for URL changes from browser navigation (back/forward)
@@ -107,6 +125,27 @@ export default function Header() {
     };
   }, []);
 
+  const languageSwitcher = (
+    <div className={styles.languageSwitcher}>
+      {locales.map((code, index) => (
+        <span key={code}>
+          {index > 0 && <span className={styles.languageSeparator}> | </span>}
+          <button
+            type="button"
+            className={`${styles.languageOption} ${
+              code === locale ? styles.languageOptionActive : ""
+            }`}
+            onClick={() => switchLanguage(code)}
+            aria-label={`${dict.header.switchTo} ${dict.header.languageName[code]}`}
+            aria-current={code === locale ? "true" : undefined}
+          >
+            {dict.header.languageLabel[code]}
+          </button>
+        </span>
+      ))}
+    </div>
+  );
+
   return (
     <div
       className={`${styles.toolbarWrapper} ${
@@ -118,7 +157,7 @@ export default function Header() {
           isScrolled ? styles.toolbarScrolled : ""
         }`}
       >
-        <Link href={"/"}>
+        <Link href={`/${locale}`}>
           <Image
             className={styles.logo}
             src="/oan-logo.svg"
@@ -134,19 +173,24 @@ export default function Header() {
         <div className={styles.menuItems}>
           <Link
             className={`${styles.label} ${styles.becomePartnerButton}`}
-            key={"Hazte Socio"}
-            href={"/become-partner"}
+            key={"become-partner"}
+            href={`/${locale}/become-partner`}
             onClick={() => {
               setIsMobileNavBarOpen(false);
             }}
           >
-            Hazte Socio
+            {dict.header.becomePartner}
           </Link>
+          {languageSwitcher}
         </div>
 
         <button
           className={styles.menuMobile}
           onClick={() => setIsMobileNavBarOpen(!isMobileNavBarOpen)}
+          aria-label={
+            isMobileNavBarOpen ? dict.header.closeMenu : dict.header.openMenu
+          }
+          aria-expanded={isMobileNavBarOpen}
         >
           {!isMobileNavBarOpen ? (
             <AiOutlineMenu size={50} />
@@ -166,6 +210,7 @@ export default function Header() {
         }`}
       >
         {mobileMenuItems}
+        {languageSwitcher}
       </div>
     </div>
   );
