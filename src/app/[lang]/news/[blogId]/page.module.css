@@ -8,3 +8,39 @@
     max-width: var(--max-width-size);
     margin: auto;
 }
+
+/* Styling for posts rendered from markdown */
+.markdownBody :global(h2),
+.markdownBody :global(h3) {
+    margin-top: 1rem;
+}
+
+.markdownBody :global(p) {
+    line-height: 1.6;
+}
+
+.markdownBody :global(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.markdownBody :global(ul),
+.markdownBody :global(ol) {
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.markdownBody :global(a) {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.markdownBody :global(blockquote) {
+    border-left: 4px solid var(--primary-color);
+    margin: 0;
+    padding-left: 1rem;
+    font-style: italic;
+}
