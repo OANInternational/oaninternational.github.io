@@ -3,6 +3,7 @@ import type { ReactElement } from "react";
 
 import styles from "./article-preview.module.css";
 import Link from "next/link";
+import { Locale } from "@/i18n/config";
 
 export interface Article {
   title: string;
@@ -18,10 +19,17 @@ export interface BlogArticle extends Article {
   author: string;
 }
 
-export default function ArticlePreview(props: { article: Article }) {
+export default function ArticlePreview(props: {
+  article: Article;
+  locale: Locale;
+}) {
+  const href = props.article.link.startsWith("/")
+    ? `/${props.locale}${props.article.link}`
+    : props.article.link;
+
   return (
     <article className={styles.articleSection}>
-      <Link href={props.article.link}>
+      <Link href={href}>
         <Image
           className={styles.articleImage}
           src={props.article.imageUrl}
@@ -33,7 +41,7 @@ export default function ArticlePreview(props: { article: Article }) {
       </Link>
 
       <div className={styles.textWrapper}>
-        <Link href={props.article.link}>
+        <Link href={href}>
           <h1 className={styles.articleTitle}>{props.article.title}</h1>
         </Link>
 

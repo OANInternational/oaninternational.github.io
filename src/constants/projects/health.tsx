@@ -1,47 +1,9 @@
 import { IProjectPreview } from "@/components/project-preview/project-preview.component";
-import Image from "next/image";
-import { CSSProperties } from "react";
+import { Locale } from "@/i18n/config";
+import { HEALTH_PROJECTS_ES } from "./health.es";
+import { HEALTH_PROJECTS_EN } from "./health.en";
 
-const wrapper: CSSProperties = {
-  display: "flex",
-  flexDirection: "column",
-  gap: "20px",
+export const HEALTH_PROJECTS: Record<Locale, IProjectPreview[]> = {
+  es: HEALTH_PROJECTS_ES,
+  en: HEALTH_PROJECTS_EN,
 };
-
-const list: CSSProperties = {
-  marginLeft: "20px",
-  display: "flex",
-  flexDirection: "column",
-  gap: "10px",
-};
-
-export const HEALTH_PROJECTS: IProjectPreview[] = [
-  {
-    title: `PReMASE (Proyecto de reducción de la malnutrición y mejora de la salud infantil)`,
-    imageUrl: "/oan-web-032.jpg",
-    summary: (
-      <div style={wrapper}>
-        <p>
-          Este proyecto tiene como objetivo{" "}
-          <b>mejorar el estado de salud nutricional de los niños</b> del área
-          rural de Nikki mediante el fortalecimiento de las capacidades
-          familiares y comunitarias. Para la <b>detección y el tratamiento</b>{" "}
-          de la desnutrición infantil, se llevan a cabo evaluaciones
-          nutricionales periódicas en los pueblos de intervención y se realizan
-          derivaciones a los servicios de salud necesarios, realizando un
-          seguimiento de los casos. Para trabajar la <b>prevencion</b> se
-          realizan sesiones de sensibilizacion comunitaria y se refuerzan las
-          capacidades de personas líderes encargadas de velar por la nutrición
-          en cada pueblo.
-        </p>
-
-        <p>
-          Para la ejecución de este proyecto, OAN International ha colaborado
-          con el Colegio de Enfermería de Cantabria (España), que aporta apoyo
-          económico y técnico para el desarrollo de las actividades.
-        </p>
-      </div>
-    ),
-    url: "/documents/projects/proyecto-nutricion.pdf",
-  },
-];

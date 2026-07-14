@@ -1,5 +1,6 @@
 import styles from "./donation-buttons.module.css";
 import { useState, useEffect } from "react";
+import { Locale } from "@/i18n/config";
 
 interface DonationOption {
   amount: number;
@@ -10,9 +11,10 @@ interface DonationOption {
 
 interface DonationButtonsProps {
   options: DonationOption[];
+  locale: Locale;
 }
 
-const DonationButtons = ({ options }: DonationButtonsProps) => {
+const DonationButtons = ({ options, locale }: DonationButtonsProps) => {
   const [hoveredButton, setHoveredButton] = useState<number | null>(null);
   const [showHoverText, setShowHoverText] = useState<number | null>(null);
 
@@ -56,8 +58,13 @@ const DonationButtons = ({ options }: DonationButtonsProps) => {
             }`}
           >
             {showHoverText === option.amount
-              ? option.hoverText || `¡Gracias por donar ${option.amount}€!`
-              : `Dona ${option.amount}€ al mes`}
+              ? option.hoverText ||
+                (locale === "en"
+                  ? `Thank you for donating ${option.amount}€!`
+                  : `¡Gracias por donar ${option.amount}€!`)
+              : locale === "en"
+                ? `Donate ${option.amount}€ per month`
+                : `Dona ${option.amount}€ al mes`}
           </span>
         </a>
       ))}
