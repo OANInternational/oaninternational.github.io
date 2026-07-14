@@ -9,10 +9,10 @@ const dict = getDictionary(defaultLocale);
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: {
-    default: dict.metadata.title,
-    template: `%s | ${dict.metadata.title}`,
-  },
+  // Plain title only: the "%s | OAN International" template lives in the
+  // [lang] layout. Defining a template here too would wrap the [lang] default
+  // title, producing "OAN International | OAN International" on the home page.
+  title: dict.metadata.title,
   keywords: ["Nikki", "Benin", "ONG", "NGO", "Nikarit", "OAN International"],
   description: dict.metadata.description,
   openGraph: {
