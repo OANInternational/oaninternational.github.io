@@ -7,7 +7,7 @@
     "build": "next build",
     "postbuild": "node scripts/fix-html-lang.mjs",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@next/third-parties": "^16.2.10",

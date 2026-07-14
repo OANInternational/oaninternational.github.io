@@ -3,10 +3,8 @@
 import { useEffect, Suspense } from "react";
 import { scrollToSection } from "@/utils/scrollToSection";
 import { useParams, useSearchParams } from "next/navigation";
-import Image from "next/image";
 
 import styles from "./page.module.css";
-import TitleSection from "@/components/title-section/title-section.component";
 import TitlePage from "@/components/title-page/title-page.component";
 import DonationButtons from "@/components/donation-buttons/donation-buttons.component";
 import MembershipGoals from "@/components/membership-goals/membership-goals.component";

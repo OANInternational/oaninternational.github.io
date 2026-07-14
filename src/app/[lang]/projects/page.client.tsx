@@ -6,12 +6,9 @@ import styles from "./page.module.css";
 import TitlePage from "@/components/title-page/title-page.component";
 import { useParams, useSearchParams } from "next/navigation";
 
-import ProjectCategorySection, {
-  IProjectCategory,
-} from "@/components/project-category-section/project-category-section.component";
+import ProjectCategorySection from "@/components/project-category-section/project-category-section.component";
 import { PROJECT_CATEGORIES } from "@/constants/projects/categories";
 import { CSSProperties } from "react";
-import TitleSection from "@/components/title-section/title-section.component";
 import { Locale } from "@/i18n/config";
 
 const content: Record<Locale, { pageTitle: string }> = {

@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 import styles from "./project-category-section.module.css";
 import ProjectPreview, {
   IProjectPreview,
 } from "../project-preview/project-preview.component";
-import { MutableRefObject, ReactElement } from "react";
+import { ReactElement } from "react";
 import { Locale } from "@/i18n/config";
 
 export interface IProjectCategory {

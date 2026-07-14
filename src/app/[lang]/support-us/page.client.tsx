@@ -273,7 +273,7 @@ const content: Record<Locale, SupportContent> = {
       </>,
       <>
         <strong>Charity event</strong>: organizing a concert, sporting activity
-        or gathering that raises awareness of OAN International's work.
+        or gathering that raises awareness of OAN International&apos;s work.
       </>,
       <>
         Do you have a <strong>proposal</strong>? If you have new ideas on how to
