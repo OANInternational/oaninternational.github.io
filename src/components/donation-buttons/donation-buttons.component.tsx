@@ -14,6 +14,18 @@ interface DonationButtonsProps {
   locale: Locale;
 }
 
+const donateLabel: Record<Locale, (amount: number) => string> = {
+  es: (amount) => `Dona ${amount}€ al mes`,
+  en: (amount) => `Donate ${amount}€ per month`,
+  fr: (amount) => `Faites un don de ${amount}€ par mois`,
+};
+
+const thanksLabel: Record<Locale, (amount: number) => string> = {
+  es: (amount) => `¡Gracias por donar ${amount}€!`,
+  en: (amount) => `Thank you for donating ${amount}€!`,
+  fr: (amount) => `Merci pour votre don de ${amount}€ !`,
+};
+
 const DonationButtons = ({ options, locale }: DonationButtonsProps) => {
   const [hoveredButton, setHoveredButton] = useState<number | null>(null);
   const [showHoverText, setShowHoverText] = useState<number | null>(null);
@@ -56,13 +68,8 @@ const DonationButtons = ({ options, locale }: DonationButtonsProps) => {
             }`}
           >
             {showHoverText === option.amount
-              ? option.hoverText ||
-                (locale === "en"
-                  ? `Thank you for donating ${option.amount}€!`
-                  : `¡Gracias por donar ${option.amount}€!`)
-              : locale === "en"
-                ? `Donate ${option.amount}€ per month`
-                : `Dona ${option.amount}€ al mes`}
+              ? option.hoverText || thanksLabel[locale](option.amount)
+              : donateLabel[locale](option.amount)}
           </span>
         </a>
       ))}

@@ -14,6 +14,11 @@ const meta: Record<Locale, { title: string; description: string }> = {
     description:
       "OAN International's Grano de Arena campaign supporting development in Nikki.",
   },
+  fr: {
+    title: "Grano de Arena",
+    description:
+      "Campagne Grano de Arena d'OAN International pour soutenir le développement à Nikki.",
+  },
 };
 
 export async function generateMetadata({
@@ -29,6 +34,7 @@ export async function generateMetadata({
 const content: Record<Locale, { title: string }> = {
   es: { title: "Grano de arena" },
   en: { title: "Grano de arena" },
+  fr: { title: "Grano de arena" },
 };
 
 export default async function GranoDeArena({

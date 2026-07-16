@@ -122,6 +122,51 @@ const content: Record<Locale, HomeContent> = {
     overlayText: "Your support makes the difference",
     videoTitle: "OAN International in 30 s",
   },
+  fr: {
+    missionTitle: "Mission et vision",
+    missionDescription: (
+      <>
+        <span className={styles.descriptionHighlight}>Nous collaborons</span>{" "}
+        avec la population locale de{" "}
+        <span className={styles.descriptionHighlight}>Nikki</span>, au Bénin,
+        pour trouver et mettre en œuvre des solutions qui favorisent leur
+        développement et leur permettent d&apos;atteindre leur autonomie, à
+        travers
+        la <span className={styles.descriptionHighlight}>recherche</span> et la{" "}
+        <span className={styles.descriptionHighlight}>
+          sensibilisation sociale
+        </span>{" "}
+        aux inégalités nord-sud.
+      </>
+    ),
+    tenYearsButton: "Nous fêtons nos 10 ans !",
+    quote:
+      "“Un modèle de coopération au développement durable, responsable et reproductible”",
+    cards: [
+      { subtitle: "projets", description: "au cours des 10 dernières années" },
+      { subtitle: "domaines", description: "de travail principaux" },
+      {
+        subtitle: "bénévoles",
+        description: "travaillant avec la population locale",
+      },
+      { subtitle: "collaborateurs", description: "pour le présent de Nikki" },
+    ],
+    joinTitle: "Rejoignez notre communauté !",
+    joinDescription: (
+      <>
+        Nous sommes tout près d&apos;atteindre notre objectif de{" "}
+        <span className={styles.membershipHighlight}>100 membres</span>, qui
+        nous permettra de consolider nos projets à Nikki et d&apos;accroître
+        notre
+        impact. Plus que {targetMembers - currentMembers} personnes !
+      </>
+    ),
+    progressLabel: "membres",
+    becomePartnerBtn: "Devenez membre !",
+    otherWaysBtn: "Autres façons d'aider",
+    overlayText: "Votre soutien fait la différence",
+    videoTitle: "OAN International en 30 s",
+  },
 };
 
 export default async function Home({

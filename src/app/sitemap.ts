@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { locales } from "@/i18n/config";
 import { SITE_URL, STATIC_ROUTES } from "@/i18n/routes";
-import { getAllPostSlugs } from "@/lib/blog-posts";
+import { getPostSlugs } from "@/lib/blog-posts";
 
 // Static export requires this so the sitemap is emitted as a static file.
 export const dynamic = "force-static";
@@ -18,7 +18,7 @@ function languagesFor(path: string): Record<string, string> {
 export default function sitemap(): MetadataRoute.Sitemap {
   const paths: string[] = [
     ...STATIC_ROUTES,
-    ...getAllPostSlugs(locales).map((slug) => `news/${slug}`),
+    ...getPostSlugs().map((slug) => `news/${slug}`),
   ];
 
   const entries: MetadataRoute.Sitemap = [];

@@ -6,11 +6,11 @@ import remarkGfm from "remark-gfm";
 import TitlePage from "@/components/title-page/title-page.component";
 import styles from "./page.module.css";
 
-import { isLocale, Locale, locales } from "@/i18n/config";
-import { getMarkdownPost, getMarkdownPostParams } from "@/lib/blog-posts";
+import { isLocale, locales } from "@/i18n/config";
+import { getPost, getPostParams } from "@/lib/blog-posts";
 
 export function generateStaticParams() {
-  return getMarkdownPostParams(locales);
+  return getPostParams(locales);
 }
 
 export async function generateMetadata({
@@ -22,7 +22,7 @@ export async function generateMetadata({
   if (!isLocale(lang)) {
     return {};
   }
-  const post = getMarkdownPost(lang, blogId);
+  const post = getPost(blogId);
   return post ? { title: post.title, description: post.description } : {};
 }
 
@@ -35,8 +35,7 @@ export default async function BlogEntry({
   if (!isLocale(lang)) {
     notFound();
   }
-  const locale = lang as Locale;
-  const post = getMarkdownPost(locale, blogId);
+  const post = getPost(blogId);
   if (!post) {
     notFound();
   }
@@ -48,7 +47,12 @@ export default async function BlogEntry({
         backgroundImageUrl={post.imageUrl}
         subTitle={post.date + " - " + post.author}
       />
-      <section className={`${styles.articleSection} ${styles.markdownBody}`}>
+      {/* Posts are written in a single language and shown under every locale,
+          so the article itself is marked with the post's own language. */}
+      <section
+        lang={post.language}
+        className={`${styles.articleSection} ${styles.markdownBody}`}
+      >
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.body}</ReactMarkdown>
       </section>
     </main>

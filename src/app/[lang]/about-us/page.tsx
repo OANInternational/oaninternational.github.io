@@ -13,6 +13,11 @@ const meta: Record<Locale, { title: string; description: string }> = {
     description:
       "Discover the history, values and team of OAN International, an NGO working in Nikki (Benin).",
   },
+  fr: {
+    title: "À propos",
+    description:
+      "Découvrez l'histoire, les valeurs et l'équipe d'OAN International, une ONG qui travaille à Nikki (Bénin).",
+  },
 };
 
 export async function generateMetadata({

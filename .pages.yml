@@ -7,31 +7,25 @@ media:
   output: /blog-images
 
 content:
-  - name: blog_es
-    label: "Blog (Español)"
+  # One flat blog. Each post is written in a single language and shown on the
+  # site under every language. Pick the post's language in the "Language" field.
+  - name: blog
+    label: "Blog posts"
     type: collection
-    path: content/blog/es
+    path: content/blog
     filename: "{primary}.md"
     view:
-      fields: [title, date]
-    fields:
-      - { name: title, label: "Título", type: string }
-      - { name: date, label: "Fecha", type: date }
-      - { name: author, label: "Autor/a", type: string, default: "OAN International" }
-      - { name: description, label: "Descripción breve", type: text }
-      - { name: image, label: "Imagen de portada", type: image }
-      - { name: body, label: "Contenido", type: rich-text }
-
-  - name: blog_en
-    label: "Blog (English)"
-    type: collection
-    path: content/blog/en
-    filename: "{primary}.md"
-    view:
-      fields: [title, date]
+      fields: [title, date, language]
     fields:
       - { name: title, label: "Title", type: string }
       - { name: date, label: "Date", type: date }
+      - {
+          name: language,
+          label: "Language",
+          type: select,
+          default: "es",
+          options: { values: ["es", "en", "fr"] },
+        }
       - { name: author, label: "Author", type: string, default: "OAN International" }
       - { name: description, label: "Short description", type: text }
       - { name: image, label: "Cover image", type: image }

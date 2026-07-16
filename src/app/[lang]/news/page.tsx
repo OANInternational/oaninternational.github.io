@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale, Locale } from "@/i18n/config";
-import { getMarkdownPostMetas } from "@/lib/blog-posts";
+import { getPostMetas } from "@/lib/blog-posts";
 import News from "./page.client";
 
 const meta: Record<Locale, { title: string; description: string }> = {
@@ -14,6 +14,11 @@ const meta: Record<Locale, { title: string; description: string }> = {
     title: "News",
     description:
       "Articles, interviews and media appearances of OAN International.",
+  },
+  fr: {
+    title: "Actualités",
+    description:
+      "Articles, entretiens et apparitions médiatiques d'OAN International.",
   },
 };
 
@@ -36,9 +41,10 @@ export default async function Page({
   if (!isLocale(lang)) {
     notFound();
   }
-  // Read markdown-authored posts at build time (server-only) and hand their
-  // metadata to the client list. Full bodies are only needed on the detail page.
-  const markdownPosts = getMarkdownPostMetas(lang).map((p) => ({
+  // Blog posts are language-agnostic: the same set is shown under every locale.
+  // Read metadata at build time (server-only) and hand it to the client list;
+  // full bodies are only needed on the detail page.
+  const markdownPosts = getPostMetas().map((p) => ({
     id: p.id,
     title: p.title,
     date: p.date,

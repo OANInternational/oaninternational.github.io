@@ -284,6 +284,124 @@ const content: Record<Locale, AboutContent> = {
       "",
     ],
   },
+  fr: {
+    pageTitle: "À propos",
+    quote: {
+      text: `"Connaître le Bénin, c'est comme lire l'âge d'un tronc d'arbre plusieurs
+    fois centenaire. Tout comme les anneaux de l'arbre, les gens, les villages,
+    les marchés et les paysages sont l'histoire vivante du continent africain"`,
+      author: "Joan Riera",
+    },
+    historyTitle: "Notre histoire",
+    historyP1:
+      "En 2013, l'un des fondateurs d'OAN International, Daniel Alfaro, se rend à Nikki en tant que bénévole.",
+    historyP2:
+      "Un an plus tard, en 2014, un groupe de 8 jeunes fonde OAN International (Objetivo Analizar Nikki), l'ONG que nous sommes aujourd'hui à Nikki, une région de 170 000 habitants située dans l'une des zones les plus rurales et les moins dotées en ressources du pays.",
+    historyP3:
+      "Depuis ses débuts, OAN International met ses connaissances et son expérience au service des acteurs du changement de Nikki, afin de lancer avec eux des projets cohérents avec leur réalité et générant un véritable impact au quotidien.",
+    historyDocIntro: "Découvrez-en plus sur le Bénin grâce à",
+    historyDocLink: "CE DOCUMENT",
+    historyBlockP1:
+      "Au cours des 10 dernières années, plus de 450 personnes ont travaillé bénévolement au sein d'OAN, plus de 120 jeunes de diverses nationalités se sont rendus à Nikki pour collaborer à des projets de développement avec la population locale, et plus de 60 mémoires de fin d'études de licence et de master ont été réalisés, permettant aux étudiants (au Bénin et en Espagne) de prendre conscience de cette réalité.",
+    historyBlockP2:
+      "Actuellement, OAN International compte 10 personnes salariées au Bénin et plus de 20 personnes bénévoles en Espagne.",
+    pillarsTitle: "Nos piliers",
+    pillars: [
+      <>
+        <b>Des projets utiles</b>, qui correspondent réellement aux ressources
+        et aux besoins de la population de Nikki, avec des actions
+        soigneusement pensées, mises en œuvre et évaluées.
+      </>,
+      <>
+        <b>L&apos;autonomisation des personnes</b>, afin de parvenir à leur
+        autogestion et à un leadership local autonome.
+      </>,
+      <>
+        <b>L&apos;esprit critique</b> au sujet des relations nord-sud, de la
+        situation défavorisée de certains pays et de ses causes.
+      </>,
+      <>
+        Construction d&apos;un modèle de{" "}
+        <b>coopération durable, responsable et reproductible</b> vers
+        d&apos;autres lieux.
+      </>,
+    ],
+    valuesTitle: "Nos valeurs",
+    values: [
+      {
+        number: "1",
+        title: "ENGAGEMENT",
+        paragraph:
+          "Nous affirmons notre ENGAGEMENT envers les personnes et envers notre mission par l'effort et le dévouement dont nous faisons preuve au quotidien, car nous croyons fermement que la durabilité et les réussites de nos actions reposent sur la responsabilité que nous assumons.",
+      },
+      {
+        number: "2",
+        title: "TRANSPARENCE",
+        paragraph:
+          "Nous travaillons dans la TRANSPARENCE et l'information publique comme garantes de la qualité de notre action.",
+      },
+      {
+        number: "3",
+        title: "JUSTICE SOCIALE",
+        paragraph:
+          "Nous croyons en la JUSTICE SOCIALE, que nous entendons comme la reconnaissance et la création du contexte permettant à toutes les personnes le plein exercice de chacun des droits humains.",
+      },
+      {
+        number: "4",
+        title: "HUMILITÉ et RESPECT",
+        paragraph:
+          "Nous agissons avec HUMILITÉ et RESPECT envers les personnes avec lesquelles nous travaillons.",
+      },
+      {
+        number: "5",
+        title: "COHÉRENCE",
+        paragraph:
+          "Nous recherchons la COHÉRENCE entre nos actions et ce que nous défendons, car c'est sur elle que reposera le succès de notre travail.",
+      },
+    ],
+    transparencyTitle: "Transparence",
+    transparencyIntro:
+      "Chez OAN, nous pensons que la transparence est essentielle au bon fonctionnement d'une organisation. Vous pourrez découvrir ici comment OAN fonctionne de l'intérieur, quelle est notre réglementation et comment nous nous finançons. ",
+    statutesHeading: "Statuts",
+    economicHeading: "Rapports financiers",
+    activitiesHeading: "Rapport d'activités",
+    statutesLinkText: "Statuts OAN 2020",
+    activityMemoryLabel: "Rapport d'activités",
+    economicMemoryLabel: "Rapport financier",
+    teamTitle: "Notre équipe",
+    teamIntro:
+      "Derrière, nous avons une formidable équipe permanente de professionnels et de bénévoles qui contribuent à construire un meilleur présent pour Nikki, grâce aux dons de tous nos membres.",
+    spainHeading: "Espagne",
+    beninHeading: "Bénin",
+    spainRoles: [
+      "Président",
+      "Secrétaire général",
+      "Coordinatrice de projets",
+      "Coordinateur de projets",
+      "Communication",
+      "Communication",
+      "Projet Nikarit",
+      "Technologie",
+      "Bénévole",
+      "Bénévole",
+      "Bénévole",
+      "Bénévole",
+      "Bénévole",
+      "Bénévole",
+    ],
+    beninRoles: [
+      "Coordinateur général",
+      "Trésorerie",
+      "Administration générale",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+    ],
+  },
 };
 
 // Create a client component that uses useSearchParams
