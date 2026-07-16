@@ -15,6 +15,7 @@ export function generateStaticParams() {
 const OG_LOCALE: Record<Locale, string> = {
   es: "es_ES",
   en: "en_US",
+  fr: "fr_FR",
 };
 
 export async function generateMetadata({

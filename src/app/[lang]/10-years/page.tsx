@@ -13,6 +13,11 @@ const meta: Record<Locale, { title: string; description: string }> = {
     description:
       "10 years of OAN International: our achievements in health, water, women's empowerment and development in Nikki (Benin).",
   },
+  fr: {
+    title: "10 ans",
+    description:
+      "10 ans d'OAN International : nos réalisations en santé, eau, autonomisation des femmes et développement à Nikki (Bénin).",
+  },
 };
 
 export async function generateMetadata({

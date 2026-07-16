@@ -197,6 +197,93 @@ const content: Record<Locale, TenYearsContent> = {
       },
     ],
   },
+  fr: {
+    title: "OAN International fête ses 10 ans",
+    history: [
+      "En 2014, nous avons fondé OAN International dans le but d'accompagner la population de la commune de Nikki (Bénin) dans la lutte pour ses droits. Pour cela, nous avons proposé un modèle de coopération internationale responsable, durable et plaçant la population comme actrice principale des projets.",
+      "Au cours de ces 10 ans, nous avons travaillé dans les domaines de la santé, de l'accès à l'eau potable, de l'émancipation des femmes, du commerce équitable, de l'agronomie et de la salubrité.",
+    ],
+    achievementsTitle: "Nos réalisations",
+    achievements: [
+      <>
+        <strong>Réduire</strong> le taux de{" "}
+        <strong>malnutrition infantile</strong> dans 14 villages avec
+        l&apos;évaluation de plus de 1100 enfants et une réduction de{" "}
+        <strong>80%</strong> des cas de malnutrition. Mise en place de 12
+        comités de suivi de la malnutrition composés de 36 personnes des
+        villages qui ont été formées pour savoir détecter les cas de
+        malnutrition et les orienter vers les services de santé correspondants.
+      </>,
+      <>
+        Nous avons doté de machines, d&apos;outils et de matériaux les
+        coopératives de femmes productrices de karité avec lesquelles nous
+        travaillons, favorisant l&apos;
+        <strong>autonomie de 500 femmes</strong> productrices de karité pour la
+        production de beurre répondant aux normes de qualité nationales et
+        internationales. Tout cela a amélioré la vie des quelque{" "}
+        <strong>2.500 personnes</strong> qui vivent dans ces villages. Grâce à
+        cela, les femmes ont{" "}
+        <strong>augmenté leurs revenus de 70%</strong> depuis le début du
+        projet.
+      </>,
+      <>
+        Nous avons{" "}
+        <strong>
+          redynamisé le système de réparation des pompes à eau
+        </strong>{" "}
+        dans plus de <strong>70 communautés</strong> (15.000 personnes), en
+        garantissant une meilleure disponibilité des pièces de rechange pour les
+        réparations, une plus grande sensibilisation des habitants à
+        l&apos;entretien préventif des pompes à eau et en améliorant la
+        formation des techniciens réparateurs aux bonnes pratiques dans
+        l&apos;exercice de leur métier.
+      </>,
+      <>
+        Nous avons impulsé la mise en place de{" "}
+        <strong>4 potagers communautaires</strong> gérés par des femmes, grâce
+        auxquels leurs revenus ont augmenté et l&apos;accès à l&apos;alimentation
+        s&apos;est amélioré dans les villages ruraux.
+      </>,
+      <>
+        Nous avons facilité l&apos;<strong>accès au microcrédit</strong> pour
+        plus de <strong>40 femmes</strong> à Nikki pendant 5 ans, aidant de
+        petites entrepreneuses à développer leurs activités et à améliorer leur
+        qualité de vie. Nous avons soutenu la constitution d&apos;un réseau de
+        solidarité entre femmes autodénommé Soukiana (&apos;Aimons-nous&apos; en
+        langue batonou), en les accompagnant avec plus de{" "}
+        <strong>30 sessions de formation</strong> et de mise en commun sur des
+        sujets d&apos;égalité de genre et d&apos;autonomisation des femmes.
+      </>,
+      <>
+        Depuis 2017, nous promouvons chaque année la célébration de la{" "}
+        <strong>
+          Journée internationale pour l&apos;élimination de la violence à
+          l&apos;égard des femmes
+        </strong>
+        , et depuis 2022 également la Journée de la femme, où participent chaque
+        année plus de <strong>150 personnes</strong>, des responsables
+        communautaires et des autorités.
+      </>,
+    ],
+    closing:
+      "Tout cela a été rendu possible grâce aux grands efforts de centaines de bénévoles en Espagne et au Bénin au cours de cette décennie, ce qui nous a permis d'arriver là où nous en sommes aujourd'hui. Mais nous voulons continuer à grandir et à consolider ce projet, c'est pourquoi nous te demandons ta collaboration.",
+    whyTitle: "Pourquoi OAN International ?",
+    whyText:
+      "En choisissant OAN International, tu soutiens une petite ONG dont l'impact est tangible et direct sur le terrain. Notre structure nous permet de maintenir une transparence totale dans la gestion des ressources, ce qui signifie que tu peux voir comment et où ta contribution est utilisée. Contrairement aux organisations plus grandes, notre proximité avec les projets et avec l'équipe locale garantit que ta contribution se traduise par un changement réel et visible dans la vie des communautés de Nikki (Bénin). En devenant membre d'OAN, ta contribution mensuelle nous permet de maintenir les projets et tu ne soutiens pas seulement une cause, mais tu participes aussi activement au développement de chaque projet.",
+    faqTitle: "FAQ",
+    faqs: [
+      {
+        question: "Quelle est la destination de ma contribution ?",
+        answer:
+          "100% de ta contribution est destinée aux objectifs de l'ONG. Nous sommes transparents concernant nos comptes, que tu peux trouver publiés chaque année sur notre site dans la section Transparence.",
+      },
+      {
+        question: "Ma contribution est-elle déductible des impôts ?",
+        answer:
+          "Oui. OAN International est déclarée Association d'Utilité Publique par le Ministère de l'Intérieur, de sorte que ta contribution, en tant que membre, est déductible des impôts. Les cotisations des membres adhérant à cette initiative sont déductibles jusqu'à 80% sur les premiers 150€ et 35% sur le reste.",
+      },
+    ],
+  },
 };
 
 // Create a client component that uses useSearchParams

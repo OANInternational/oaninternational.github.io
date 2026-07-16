@@ -16,6 +16,11 @@ const meta: Record<Locale, { title: string; description: string }> = {
     description:
       "Information about how OAN International uses cookies on its website.",
   },
+  fr: {
+    title: "Politique de cookies",
+    description:
+      "Informations sur l'utilisation des cookies sur le site web d'OAN International.",
+  },
 };
 
 export async function generateMetadata({
@@ -63,6 +68,18 @@ const content: Record<
     disableTitle: "Disabling cookies",
     disableText:
       "However, if you wish, you can disable cookies on this or any other site. We recommend that you check your browser's help section so you can disable them.",
+  },
+  fr: {
+    title: "Cookies",
+    whatTitle: "Qu'est-ce qu'un cookie ?",
+    whatText:
+      "Un cookie est un petit fragment de texte envoyé à votre navigateur par un site web que vous avez visité. Il aide le site web à mémoriser des informations sur votre visite, comme votre langue préférée et d'autres paramètres. Cela peut faciliter votre prochaine visite et rendre le site plus utile pour vous. Les cookies jouent un rôle important. Sans eux, l'utilisation du web serait une expérience bien plus frustrante.",
+    analyticsTitle: "Cookies de Google Analytics",
+    analyticsText:
+      "Ce site utilise Google Analytics pour mieux comprendre comment vous utilisez le portail. L'objectif principal de Google Analytics est d'apprendre et d'améliorer le site afin d'en tirer le meilleur parti.",
+    disableTitle: "Désactiver les cookies",
+    disableText:
+      "Cependant, si vous le souhaitez, vous pouvez désactiver les cookies de ce site ou de tout autre site. Nous vous recommandons de consulter la section d'aide de votre navigateur afin de pouvoir les désactiver.",
   },
 };
 

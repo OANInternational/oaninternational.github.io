@@ -18,6 +18,11 @@ const meta: Record<Locale, { title: string; description: string }> = {
     description:
       "OAN International's documentary about women's work in Nikki and their role in the community.",
   },
+  fr: {
+    title: "Son Yara",
+    description:
+      "Documentaire d'OAN International sur le travail des femmes à Nikki et leur rôle dans la communauté.",
+  },
 };
 
 export async function generateMetadata({
@@ -83,6 +88,26 @@ const content: Record<Locale, SonYaraContent> = {
     whyTitle: "Why a documentary?",
     why1: "Beyond the initiatives launched on the ground as part of our cooperation work, at OAN International we believe that development education also plays a fundamental role in building change in our societies. Through events, training and communication activities we work to foster a critical spirit that invites reflection on the origin and nature of North-South relations.",
     why2: "Son Yara thus seeks to harness the creative and transformative value of art in general, and film in particular, to share the voices and stories of the women of Nikki with audiences in Spain, bring their realities closer and encourage connections and parallels with our own experience.",
+  },
+  fr: {
+    title: "Son Yara",
+    subTitle:
+      "Un documentaire d'OAN International sur le travail des femmes à Nikki et leur rôle dans la communauté",
+    intro1:
+      "Le soleil se lève à Nikki, au nord du Bénin. Au cours d'un voyage du passé au présent, de l'aube au crépuscule, les paroles des femmes de la commune deviennent les protagonistes d'une histoire de dépassement de soi et de lutte pour leurs droits. Des paroles qui naissent de l'intime pour se refléter dans l'universel.",
+    intro2:
+      "À travers des entretiens avec des acteurs locaux et des récits de vie, ce court-métrage documentaire conçu par OAN International approfondit le thème du travail des femmes et de leur rôle dans la communauté.",
+    watchButton: "Voir le documentaire",
+    aboutTitle: "À propos du sujet de l'œuvre",
+    about: [
+      "Les normes et traditions sociales créent encore aujourd'hui une nette division dans la répartition du travail selon le genre. Selon le Rapport sur le développement humain de 2015, le nombre d'hommes est presque le double de celui des femmes dans le travail rémunéré, et celui des femmes le triple de celui des hommes dans le travail non rémunéré.",
+      "Les tâches domestiques et le travail de soin sont fondamentaux pour l'équilibre et le bien-être des sociétés humaines. Cependant, la répartition actuelle des responsabilités limite les opportunités et les possibilités de choix des femmes et, en fin de compte, leur développement et celui de leurs communautés.",
+      "Chez OAN International, nous collaborons dans la commune de Nikki avec des femmes à travers des projets pluridisciplinaires pour soutenir leur autonomisation et la lutte pour leurs droits.",
+      "Concrètement, une importante ligne d'action consiste précisément à promouvoir des initiatives qui renforcent leur autonomie économique, comme en témoignent les projets Nikarit ou Microcrédits. Son Yara cherche ainsi à s'associer à cet objectif, et à le faire grâce au cinéma et à l'éducation au développement.",
+    ],
+    whyTitle: "Pourquoi un documentaire ?",
+    why1: "Au-delà des initiatives mises en œuvre sur le terrain dans le cadre de notre travail de coopération, chez OAN International nous considérons que l'éducation au développement joue également un rôle fondamental dans la construction du changement au sein de nos sociétés. Par le biais d'événements, de formations et d'actions de communication, nous œuvrons à susciter un esprit critique qui invite à la réflexion sur l'origine et la nature des relations Nord-Sud.",
+    why2: "Son Yara cherche ainsi à tirer parti de la valeur créative et transformatrice de l'art en général, et du cinéma en particulier, pour partager les voix et les histoires des femmes de Nikki avec le public en Espagne, rapprocher leurs réalités et favoriser la création de liens et de parallèles avec notre propre expérience.",
   },
 };
 

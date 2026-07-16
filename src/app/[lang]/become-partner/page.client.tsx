@@ -57,6 +57,23 @@ const content: Record<
       "Want to get to know OAN International better before committing? Join as a member for one month, free of charge!",
     loading: "Loading…",
   },
+  fr: {
+    title: "Devenez membre !",
+    hoverText: {
+      10: "Vous ne payez que 2,5€ par mois !",
+      20: "Vous ne payez que 4€ par mois !",
+      25: "Vous ne payez que 7€ par mois !",
+      50: "Vous ne payez que 22€ par mois !",
+    },
+    intro1:
+      "En devenant membre d'OAN International, vous contribuez au fonctionnement de l'organisation et à la réalisation de tous ses objectifs.",
+    intro2:
+      "Pour devenir membre d'OAN International, il vous suffit de choisir le montant que vous souhaitez et de remplir le court formulaire :",
+    freeTrialTitle: "Essai gratuit d'1 mois",
+    freeTrialText:
+      "Vous voulez mieux connaître OAN International avant de vous engager ? Rejoignez-nous comme membre pendant un mois, gratuitement !",
+    loading: "Chargement…",
+  },
 };
 
 // Create a client component that uses useSearchParams

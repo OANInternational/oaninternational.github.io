@@ -52,8 +52,8 @@ const es: Dictionary = {
   },
   header: {
     becomePartner: "Hazte Socio",
-    languageLabel: { es: "ES", en: "EN" },
-    languageName: { es: "Español", en: "English" },
+    languageLabel: { es: "ES", en: "EN", fr: "FR" },
+    languageName: { es: "Español", en: "English", fr: "Français" },
     openMenu: "Abrir menú",
     closeMenu: "Cerrar menú",
     switchTo: "Cambiar a",
@@ -101,8 +101,8 @@ const en: Dictionary = {
   },
   header: {
     becomePartner: "Become a Member",
-    languageLabel: { es: "ES", en: "EN" },
-    languageName: { es: "Español", en: "English" },
+    languageLabel: { es: "ES", en: "EN", fr: "FR" },
+    languageName: { es: "Español", en: "English", fr: "Français" },
     openMenu: "Open menu",
     closeMenu: "Close menu",
     switchTo: "Switch to",
@@ -124,7 +124,56 @@ const en: Dictionary = {
   },
 };
 
-const dictionaries: Record<Locale, Dictionary> = { es, en };
+const fr: Dictionary = {
+  nav: {
+    "about-us": "À propos",
+    history: "Notre histoire",
+    values: "Nos piliers et valeurs",
+    transparency: "Transparence",
+    team: "Notre équipe",
+    "10-years": "10 ans",
+    achievements: "Nos réalisations",
+    faq: "FAQ",
+    projects: "Projets",
+    woman: "Femmes et moyens de subsistance durables",
+    "food-security": "Sécurité alimentaire",
+    "water-access": "Accès à l'eau",
+    "support-us": "S'impliquer",
+    donate: "Faire un don",
+    "support-main": "Devenez membre",
+    thesis: "Jeunes",
+    companies: "Entreprises",
+    news: "Actualités",
+    blog: "Blog",
+    press: "Presse",
+    contact: "Contact",
+  },
+  header: {
+    becomePartner: "Devenez membre",
+    languageLabel: { es: "ES", en: "EN", fr: "FR" },
+    languageName: { es: "Español", en: "English", fr: "Français" },
+    openMenu: "Ouvrir le menu",
+    closeMenu: "Fermer le menu",
+    switchTo: "Passer en",
+  },
+  footer: {
+    slogan: "Ensemble pour et avec Nikki !",
+    copyright: "© 2020 OAN International",
+    rightsReserved: "Tous droits réservés",
+    legalNotice: "Mentions légales",
+    cookiePolicy: "Politique de cookies",
+    donatePaypal: "FAITES UN DON AVEC PAYPAL !",
+    phone: "Tél.",
+    email: "E-mail :",
+  },
+  metadata: {
+    title: "OAN International",
+    description:
+      "OAN International est une ONG dont l'objectif est de rechercher les ressources existantes et les pistes d'action pour améliorer la qualité de vie de la population de Nikki, au Bénin, ainsi que de sensibiliser aux inégalités Nord-Sud afin de favoriser une pensée critique.",
+  },
+};
+
+const dictionaries: Record<Locale, Dictionary> = { es, en, fr };
 
 export function getDictionary(locale: Locale): Dictionary {
   return dictionaries[locale];

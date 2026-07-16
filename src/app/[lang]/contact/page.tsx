@@ -16,6 +16,11 @@ const meta: Record<Locale, { title: string; description: string }> = {
     title: "Contact",
     description: "Get in touch with OAN International through our contact form.",
   },
+  fr: {
+    title: "Contact",
+    description:
+      "Contactez OAN International par l'intermédiaire de notre formulaire.",
+  },
 };
 
 export async function generateMetadata({
@@ -41,6 +46,11 @@ const content: Record<
     title: "Contact us",
     sectionTitle: "Would you like to get in touch with us?",
     loading: "Loading…",
+  },
+  fr: {
+    title: "Contactez-nous",
+    sectionTitle: "Vous souhaitez nous contacter ?",
+    loading: "Chargement…",
   },
 };
 
