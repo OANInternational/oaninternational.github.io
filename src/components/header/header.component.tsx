@@ -100,7 +100,10 @@ export default function Header({ locale }: { locale: Locale }) {
       return;
     }
     const search = typeof window !== "undefined" ? window.location.search : "";
-    const nextPath = pathname.replace(/^\/(es|en)/, `/${target}`);
+    // Swap whichever locale prefix is present. Built from `locales` so adding a
+    // language (e.g. fr) doesn't silently break the switcher.
+    const localePrefix = new RegExp(`^/(${locales.join("|")})(?=/|$)`);
+    const nextPath = pathname.replace(localePrefix, `/${target}`);
     router.push(nextPath + search);
     setIsMobileNavBarOpen(false);
   };
