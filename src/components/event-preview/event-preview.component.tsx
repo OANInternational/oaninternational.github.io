@@ -20,6 +20,11 @@ const labels: Record<Locale, EventLabels> = {
     price: "Price",
     buyTicket: "Buy ticket",
   },
+  fr: {
+    date: "Date",
+    price: "Prix",
+    buyTicket: "Acheter un billet",
+  },
 };
 
 export interface Event {

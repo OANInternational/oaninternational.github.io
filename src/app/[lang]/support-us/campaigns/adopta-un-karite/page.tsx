@@ -14,6 +14,11 @@ const meta: Record<Locale, { title: string; description: string }> = {
     description:
       "Twin with a shea tree and support the women shea producers of Nikki.",
   },
+  fr: {
+    title: "Adoptez un karité",
+    description:
+      "Adoptez un karité et soutenez les femmes productrices de karité de Nikki.",
+  },
 };
 
 export async function generateMetadata({
@@ -29,6 +34,7 @@ export async function generateMetadata({
 const content: Record<Locale, { title: string }> = {
   es: { title: "Adopta un karité" },
   en: { title: "Adopt a shea tree" },
+  fr: { title: "Adoptez un karité" },
 };
 
 export default async function AdoptaUnKarite({

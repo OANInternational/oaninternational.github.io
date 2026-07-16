@@ -16,6 +16,11 @@ const meta: Record<Locale, { title: string; description: string }> = {
     description:
       "Terms of use, intellectual property and privacy policy of OAN International.",
   },
+  fr: {
+    title: "Mentions légales",
+    description:
+      "Conditions d'utilisation, propriété intellectuelle et politique de confidentialité d'OAN International.",
+  },
 };
 
 export async function generateMetadata({
@@ -256,6 +261,110 @@ const content: Record<Locale, LegalContent> = {
     s12: {
       title: "12. Applicable law and submission to Courts and Tribunals",
       p1: "These General Terms will be governed by their own provisions and, in matters not foreseen therein, by the Spanish legal system.",
+    },
+  },
+  fr: {
+    title: "Politique de confidentialité",
+    intro:
+      "Veuillez lire ces conditions avant d'accéder au site web d'OAN International (Objetivo Analizar Nikki International), ci-après OAN. Conformément aux dispositions de la Ley 34/2002, du 11 juillet, relative aux services de la société de l'information et au commerce électronique, nous vous informons que le site web www.oaninternational.org a été créé, est maintenu et est la propriété d'OAN, dont l'adresse à laquelle les utilisateurs peuvent s'adresser est la suivante :",
+    orgName: "OAN International",
+    address: "Adresse : Avenida de Europa 12, P5, 1D",
+    phone: "Téléphone de contact : 696 71 44 99",
+    email: "E-mail de contact : contacto@oaninternational.org",
+    s1: {
+      title: "1. Acceptation des conditions d'utilisation.",
+      p1: "Les présentes conditions générales régissent l'utilisation du site web d'OAN, auquel on accède via l'adresse URL : www.oaninternational.org. L'existence des présentes conditions générales n'exclut pas la présence d'autres dispositions ou conditions d'accès aux différentes sections qui composent le site d'OAN. Le visiteur donne son acceptation et est lié par les conditions exposées ici. En utilisant le PORTAIL, l'utilisateur accepte les présentes conditions générales et s'engage à utiliser le PORTAIL, les services et les contenus hébergés conformément à celles-ci. OAN se réserve le droit de modifier les présentes Conditions Générales à tout moment et sans préavis. C'est pourquoi l'utilisateur s'engage à consulter les présentes Conditions Générales chaque fois qu'il accède au PORTAIL.",
+    },
+    s2: {
+      title: "2. Propriété intellectuelle et/ou industrielle.",
+      p1: "Tous les droits de propriété industrielle et intellectuelle figurant sur ce site web, ainsi que sur ses contenus (textes, logos, images, sons, audio, vidéo, logiciels.....), sont la propriété exclusive d'OAN, leur utilisation a été autorisée par leurs titulaires ou ils relèvent d'une licence creative commons. L'article 34 de la Ley 17/2001, du 17 décembre, relative aux marques, ainsi que d'autres législations nationales susceptibles d'être applicables, garantit le droit exclusif d'utiliser lesdits signes distinctifs dans le trafic économique. Par conséquent, leur utilisation par des tiers dépourvus d'autorisation est interdite.",
+      p2: "L'utilisateur peut visualiser tous les éléments, les imprimer, les copier et les stocker sur le disque dur de son ordinateur ou sur tout autre support physique, à condition que ce soit, uniquement et exclusivement, pour son usage personnel et privé ; leur utilisation à des fins commerciales, leur distribution, ainsi que leur modification, altération ou décompilation, sont donc formellement interdites.",
+      p3: "Les utilisateurs devront s'abstenir d'obtenir, et même de tenter d'obtenir des informations, messages, graphiques, dessins, fichiers sonores et/ou d'image, photographies, enregistrements, logiciels et, en général, toute sorte de matériel accessible à travers la Page ou les Services (ci-après, les « contenus ») en employant à cette fin des moyens ou procédés autres que ceux qui, selon les cas, ont été mis à leur disposition à cet effet ou qui ont été indiqués à cet effet sur la Page ou, en général, autres que ceux habituellement employés sur Internet à cet effet, pourvu qu'ils n'entraînent pas de risque de dommage ou d'utilisation abusive de la Page, des Services et/ou des Contenus.",
+      p4: "OAN n'accorde aucune licence ni autorisation d'utilisation d'aucune sorte sur ses droits de propriété intellectuelle et/ou industrielle ou sur toute autre propriété ou droit lié à la Page, aux Services ou aux Contenus.",
+    },
+    s3: {
+      title: "3. Interdiction de diffusion des contenus et des informations fournies",
+      intro:
+        "Les utilisateurs s'engagent à utiliser les Contenus de manière diligente, correcte et licite et, en particulier, s'engagent à s'abstenir de :",
+      list: [
+        "Utiliser les Contenus d'une manière, à des fins ou avec des effets contraires à la Loi, aux usages et à l'ordre public.",
+        "Reproduire ou copier, distribuer, permettre l'accès du public par toute modalité de communication publique, transformer ou modifier les Contenus, à moins de disposer de l'autorisation du titulaire des droits correspondants ou que cela soit légalement permis.",
+        "Supprimer, contourner ou manipuler le copyright et les autres données d'identification des droits d'OAN ou de leurs titulaires incorporées aux Contenus, ainsi que les dispositifs techniques de protection ou tout mécanisme d'information que les Contenus pourraient inclure.",
+        "Employer les Contenus et, en particulier, les informations de toute sorte obtenues à travers la Page ou les Services pour envoyer de la publicité, des communications à des fins de vente directe ou à toute autre fin commerciale, des messages non sollicités adressés à une pluralité de personnes indépendamment de leur finalité, et devront de même s'abstenir de commercialiser ou de divulguer de quelque manière que ce soit lesdites informations.",
+      ],
+      trailing:
+        "OAN poursuivra le non-respect des conditions précédentes ainsi que toute utilisation abusive des contenus présentés sur son site, en exerçant toutes les actions civiles et pénales qui pourraient lui revenir.",
+    },
+    s4: {
+      title: "4. Insertion de liens, hyperliens ou liens hypertexte.",
+      intro:
+        "Les Utilisateurs et, en général, les personnes qui se proposent d'établir un hyperlien entre leur site web et la Page (ci-après l'hyperlien), sans préjudice du fait qu'OAN se réserve dès à présent le droit de les refuser, devront respecter, au minimum, les conditions suivantes :",
+      list: [
+        "L'Hyperlien permettra uniquement l'accès à la Page, mais ne pourra la reproduire d'aucune manière.",
+        "Aucune déclaration ou indication fausse, inexacte ou incorrecte ne sera faite au sujet de la Page et des Services et, en particulier, il ne sera ni déclaré ni laissé entendre qu'OAN a autorisé l'Hyperlien, qu'elle a supervisé ou assumé de quelque manière que ce soit les contenus ou services offerts ou mis à disposition sur le site web sur lequel l'Hyperlien est établi.",
+        "À l'exception des signes qui font partie de l'Hyperlien lui-même, le site web sur lequel l'Hyperlien est établi ne contiendra aucune marque, nom commercial, enseigne d'établissement, dénomination, logo, slogan ou autres signes distinctifs appartenant à OAN.",
+        "Le site web sur lequel l'Hyperlien est établi ne contiendra pas d'informations ou de contenus illicites, contraires à la morale, aux bonnes mœurs généralement acceptées et/ou à l'ordre public, et ne contiendra pas non plus de contenus contraires à la nature et aux fins propres d'OAN ou à tout droit de tiers. L'établissement de l'Hyperlien n'implique en aucun cas l'existence de relations entre OAN et le propriétaire du site web sur lequel il est établi, ni l'acceptation et l'approbation par OAN de ses contenus ou services.",
+      ],
+    },
+    s5: {
+      title:
+        "5. Obligation de confidentialité concernant les contenus et informations des services fournis par OAN aux Utilisateurs.",
+      p1: "En ce qui concerne les services mis à la disposition des utilisateurs au moyen d'une inscription préalable, toutes les données sont conservées dans la plus stricte confidentialité, conformément à la législation en vigueur en matière de traitement des données à caractère personnel.",
+    },
+    s6: {
+      title: "6. Données à caractère personnel.",
+      intro:
+        "Pour utiliser certains services, les utilisateurs doivent fournir à OAN certaines données à caractère personnel. L'utilisateur donne son consentement à leur traitement en fournissant ces données. OAN traitera lesdites données personnelles dans le but de maintenir les relations pour lesquelles elles sont recueillies et conformément à la législation en vigueur. Les utilisateurs ayant fourni des données personnelles à OAN se voient reconnaître les droits suivants :",
+      list: [
+        "Droit d'accès : droit de demander et d'obtenir gratuitement des informations sur ses données personnelles faisant l'objet d'un traitement, leur origine et les communications réalisées ou prévues.",
+        "Droit de rectification et d'annulation : droit de rectifier ou d'annuler les données personnelles dont le traitement n'est pas conforme à la Loi et, en particulier, lorsqu'elles sont inexactes ou incomplètes.",
+        "Droit d'opposition : droit de s'opposer au traitement des données personnelles. Ce droit entraînera la suppression des données personnelles du traitement. L'exercice du droit d'opposition impliquera la fin des relations entre OAN et les utilisateurs en vertu desquelles ces données ont été communiquées.",
+      ],
+      trailing:
+        "Aux fins de l'exercice de ces droits ou pour toute question relative à la politique d'OAN concernant les utilisateurs qui visitent son PORTAIL, les utilisateurs pourront s'adresser à l'adresse postale suivante : Avenida de Europa 12, P5, 1D, Pozuelo de Alarcón, Madrid, Espagne.",
+    },
+    s7: {
+      title:
+        "7. Utilisation de la Page, des Services et des Contenus sous la responsabilité exclusive des Utilisateurs.",
+      p1: "Les Utilisateurs sont conscients et acceptent volontairement que l'utilisation de la Page, des Services et des Contenus a lieu, en tout état de cause, sous leur seule et exclusive responsabilité. En particulier, OAN ne garantit pas la continuité, la disponibilité et l'utilité du PORTAIL, de ses Services et Contenus. Par conséquent, elle n'est pas responsable des éventuels dommages et préjudices de quelque nature que ce soit qui pourraient en découler pour les utilisateurs. Le tout sans préjudice des dispositions des Conditions Particulières. OAN ne garantit pas non plus l'absence de virus ni d'autres éléments susceptibles de provoquer des altérations dans le système informatique des utilisateurs ou dans les documents électroniques ou fichiers qui y sont stockés.",
+      p2: "OAN ne garantit pas la licéité, la fiabilité, la véracité, l'exactitude, l'exhaustivité et l'actualité des Contenus. Par conséquent, OAN n'est pas responsable des éventuels dommages et préjudices de quelque nature que ce soit qui pourraient en découler pour les utilisateurs, et en particulier, mais non exclusivement, des dommages et préjudices qui pourraient être dus à :",
+      list: [
+        "Le non-respect de la Loi, de la morale, des usages généralement acceptés et/ou de l'ordre public par suite de la fourniture de services par des tiers à travers la Page.",
+        "La violation des droits de propriété intellectuelle et/ou industrielle, des secrets d'affaires, d'engagements contractuels de toute sorte, des droits à l'honneur, à l'intimité personnelle et familiale et à l'image des personnes, des droits de propriété et de toute autre nature appartenant à un tiers, par suite de la fourniture de services par des tiers à travers la Page.",
+        "La réalisation d'actes de concurrence déloyale et de publicité illicite par suite de la fourniture de services par des tiers à travers la page.",
+        "Le manque de véracité, d'exactitude, d'exhaustivité, de pertinence et/ou d'actualité des contenus transmis, diffusés, stockés, reçus, obtenus, mis à disposition ou accessibles au moyen des services fournis par des tiers à travers la Page.",
+        "Le non-respect, le retard dans l'exécution, l'exécution défectueuse ou la résiliation pour quelque cause que ce soit des obligations contractées par des tiers et des contrats conclus avec des tiers en relation avec ou à l'occasion de la fourniture de services à travers la Page.",
+        "Les vices et défauts de toute sorte des services fournis par des tiers à travers la Page.",
+      ],
+    },
+    s8: {
+      title:
+        "8. Exclusion de garanties et de responsabilité pour les services et contenus hébergés en dehors du PORTAIL :",
+      p1: "OAN n'est pas responsable des dommages et préjudices de quelque nature que ce soit qui pourraient en découler pour les utilisateurs pour cette raison. La Page met ou peut mettre à la disposition des utilisateurs des dispositifs techniques de liaison (tels que, entre autres, des liens, des bannières, des boutons), des répertoires et des outils de recherche qui permettent aux utilisateurs d'accéder à des sites web appartenant à et/ou gérés par des tiers.",
+      p2: "L'installation de ces liens, répertoires et outils de recherche sur la Page a pour seul objet de faciliter aux utilisateurs la recherche et l'accès aux informations disponibles sur Internet. OAN ne contrôle pas non plus au préalable, n'approuve pas, ne surveille pas et ne fait pas siens les produits et services, contenus, informations, données, fichiers et toute sorte de matériel existant sur lesdits sites liés. Les utilisateurs doivent donc faire preuve de la plus grande prudence dans l'évaluation et l'utilisation des services, informations, données, fichiers, produits et toute sorte de matériel qui y existent. OAN ne garantit ni n'assume aucun type de responsabilité pour les dommages et préjudices de toute sorte qui pourraient être dus à :",
+      list: [
+        "Le fonctionnement, la disponibilité, l'accessibilité ou la continuité des sites liés.",
+        "La maintenance des services, informations, données, fichiers, produits et toute sorte de matériel existant sur les sites liés ;",
+        "La fourniture ou la transmission des services, informations, données, fichiers, produits et toute sorte de matériel existant sur les sites liés ;",
+        "La qualité, la licéité, la fiabilité et l'utilité des services, informations, données, fichiers, produits et toute sorte de matériel existant sur les sites liés, dans les mêmes termes et avec la même portée que ceux prévus à la condition générale 9.2 concernant les contenus et les services fournis par des tiers à travers la page.",
+      ],
+    },
+    s9: {
+      title:
+        "9. Exclusion de garanties et de responsabilité pour l'utilisation que les utilisateurs peuvent faire du PORTAIL, des services et des contenus :",
+      p1: "OAN ne contrôle ni ne supervise si les utilisateurs utilisent le PORTAIL, ses services et contenus conformément aux dispositions des présentes Conditions Générales et des Conditions Particulières applicables. Par conséquent, elle n'assume aucun type de responsabilité envers les tiers pour le comportement des utilisateurs.",
+    },
+    s10: {
+      title: "10. Responsabilité pour dommages et préjudices.",
+      p1: "Les utilisateurs répondront des dommages et préjudices de toute nature qu'OAN pourrait subir, directement ou indirectement, par suite du non-respect de l'une quelconque des obligations découlant des Conditions Générales et, le cas échéant, des Conditions Particulières ou de la Loi.",
+    },
+    s11: {
+      title: "11. Acceptation des présentes Conditions Générales.",
+      p1: "L'acceptation des présentes Conditions Générales par les Utilisateurs est une condition préalable indispensable et obligatoire pour, le cas échéant, pouvoir bénéficier des Services qui y sont contenus. Les Utilisateurs déclarent, sous leur responsabilité, avoir lu intégralement les présentes Conditions Générales d'Accès et d'Utilisation de la Page, et confirment leur acceptation.",
+    },
+    s12: {
+      title: "12. Loi applicable et soumission aux tribunaux",
+      p1: "Les présentes Conditions Générales seront régies par leurs propres stipulations et, pour ce qui n'y est pas prévu, par l'ordre juridique espagnol.",
     },
   },
 };

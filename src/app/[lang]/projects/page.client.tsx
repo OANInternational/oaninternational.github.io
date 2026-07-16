@@ -18,6 +18,9 @@ const content: Record<Locale, { pageTitle: string }> = {
   en: {
     pageTitle: "Projects",
   },
+  fr: {
+    pageTitle: "Projets",
+  },
 };
 
 // Create a client component that uses useSearchParams

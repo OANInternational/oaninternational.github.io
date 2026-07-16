@@ -308,6 +308,139 @@ const content: Record<Locale, SupportContent> = {
       50: "You pay just 22€ a month!",
     },
   },
+  fr: {
+    headlinePrimary: "Comités",
+    headlineSecondary: "Recherche",
+    headlineTertiary: "Départements",
+    headlineDescription:
+      "Événements, communication et marketing, design, traduction, ressources humaines, juridique et trésorerie",
+    title: "Impliquez-vous avec nous",
+    intro: (
+      <>
+        Participez à nos{" "}
+        <span className={styles.colorSecondary}>initiatives</span> ou
+        rejoignez-nous comme{" "}
+        <span className={styles.colorSecondary}>bénévole</span>. Nous vous
+        accueillons à bras ouverts !
+      </>
+    ),
+    writeUs: "Écrivez-nous",
+    campaignsTitle: "Campagnes",
+    campaignShea: "Adoptez un karité",
+    campaignDocumentary: "Documentaire SON YARA",
+    donateTitle: "Faire un don",
+    taxIntro: (
+      <>
+        Tous les dons à <b>OAN International</b> sont déductibles des impôts en
+        vertu de la{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.boe.es/buscar/doc.php?id=BOE-A-2002-25039"
+          className={styles.link}
+        >
+          Loi 49/2002
+        </a>
+        , du 23 décembre, relative au régime fiscal des entités sans but
+        lucratif et aux incitations fiscales au mécénat.{" "}
+      </>
+    ),
+    taxDeduction: (
+      <>
+        Le fisc <b>vous rembourse 80 % de ce que vous donnez</b>, jusqu&apos;aux
+        premiers 250€ (au-delà de ce montant, la déduction est de 40 %, et si
+        vous nous soutenez depuis 3 ans, de 45 %).
+      </>
+    ),
+    impact:
+      "Avec très peu, vous pouvez nous aider à générer un grand impact à Nikki. Ensemble, nous pouvons construire un monde plus juste.",
+    transferTitle: "Virement ou Bizum",
+    transferText:
+      "La meilleure façon de nous faire un don est de mettre en place directement un virement périodique sur notre compte :",
+    bizumText:
+      "Si vous préférez, vous pouvez également faire votre don via Bizum, en saisissant le code de campagne d'OAN INTERNATIONAL :",
+    teamingTitle: "Teaming",
+    teaming1: "Chez OAN International, nous vous facilitons la tâche !",
+    teaming2:
+      "Nous savons que vous êtes jeune et que votre budget est limité. Nous vous proposons donc de donner seulement 1 café par mois : 1€ par mois.",
+    teaming3:
+      "Inscrivez-vous à notre équipe Teaming et vous soutiendrez des projets de développement dans la santé, l'eau, l'autonomisation des femmes et bien plus encore !",
+    teamingButton: "Rejoignez notre groupe",
+    companiesTitle: "Entreprises",
+    companies1:
+      "Vous êtes une entreprise et souhaitez soutenir des projets comme ceux d'OAN International ? Vous voulez aller plus loin dans votre RSE en devenant moteur du changement sur le terrain ?",
+    companies2:
+      "En effectuant un don périodique, vous pourrez contribuer directement au quotidien des projets et, de plus, votre apport est déductible à hauteur de 40 %.",
+    companies3:
+      "Les façons de nous aider sont nombreuses ; il s'agit de choisir celle qui convient le mieux à votre organisation :",
+    companyItems: [
+      <>
+        <strong>Don ponctuel.</strong> Si vous ne pouvez pas vous engager sur le
+        long terme et préférez faire un apport ponctuel, l&apos;aide est
+        toujours la bienvenue. Soyez assurés que 100 % de vos dons seront
+        investis dans les projets sur le terrain.
+      </>,
+      <>
+        Faites de votre <strong>entreprise un membre</strong> d&apos;OAN
+        International. Les apports périodiques nous permettent de maintenir un
+        travail ininterrompu et de poursuivre des objectifs à moyen et long
+        terme. Avec cette option, votre entreprise prendra une part active au
+        développement de chaque projet. De plus, notre proximité avec la
+        communauté et l&apos;équipe locale garantit que votre contribution se
+        traduise par un changement réel et visible dans la vie à Nikki.
+      </>,
+      <>
+        <strong>Financez directement l&apos;un de nos projets</strong>{" "}
+        (entièrement ou partiellement). Si les valeurs de votre équipe ou de
+        votre organisation sont particulièrement alignées avec l&apos;un de nos
+        projets, vous pouvez soutenir la population de Nikki spécifiquement à
+        travers l&apos;un des domaines d&apos;action dans lesquels OAN
+        International intervient aux côtés des agents de changement locaux.
+      </>,
+      <>
+        <strong>Cadeaux pour clients/employés</strong> : pour avoir une
+        attention solidaire envers vos clients ou employés, OAN propose des kits
+        de produits du projet Nikarit ou le calendrier annuel d&apos;OAN
+        International.
+      </>,
+      <>
+        <strong>Événement solidaire</strong> : en organisant un concert, une
+        activité sportive ou une rencontre mettant en valeur le travail
+        d&apos;OAN International.
+      </>,
+      <>
+        Vous avez une <strong>proposition</strong> ? Si vous avez de nouvelles
+        idées pour nous soutenir, remplissez le{" "}
+        <a
+          style={{ color: "var(--black)" }}
+          href="https://docs.google.com/forms/d/e/1FAIpQLSesVw6RZbW6-CHJUG90L9fmJpBq5PFAt4OFYtz_quIjLGOKSg/viewform?usp=header"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          formulaire
+        </a>{" "}
+        suivant et contactez-nous directement.
+      </>,
+    ],
+    thesisTitle: "Votre mémoire/thèse avec OAN",
+    thesis1:
+      "Nous présentons une nouvelle forme de coopération qui associe l'université au changement. Si vous êtes étudiant et souhaitez faire la différence, c'est parfait pour vous !",
+    thesis2:
+      "Vous pouvez apporter votre aide en réalisant votre mémoire ou votre thèse sur l'un des projets d'OAN International à Nikki. Vous travaillerez main dans la main avec nos comités :",
+    committees: [
+      "Comité Énergie, Infrastructures et Eau",
+      "Comité Biosanitaire",
+      "Comité des Politiques Sociales",
+      "Comité d'Agronomie",
+    ],
+    thesis3: "N'hésitez pas et écrivez-nous !",
+    donationHover: {
+      10: "Vous ne payez que 2,5€ par mois !",
+      20: "Vous ne payez que 4€ par mois !",
+      25: "Vous ne payez que 7€ par mois !",
+      50: "Vous ne payez que 22€ par mois !",
+    },
+  },
 };
 
 export default function SupportUs() {

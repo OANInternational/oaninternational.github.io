@@ -78,6 +78,39 @@ const membershipGoals: Record<Locale, MembershipGoal[]> = {
       color: "pink",
     },
   ],
+  fr: [
+    {
+      memberCount: 75,
+      title: "Prévenir la malnutrition de 1 875 enfants",
+      description:
+        "En évaluant l'état nutritionnel de 1 875 enfants âgés de 6 à 59 mois afin de détecter les cas de malnutrition modérée et sévère.",
+      imageUrl: "/oan-web-047.png",
+      color: "blue",
+    },
+    {
+      memberCount: 100,
+      title: "Donner accès à l'eau potable à plus de 100 communautés",
+      description: "En révisant et en gérant 300 pompes à eau potable.",
+      imageUrl: "/oan-web-045.jpg",
+      color: "green",
+    },
+    {
+      memberCount: 150,
+      title: "Soutenir Nikarit, notre entreprise sociale de karité",
+      description:
+        "En améliorant les conditions de travail de 450 femmes des coopératives de collecte et de transformation du beurre de karité.",
+      imageUrl: "/oan-web-025.jpg",
+      color: "orange",
+    },
+    {
+      memberCount: 200,
+      title: "Développer la collecte des déchets",
+      description:
+        "En soutenant la collecte des déchets de 550 foyers pendant un mois.",
+      imageUrl: "/oan-web-046.jpg",
+      color: "pink",
+    },
+  ],
 };
 
 interface Labels {
@@ -109,6 +142,16 @@ const labels: Record<Locale, Labels> = {
     goalSuffix: "members",
     goalAction: "we could",
     finalGoal: "Keep working to defend the human rights of the people of Nikki",
+  },
+  fr: {
+    headingHighlight: "Devenez membre",
+    headingRest: "et faites la différence",
+    membersLabel: "membres",
+    goalPrefix: "Avec",
+    goalSuffix: "membres",
+    goalAction: "nous pourrions",
+    finalGoal:
+      "Continuer à œuvrer pour défendre les droits humains de la population de Nikki",
   },
 };
 

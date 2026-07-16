@@ -13,6 +13,11 @@ const meta: Record<Locale, { title: string; description: string }> = {
     description:
       "Get involved with OAN International: donate, volunteer or take part in our campaigns for Nikki (Benin).",
   },
+  fr: {
+    title: "S'impliquer",
+    description:
+      "Impliquez-vous avec OAN International : faites un don, devenez bénévole ou participez à nos campagnes pour Nikki (Bénin).",
+  },
 };
 
 export async function generateMetadata({

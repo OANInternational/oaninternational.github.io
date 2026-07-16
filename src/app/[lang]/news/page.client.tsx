@@ -53,6 +53,17 @@ const content: Record<Locale, NewsContentText> = {
     congress: "3enRed Conference",
     radio: "Radio",
   },
+  fr: {
+    pageTitle: "Actualités",
+    pageSubTitle:
+      "Articles, entretiens et apparitions médiatiques d'OAN International",
+    upcomingEvents: "Prochains événements",
+    noEvents: "Aucun événement programmé pour le moment",
+    blog: "Blog",
+    press: "Presse écrite et numérique",
+    congress: "Congrès 3enRed",
+    radio: "Radio",
+  },
 };
 
 // Create a client component that uses useSearchParams

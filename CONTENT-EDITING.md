@@ -4,6 +4,11 @@ Two things on the site can be edited without a developer: the **members
 counter** and the **blog posts**. There are two ways to do it — a **visual
 editor** (easiest) and a **direct** method on GitHub.
 
+The site is shown in **Spanish, English and French**. The UI (menus, buttons,
+page text) is translated into all three. **Blog posts are different:** each post
+is written in **one language** and is shown to visitors in every language — you
+do not translate posts.
+
 ---
 
 ## Quick reference
@@ -11,8 +16,7 @@ editor** (easiest) and a **direct** method on GitHub.
 | What | Where | Effect |
 | --- | --- | --- |
 | Members counter | `content/site.json` | Home hero, "Become a member", goals section |
-| Blog post (Spanish) | `content/blog/es/<slug>.md` | `/es/news/<slug>` + the Spanish news list |
-| Blog post (English) | `content/blog/en/<slug>.md` | `/en/news/<slug>` + the English news list |
+| Blog post | `content/blog/<slug>.md` | `/es/news/<slug>`, `/en/news/<slug>`, `/fr/news/<slug>` + the news list |
 | Post images | `public/blog-images/…` | Referenced in a post as `/blog-images/<file>` |
 
 Any change is picked up by the automatic deploy — the site updates ~1–2 minutes
@@ -29,22 +33,21 @@ to run and no OAuth app to create** — you just sign in and authorize it.
 
 1. Go to **https://app.pagescms.org** and click **Sign in with GitHub**.
 2. When prompted, **authorize the Pages CMS GitHub app** and give it access to
-   the **`oaninternational.github.io`** repository. (This is what lets the
-   editor save changes back to the site.)
-3. Open the repository in Pages CMS. You'll see three sections, defined by the
+   the **`oaninternational.github.io`** repository.
+3. Open the repository in Pages CMS. You'll see two sections, defined by the
    [`.pages.yml`](.pages.yml) file already in the repo:
-   - **Blog (Español)** and **Blog (English)** — the posts
+   - **Blog posts** — the posts
    - **Members counter** — the number
 
 **To add a blog post:**
 
 1. Write the post in Google Docs as usual. **File → Download → Markdown (.md)**.
-2. In Pages CMS, open **Blog (Español)** (or English) → **Add entry**.
-3. Fill in Title, Date, Author, a short Description, upload a Cover image, and
-   paste the post into the **Content** field.
-4. **Save.** Pages CMS commits it and the site redeploys.
-5. Repeat in the other language collection to publish the post in both
-   languages (use the **same slug/filename** so the two versions line up).
+2. In Pages CMS, open **Blog posts** → **Add entry**.
+3. Fill in Title, Date, pick the **Language** the post is written in (es/en/fr),
+   Author, a short Description, upload a Cover image, and paste the post into the
+   **Content** field.
+4. **Save.** Pages CMS commits it and the site redeploys. The post shows up for
+   all visitors, whatever language they're browsing in.
 
 **To update the members counter:** open **Members counter**, change the number,
 Save.
@@ -62,16 +65,15 @@ Save.
 
 ### Blog post
 1. Write in Google Docs → **File → Download → Markdown (.md)**.
-2. On GitHub, add the file under `content/blog/es/` (Spanish) and/or
-   `content/blog/en/` (English). Name it `<slug>.md` — the `<slug>` is the URL:
-   `content/blog/es/magia-por-benin.md` → `/es/news/magia-por-benin`. Use the
-   **same `<slug>`** in both language folders.
-3. At the top of each file add this header ("front matter"), then paste the
+2. On GitHub, add the file under `content/blog/`. Name it `<slug>.md` — the
+   `<slug>` is the URL: `content/blog/magia-por-benin.md` → `/news/magia-por-benin`.
+3. At the top of the file add this header ("front matter"), then paste the
    Markdown body below it:
    ```markdown
    ---
    title: "Your post title"
    date: 2026-08-01
+   language: es        # the language you wrote the post in: es, en or fr
    author: "OAN International"
    description: "One sentence shown in the news list and link previews."
    image: /blog-images/your-cover-image.jpg
@@ -81,15 +83,16 @@ Save.
    ```
 4. **Images:** upload them into `public/blog-images/` and reference them as
    `![description](/blog-images/your-image.jpg)`.
-5. Commit. The post appears at `/es/news/<slug>` / `/en/news/<slug>` and in the
-   news list after the deploy.
+5. Commit. The post appears in the news list and at `/es/news/<slug>`,
+   `/en/news/<slug>` and `/fr/news/<slug>` after the deploy.
 
 ---
 
 ## Notes
 
-- **Both languages:** a post appears in a language only if that language's file
-  exists. You can publish Spanish first and add the English version later.
+- **One language per post.** Write each post once, in whichever language you
+  like, and set `language` accordingly. It shows for every visitor regardless of
+  the site language they picked. (The existing posts are in Spanish.)
 - **Ordering:** posts are shown newest-first, by the `date` field.
-- **Dates** must be `YYYY-MM-DD` in the front matter (the site formats them per
-  language automatically).
+- **Dates** must be `YYYY-MM-DD` in the front matter (the site formats them in
+  the post's own language automatically).

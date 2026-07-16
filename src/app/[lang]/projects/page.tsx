@@ -13,6 +13,11 @@ const meta: Record<Locale, { title: string; description: string }> = {
     description:
       "Explore OAN International's projects in Nikki (Benin) across health, water, agronomy and women's empowerment.",
   },
+  fr: {
+    title: "Projets",
+    description:
+      "Découvrez les projets d'OAN International à Nikki (Bénin) en santé, eau, agronomie et autonomisation des femmes.",
+  },
 };
 
 export async function generateMetadata({

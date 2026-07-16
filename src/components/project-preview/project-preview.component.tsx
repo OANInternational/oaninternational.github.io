@@ -16,6 +16,7 @@ export interface IProjectPreview {
 const moreInfoLabel: Record<Locale, string> = {
   es: "Más información sobre el proyecto",
   en: "More about the project",
+  fr: "En savoir plus sur le projet",
 };
 
 export default function ProjectPreview(props: {
