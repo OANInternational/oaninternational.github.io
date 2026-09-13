@@ -32,6 +32,6 @@ export const HEALTH_PROJECTS_EN: IProjectPreview[] = [
         </p>
       </div>
     ),
-    url: "/documents/projects/proyecto-nutricion.pdf",
+    url: "/documents/projects/premase-2026.pdf",
   },
 ];

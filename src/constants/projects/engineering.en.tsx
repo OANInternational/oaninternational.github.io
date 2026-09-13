@@ -23,7 +23,7 @@ export const ENGINEERING_PROJECTS_EN: IProjectPreview[] = [
     ),
     imageUrl: "/oan-web-031.jpg",
     videoUrl: "https://www.youtube.com/embed/9lKR1aJTu1Y?si=8931l6GUk5D_qXLZ",
-    url: "/documents/projects/asep.pdf",
+    url: "/documents/projects/asep-2026.pdf",
   },
   {
     title: "EMAS pumps",
@@ -38,5 +38,27 @@ export const ENGINEERING_PROJECTS_EN: IProjectPreview[] = [
     ),
     imageUrl: "/oan-web-012.jpg",
     url: "",
+  },
+  {
+    title: "ProGIDéM (Integrated household waste management project)",
+    summary: (
+      <div style={wrapper}>
+        <p>
+          A project run together with the Nikki town council to build a
+          municipal household waste collection system, which did not exist
+          before, and to raise awareness about sanitation and hygiene in public
+          spaces.
+        </p>
+
+        <p>
+          The collection service already operates in 5 neighbourhoods using a
+          tricycle and a subscription fee, and benefits more than 290 households
+          and businesses. In parallel, pilot tests are under way to make bricks
+          from plastic waste, supported by the UPM.
+        </p>
+      </div>
+    ),
+    imageUrl: "/oan-web-059.jpg",
+    url: "/documents/projects/progidem-2026.pdf",
   },
 ];
