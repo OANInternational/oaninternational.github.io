@@ -41,7 +41,7 @@ export const AGRICULTURE_PROJECTS_EN: IProjectPreview[] = [
     ),
     imageUrl: "/oan-web-030.jpg",
     videoUrl: "https://www.youtube.com/embed/jsvZld4MQOA?si=8931l6GUk5D_qXLZ",
-    url: "/documents/projects/nikarit.pdf",
+    url: "/documents/projects/nikarit-2026.pdf",
   },
   {
     title: "Community gardens",

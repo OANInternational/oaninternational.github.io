@@ -24,7 +24,7 @@ export const ENGINEERING_PROJECTS_ES: IProjectPreview[] = [
     ),
     imageUrl: "/oan-web-031.jpg",
     videoUrl: "https://www.youtube.com/embed/9lKR1aJTu1Y?si=8931l6GUk5D_qXLZ",
-    url: "/documents/projects/asep.pdf",
+    url: "/documents/projects/asep-2026.pdf",
   },
   {
     title: "Bombas EMAS",
@@ -39,5 +39,28 @@ export const ENGINEERING_PROJECTS_ES: IProjectPreview[] = [
     ),
     imageUrl: "/oan-web-012.jpg",
     url: "",
+  },
+  {
+    title: "ProGIDéM (Proyecto de gestión integral de desechos domésticos)",
+    summary: (
+      <div style={wrapper}>
+        <p>
+          Proyecto desarrollado junto al Ayuntamiento de Nikki para crear un
+          sistema municipal de recogida de residuos domésticos, inexistente
+          hasta ahora, y sensibilizar a la población sobre salubridad e higiene
+          en los espacios públicos.
+        </p>
+
+        <p>
+          El servicio de recogida funciona ya en 5 barrios mediante triciclo y
+          el pago de una cuota, y beneficia a más de 290 hogares y
+          establecimientos. En paralelo se desarrollan pruebas piloto de
+          fabricación de ladrillos a partir de residuos plásticos con el apoyo
+          de la UPM.
+        </p>
+      </div>
+    ),
+    imageUrl: "/oan-web-059.jpg",
+    url: "/documents/projects/progidem-2026.pdf",
   },
 ];
